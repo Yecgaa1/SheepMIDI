@@ -2,7 +2,7 @@
 #include "stdio.h"
 #include <string.h> 
 #include <stdint.h>
-
+#include <stdbool.h>
 void InitDACWork();
 void DACWork_key(uint8 key);
 

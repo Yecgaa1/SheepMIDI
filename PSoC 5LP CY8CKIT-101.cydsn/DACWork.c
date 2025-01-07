@@ -1,7 +1,6 @@
 #include "DACWork.h"
 #include "piano.h"
 
-
 /* 定时器中断服务函数 */
 static void Int_DAC_WC1_handler(void);
 static void Int_DAC_WC2_handler(void);
@@ -37,28 +36,28 @@ void DACWork_key(uint8 key)
     switch (key)
     {
     case 0:
-        WaveDAC8_Wave2Setup(DACData_C4, 2400);
+        WaveDAC8_Wave2Setup((uint8 *)DACData_C4, 2400);
         break;
     case 1:
-        WaveDAC8_Wave2Setup(DACData_D4, 2400);
+        WaveDAC8_Wave2Setup((uint8 *)DACData_D4, 2400);
         break;
     case 2:
-        WaveDAC8_Wave2Setup(DACData_E4, 2400);
+        WaveDAC8_Wave2Setup((uint8 *)DACData_E4, 2400);
         break;
     case 3:
-        WaveDAC8_Wave2Setup(DACData_F4, 2400);
+        WaveDAC8_Wave2Setup((uint8 *)DACData_F4, 2400);
         break;
     case 4:
-        WaveDAC8_Wave2Setup(DACData_G4, 2400);
+        WaveDAC8_Wave2Setup((uint8 *)DACData_G4, 2400);
         break;
     case 5:
-        WaveDAC8_Wave2Setup(DACData_A4, 2400);
+        WaveDAC8_Wave2Setup((uint8 *)DACData_A4, 2400);
         break;
     case 6:
-        WaveDAC8_Wave2Setup(DACData_B4, 2400);
+        WaveDAC8_Wave2Setup((uint8 *)DACData_B4, 2400);
         break;
     case 7:
-        WaveDAC8_Wave2Setup(DACData_C5, 2400);
+        WaveDAC8_Wave2Setup((uint8 *)DACData_C5, 2400);
         break;
 
     default:
@@ -70,23 +69,30 @@ void DACWork_key(uint8 key)
     }
 }
 
-void InitSynthChannels() {
-    for (int ch = 0; ch < NUM_CHANNELS; ch++) {
-        for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++) {
+void InitSynthChannels()
+{
+    for (int ch = 0; ch < NUM_CHANNELS; ch++)
+    {
+        for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++)
+        {
             synthChannels[ch].notes[n].data = NULL;
             synthChannels[ch].notes[n].current_step = 0;
             synthChannels[ch].notes[n].active = false;
         }
     }
 }
-bool addNote(int channel, const uint8_t (*noteData)[50]) {
-    if (channel < 0 || channel >= NUM_CHANNELS) {
+bool addNote(int channel, const uint8_t (*noteData)[50])
+{
+    if (channel < 0 || channel >= NUM_CHANNELS)
+    {
         return false; // 无效的通道
     }
 
     Channel *ch = &synthChannels[channel];
-    for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++) {
-        if (!ch->notes[n].active) {
+    for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++)
+    {
+        if (!ch->notes[n].active)
+        {
             ch->notes[n].data = noteData;
             ch->notes[n].current_step = 0;
             ch->notes[n].active = true;
@@ -96,13 +102,16 @@ bool addNote(int channel, const uint8_t (*noteData)[50]) {
     return false; // 通道已满
 }
 
-bool removeNote(int channel, int noteIndex) {
-    if (channel < 0 || channel >= NUM_CHANNELS || noteIndex < 0 || noteIndex >= MAX_NOTES_PER_CHANNEL) {
+bool removeNote(int channel, int noteIndex)
+{
+    if (channel < 0 || channel >= NUM_CHANNELS || noteIndex < 0 || noteIndex >= MAX_NOTES_PER_CHANNEL)
+    {
         return false; // 无效的通道或音符索引
     }
 
     Channel *ch = &synthChannels[channel];
-    if (ch->notes[noteIndex].active) {
+    if (ch->notes[noteIndex].active)
+    {
         ch->notes[noteIndex].active = false;
         ch->notes[noteIndex].data = NULL;
         ch->notes[noteIndex].current_step = 0;
@@ -111,7 +120,8 @@ bool removeNote(int channel, int noteIndex) {
     return false; // 音符未激活
 }
 
-void synthesize(uint8_t output[50]) {
+void synthesize(uint8_t output[50])
+{
     // 初始化输出缓冲区
     memset(output, 0, 50);
 
@@ -119,26 +129,34 @@ void synthesize(uint8_t output[50]) {
     int temp[50] = {0};
 
     // 遍历所有通道
-    for (int ch = 0; ch < NUM_CHANNELS; ch++) {
+    for (int ch = 0; ch < NUM_CHANNELS; ch++)
+    {
         Channel *channel = &synthChannels[ch];
         // 遍历通道中的所有音符
-        for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++) {
+        for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++)
+        {
             SynthNote *note = &channel->notes[n];
-            if (note->active && note->data != NULL) {
+            if (note->active && note->data != NULL)
+            {
                 // 确保当前步数在范围内
-                if (note->current_step < 48) {
+                if (note->current_step < 48)
+                {
                     // 合成当前步的50个数据点
-                    for (int i = 0; i < 50; i++) {
+                    for (int i = 0; i < 50; i++)
+                    {
                         temp[i] += note->data[note->current_step][i];
                     }
                     // 移动到下一步
                     note->current_step++;
                     // 如果音符合成完成，自动删除该音符
-                    if (note->current_step >= 48) {
+                    if (note->current_step >= 48)
+                    {
                         // 使用 removeNote 函数删除音符
                         removeNote(ch, n);
                     }
-                } else {
+                }
+                else
+                {
                     // 安全起见，再次删除已完成的音符
                     removeNote(ch, n);
                 }
@@ -149,19 +167,23 @@ void synthesize(uint8_t output[50]) {
     // 找到累加后的最大值和最小值用于重新缩放
     int max_val = temp[0];
     int min_val = temp[0];
-    for (int i = 1; i < 50; i++) {
-        if (temp[i] > max_val) max_val = temp[i];
-        if (temp[i] < min_val) min_val = temp[i];
+    for (int i = 1; i < 50; i++)
+    {
+        if (temp[i] > max_val)
+            max_val = temp[i];
+        if (temp[i] < min_val)
+            min_val = temp[i];
     }
 
     // 重新缩放到8位（0-255）
     // 防止除以零
     int range = max_val - min_val;
-    if (range == 0) range = 1;
+    if (range == 0)
+        range = 1;
 
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 50; i++)
+    {
         // 线性缩放
         output[i] = (uint8_t)(((temp[i] - min_val) * 255) / range);
     }
 }
-
