@@ -27,8 +27,8 @@
 *  Initial Parameter Constants
 ***************************************/
 
-#define WaveDAC8_WAVE1_TYPE     (11u)     /* Waveform for wave1 */
-#define WaveDAC8_WAVE2_TYPE     (11u)     /* Waveform for wave2 */
+#define WaveDAC8_WAVE1_TYPE     (1u)     /* Waveform for wave1 */
+#define WaveDAC8_WAVE2_TYPE     (1u)     /* Waveform for wave2 */
 #define WaveDAC8_SINE_WAVE      (0u)
 #define WaveDAC8_SQUARE_WAVE    (1u)
 #define WaveDAC8_TRIANGLE_WAVE  (2u)
@@ -36,8 +36,8 @@
 #define WaveDAC8_ARB_DRAW_WAVE  (10u) /* Arbitrary (draw) */
 #define WaveDAC8_ARB_FILE_WAVE  (11u) /* Arbitrary (from file) */
 
-#define WaveDAC8_WAVE1_LENGTH   (2400u)   /* Length for wave1 */
-#define WaveDAC8_WAVE2_LENGTH   (2400u)   /* Length for wave2 */
+#define WaveDAC8_WAVE1_LENGTH   (50u)   /* Length for wave1 */
+#define WaveDAC8_WAVE2_LENGTH   (50u)   /* Length for wave2 */
 	
 #define WaveDAC8_DEFAULT_RANGE    (6u) /* Default DAC range */
 #define WaveDAC8_DAC_RANGE_1V     (0u)

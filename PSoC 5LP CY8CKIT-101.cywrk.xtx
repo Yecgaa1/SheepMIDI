@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoC 5LP CY8CKIT-101">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\TopDesign">
 <ExpandedNodeIds>
 <v>PSoC 5LP CY8CKIT-101</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101</v>
@@ -377,7 +377,16 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\PSoC 5LP CY8CKIT-101.cydsn\DACWork.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1117, 612" SelectedTabbedMdiWindow="02e3c2a5-7a78-40f5-bd3e-8f1dae256576"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="5e597d01-8a07-4d3c-9694-56dd4abb3879" /><DocumentWindow Key="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\DACWork.c" Guid="02e3c2a5-7a78-40f5-bd3e-8f1dae256576" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

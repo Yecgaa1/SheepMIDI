@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "project.h": "c"
+        "project.h": "c",
+        "piano.h": "c",
+        "dacwork.h": "c"
     }
 }

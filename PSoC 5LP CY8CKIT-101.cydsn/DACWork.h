@@ -5,6 +5,7 @@
 #include <stdbool.h>
 void InitDACWork();
 void DACWork_key(uint8 key);
+void synthesize(uint8_t output[50]);
 
 typedef struct {
     const uint8_t (*data)[50]; // 指向48次合成的50个数据点的波形数据
