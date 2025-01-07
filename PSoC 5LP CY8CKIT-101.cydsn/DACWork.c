@@ -60,43 +60,36 @@ bool removeNote(int channel, int noteIndex)
     return false; // 音符未激活
 }
 
-void synthesize(uint8_t output[50])
-{
+void synthesize(uint8_t output[50]) {
     // 初始化输出缓冲区
     memset(output, 0, 50);
 
     // 临时变量用于累加
     int temp[50] = {0};
+    int active_notes = 0; // 记录当前活跃的音符总数
 
     // 遍历所有通道
-    for (int ch = 0; ch < NUM_CHANNELS; ch++)
-    {
+    for (int ch = 0; ch < NUM_CHANNELS; ch++) {
         Channel *channel = &synthChannels[ch];
         // 遍历通道中的所有音符
-        for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++)
-        {
+        for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++) {
             SynthNote *note = &channel->notes[n];
-            if (note->active && note->data != NULL)
-            {
+            if (note->active && note->data != NULL) {
                 // 确保当前步数在范围内
-                if (note->current_step < 48)
-                {
+                if (note->current_step < 48) {
                     // 合成当前步的50个数据点
-                    for (int i = 0; i < 50; i++)
-                    {
+                    for (int i = 0; i < 50; i++) {
                         temp[i] += note->data[note->current_step][i];
                     }
+                    active_notes++; // 每个活跃音符贡献一次
                     // 移动到下一步
                     note->current_step++;
                     // 如果音符合成完成，自动删除该音符
-                    if (note->current_step >= 48)
-                    {
+                    if (note->current_step >= 48) {
                         // 使用 removeNote 函数删除音符
                         removeNote(ch, n);
                     }
-                }
-                else
-                {
+                } else {
                     // 安全起见，再次删除已完成的音符
                     removeNote(ch, n);
                 }
@@ -104,30 +97,24 @@ void synthesize(uint8_t output[50])
         }
     }
 
-    // // 找到累加后的最大值和最小值用于重新缩放
-    // int max_val = temp[0];
-    // int min_val = temp[0];
-    // for (int i = 1; i < 50; i++)
-    // {
-    //     if (temp[i] > max_val)
-    //         max_val = temp[i];
-    //     if (temp[i] < min_val)
-    //         min_val = temp[i];
-    // }
+    // 避免除以零
+    if (active_notes == 0) {
+        // 如果没有活跃的音符，输出全零
+        memset(output, 0, 50);
+        return;
+    }
 
-    // // 重新缩放到8位（0-255）
-    // // 防止除以零
-    // int range = max_val - min_val;
-    // if (range == 0)
-    //     range = 1;
-
-    for (int i = 0; i < 50; i++)
-    {
-        // 线性缩放
-        // output[i] = (uint8_t)(((temp[i] - min_val) * 255) / range);
-        output[i]=temp[i];
+    // 将累加后的数据除以活跃的音符数量，缩放到0-255
+    for (int i = 0; i < 50; i++) {
+        // 使用整数除法，确保结果在0-255范围内
+        // 可以根据需要添加舍入或限制
+        int scaled = temp[i] / active_notes;
+        if (scaled < 0) scaled = 0;
+        if (scaled > 255) scaled = 255;
+        output[i] = (uint8_t)scaled;
     }
 }
+
 
 // void synthesize(uint8_t output[50])
 // {
@@ -204,7 +191,7 @@ static void Int_DAC_WC1_handler(void)
     // sprintf(tmp, "WC1:%d", i);
     // i++;
     // UART_1_PutString(tmp);
-    UART_1_PutString("WC1Complete\r\n");
+    // UART_1_PutString("WC1Complete\r\n");
     Control_Reg_Write(1);
     // WaveDAC8_Stop();
     WC1Update = true;
@@ -215,7 +202,7 @@ static void Int_DAC_WC2_handler(void)
     // i++;
     // UART_1_PutString(tmp);
     // WaveDAC8_Stop();
-    UART_1_PutString("WC2");
+    // UART_1_PutString("WC2");
     Control_Reg_Write(0);
     WC2Update = true;
 }

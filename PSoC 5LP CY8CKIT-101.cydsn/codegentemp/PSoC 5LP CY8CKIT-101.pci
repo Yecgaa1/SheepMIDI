@@ -1,5 +1,5 @@
 # PSoC 5LP CY8CKIT-101
-# 2025-01-07 07:19:54Z
+# 2025-01-07 09:41:08Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0

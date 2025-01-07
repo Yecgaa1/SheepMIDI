@@ -101,21 +101,22 @@ int main(void)
 
     LCD_Char_Start();    /* 初始化LCD_Char组件 */
     MatrixKbLED_Start(); /* 初始化MatrixKbLED组件 */
-    uint8_t synthesizedOutput[50];
-    WaveDAC8_Wave1Setup(synthesizedOutput, 50);
-    WaveDAC8_Wave2Setup(synthesizedOutput, 50);
+    uint8_t WC1_Output[50];
+    uint8_t WC2_Output[50];
+    WaveDAC8_Wave1Setup(WC1_Output, 50);
+    WaveDAC8_Wave2Setup(WC2_Output, 50);
     while (1)
     {
         if (WC1Update)
         {
             WC1Update = false;
-            synthesize(synthesizedOutput);
+            synthesize(WC1_Output);
             // WaveDAC8_Wave1Setup(synthesizedOutput, 50);
         }
         else if (WC2Update)
         {
             WC2Update = false;
-            synthesize(synthesizedOutput);
+            synthesize(WC2_Output);
             // WaveDAC8_Wave2Setup(synthesizedOutput, 50);
         }
         /* Timer_Button定时器运行了一个周期（默认为BUTTON_SAMPLE_PERIOD_MS =20ms）？ */
