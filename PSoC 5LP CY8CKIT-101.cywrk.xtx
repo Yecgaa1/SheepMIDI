@@ -239,6 +239,55 @@
 <VisibleNodeIds>
 <v>PSoC 5LP CY8CKIT-101</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Bypass.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Button_Module.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_AMuxCH0.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CompCH0.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CompCH0_PM.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSHL.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_IdacCH0.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_IdacCH0_PM.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_INT.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_IntClock.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_Pins.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_PM.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_SMS_Wrapper.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_TunerHelper.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Clk_Tmr_Button.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_500Hz.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg_PM.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_WC1.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_WC2.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\DACWork.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Tmr_Button.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Char.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Char_LCDPort.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Char_PM.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Seg.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Seg_Frame_Dma_dma.lst</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Seg_INT.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>

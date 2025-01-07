@@ -19,6 +19,6 @@ typedef struct {
 
 // 定义三个通道，每个通道最多三个音符
 #define NUM_CHANNELS 3
-#define MAX_NOTES_PER_CHANNEL 3
+#define MAX_NOTES_PER_CHANNEL 4
 
 Channel synthChannels[NUM_CHANNELS];
