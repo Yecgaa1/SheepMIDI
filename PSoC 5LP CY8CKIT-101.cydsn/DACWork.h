@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdint.h>
 #include <stdbool.h>
-
+#include "UartScreen.h"
 // 定义三个通道，每个通道最多三个音符
 #define NUM_CHANNELS 4
 #define MAX_NOTES_PER_CHANNEL 4

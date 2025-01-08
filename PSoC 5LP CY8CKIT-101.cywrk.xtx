@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>PSoC 5LP CY8CKIT-101</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101</v>
@@ -38,30 +38,7 @@
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Source Files\UartScreen.c</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>PSoC 5LP CY8CKIT-101</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\TopDesign</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\Pins</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\Analog</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\Clocks</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\Interrupts</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\DMA</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\System</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\Directives</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\Flash Security</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\EEPROM</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Header Files</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Header Files\device.h</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Source Files</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Source Files\DACWork.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Source Files\main.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Source Files\map.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Source Files\piano.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Source Files\UartScreen.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101">
 <ExpandedNodeIds>
@@ -98,40 +75,7 @@
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\TopDesign</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>PSoC 5LP CY8CKIT-101</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Fw_v1_1</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Fw_v1_1\API</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Fw_v1_1\API\Button_Module_Fw_v1_1.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Fw_v1_1\API\Button_Module_Fw_v1_1.h</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Fw_v1_1\Button_Module_Fw_v1_1.cysym</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\API</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC5</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC5\API</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC5\API\Button_Module_Macro_v1_1.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC5\API\Button_Module_Macro_v1_1.h</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC5\Button_Module_Macro_v1_1.cymacro</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC6</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC6\API</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC6\API\Button_Module_Macro_v1_1.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC6\API\Button_Module_Macro_v1_1.h</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\PSoC6\Button_Module_Macro_v1_1.cymacro</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Button_Module_Macro_v1_1\Button_Module_Macro_v1_1.cysym</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\API</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\API\MatrixKbLED_8p_v1_0.c</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\API\MatrixKbLED_8p_v1_0.h</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\PSoC5</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\PSoC5\MatrixKbLED_8p_v1_0.cysch</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\PSoC6</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\PSoC6\MatrixKbLED_8p_v1_0.cysch</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\MatrixKbLED_8p_v1_0.cysym</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0\MatrixKbLED_8p_v1_0_comp_ds.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\TopDesign</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\TopDesign\TopDesign.cysch</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
@@ -214,55 +158,7 @@
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.rpt</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101_timing.html</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>PSoC 5LP CY8CKIT-101</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Bypass.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Button_Module.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Clk_Tmr_Button.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Clk_Tmr_CH1.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_500Hz.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg_PM.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_WC1.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_WC2.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\DACWork.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Tmr_Button.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Tmr_CH1.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Char.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Char_LCDPort.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_Char_PM.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\map.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\MatrixKbLED.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\MatrixKbLED_isr_MKbLED.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\PGA.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\PGA_PM.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\piano.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_SW2.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_SW3.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Button.lst</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
 <TreeKeysV2>
@@ -307,43 +203,7 @@
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\ZeroTerminal</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\ZeroTerminal\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>PSoC 5LP CY8CKIT-101</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP Architecture TRM</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CY8C58LP Family Datasheet</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\System Reference Guides</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\System Reference Guides\cy_boot_v5_40</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\ADC_SAR_v3_10.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CharLCD_v2_20.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Connector20_v1_0.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\cy_clock_v2_20</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\cy_isr_v1_70</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\cy_pins_v2_20</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CyControlReg_v1_80.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Gnd_v1_0</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Gnd_v1_0\Gnd_v1_0.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\MatrixKbLED_8p_v1_0_comp_ds.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PGA_v2_0.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Potentiometer_v1_0.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Power_v1_0</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Power_v1_0\Power_v1_0.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Resistor_v1_0</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Resistor_v1_0\Resistor_v1_0.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\SwitchSPST_v1_0</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\SwitchSPST_v1_0\SwitchSPST_v1_0.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Timer_v2_80</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Timer_v2_80\Timer_v2_80.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\UART_v2_50</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\UART_v2_50\UART_v2_50.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\VDAC8_v1_90.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\WaveDAC8_v2_10.pdf</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\ZeroTerminal</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\ZeroTerminal\ZeroTerminal.pdf</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
@@ -363,6 +223,7 @@
 <name v=".\PSoC 5LP CY8CKIT-101.cydsn\map.c" />
 <name v=".\PSoC 5LP CY8CKIT-101.cydsn\main.c" />
 <name v=".\PSoC 5LP CY8CKIT-101.cydsn\DACWork.c" />
+<name v=".\PSoC 5LP CY8CKIT-101.cydsn\UartScreen.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -370,7 +231,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1447, 528" SelectedTabbedMdiWindow="806c3fea-99c4-4650-b6a7-2068382b6b23"><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\PSoC 5LP CY8CKIT-101.cydwr" Guid="a94c854f-bde0-491b-b5ea-4b0e8b853cc0" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\TopDesign\TopDesign.cysch" Guid="052adb1d-8181-42b2-8ed2-ded66078337d" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\piano.c" Guid="4957b4e6-2cc0-40f0-946a-b6ce71eb5512" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\map.c" Guid="34551a72-79a0-45ef-b717-0e6383df1d6e" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\main.c" Guid="66912319-fb7e-4485-93c1-8ec878d5cdaa" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\DACWork.c" Guid="806c3fea-99c4-4650-b6a7-2068382b6b23" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="5e597d01-8a07-4d3c-9694-56dd4abb3879" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1486, 528" SelectedTabbedMdiWindow="a94c854f-bde0-491b-b5ea-4b0e8b853cc0"><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\PSoC 5LP CY8CKIT-101.cydwr" Guid="a94c854f-bde0-491b-b5ea-4b0e8b853cc0" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\TopDesign\TopDesign.cysch" Guid="052adb1d-8181-42b2-8ed2-ded66078337d" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\piano.c" Guid="4957b4e6-2cc0-40f0-946a-b6ce71eb5512" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\map.c" Guid="34551a72-79a0-45ef-b717-0e6383df1d6e" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\main.c" Guid="66912319-fb7e-4485-93c1-8ec878d5cdaa" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\DACWork.c" Guid="806c3fea-99c4-4650-b6a7-2068382b6b23" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="5e597d01-8a07-4d3c-9694-56dd4abb3879" /><DocumentWindow Key="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\UartScreen.c" Guid="59f8f7fe-27d5-4f01-8c48-e6dd3ef51f66" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

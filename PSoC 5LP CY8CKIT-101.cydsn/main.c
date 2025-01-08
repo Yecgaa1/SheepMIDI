@@ -52,7 +52,6 @@ void MatrixKbLED_Task(void);
 void LCD_Indicator(uint8 msg, uint32 key_statuses);
 extern bool WC1Update, WC2Update;
 
-
 /*******************************************************************************
  *                                    main()
  *
@@ -81,6 +80,8 @@ int main(void)
     CYGlobalIntEnable;
 
     UART_1_Start();
+    UART_2_Start();
+    TCJSendEnd();
     UART_1_PutString("hello!");
 
     /* 初始化WaveDAC8组件 */
@@ -98,7 +99,6 @@ int main(void)
     WaveDAC8_Wave1Setup(WC1_Output, 50);
     WaveDAC8_Wave2Setup(WC2_Output, 50);
     // uint8 time = 0;
-    
 
     while (1)
     {
@@ -174,11 +174,11 @@ void MatrixKbLED_Task(void)
         /* 获取全部按键以及旋转动作的当前状态 */
         keys = MatrixKbLED_GetKey(SW_ALL);
 
-        char tmp[20] = "";
+        // char tmp[20] = "";
         // sprintf(tmp, "%c,%c\r\n", qdat, '0' + ((keys >> 19) & 1u));
         // UART_1_PutString(tmp);
-        sprintf(tmp, "%d,%d\r\n", qdat, keys);
-        UART_1_PutString(tmp);
+        // sprintf(tmp, "%d,%d\r\n", qdat, keys);
+        // UART_1_PutString(tmp);
 
         DACWork_key(qdat);
         /* 在LCD上显示按键动作和当前状态信息 */

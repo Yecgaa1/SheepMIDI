@@ -240,19 +240,34 @@ void DACWork_key(uint8 key)
         break;
     case 19:
         CH1Work = true;
+        TCJSendAnyProperty("b0", "bco", "63488");
+        TCJSendTxt("b0", "CH1工作中");
         break;
     case 20:
         CH2Work = true;
+        TCJSendAnyProperty("b1", "bco", "63488");
+        TCJSendTxt("b1", "CH2工作中");
         break;
     case 21:
         CH2Work = true;
+        TCJSendAnyProperty("b2", "bco", "63488");
+        TCJSendTxt("b2", "CH3工作中");
         break;
     case 147:
         CH1Work = false;
+        TCJSendAnyProperty("b0", "bco", "5988");
+        TCJSendTxt("b0", "CH1待机中");
+        break;
     case 148:
         CH2Work = false;
+        TCJSendAnyProperty("b1", "bco", "5988");
+        TCJSendTxt("b1", "CH2待机中");
+        break;
     case 149:
         CH2Work = false;
+        TCJSendAnyProperty("b2", "bco", "5988");
+        TCJSendTxt("b2", "CH3待机中");
+        break;
     default:
         break;
     }
