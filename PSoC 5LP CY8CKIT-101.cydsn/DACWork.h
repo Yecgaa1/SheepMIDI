@@ -4,11 +4,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-
 // 定义三个通道，每个通道最多三个音符
 #define NUM_CHANNELS 4
 #define MAX_NOTES_PER_CHANNEL 4
-
 
 #define BARS 4
 #define NOTES_PER_BAR 12
@@ -24,14 +22,15 @@ typedef struct
 typedef struct
 {
     SynthNote notes[MAX_NOTES_PER_CHANNEL]; // 每个通道最多三个同时合成的音符
+    float voiceFact;
 } Channel;
 
 // 乐谱结构体
 typedef struct
 {
     SynthNote notes[TOTAL_NOTES];
-    int current_time_step; // 当前播放到的时间步（0到63）
-    int notes_in_bar[BARS];    // 每个小节的实际音符数量
+    int current_time_step;  // 当前播放到的时间步（0到63）
+    int notes_in_bar[BARS]; // 每个小节的实际音符数量
 } Score;
 
 Channel synthChannels[NUM_CHANNELS];

@@ -20,6 +20,7 @@ void InitSynthChannels()
             synthChannels[ch].notes[n].current_step = 0;
             synthChannels[ch].notes[n].active = false;
         }
+        synthChannels[ch].voiceFact = 1.0;
     }
 }
 bool addNote(int channel, const uint8_t (*noteData)[50])
@@ -74,6 +75,7 @@ void Synthesize(uint8_t output[50])
     for (int ch = 0; ch < NUM_CHANNELS; ch++)
     {
         Channel *channel = &synthChannels[ch];
+        float voiceFact = channel->voiceFact;
         // 遍历通道中的所有音符
         for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++)
         {
@@ -86,7 +88,7 @@ void Synthesize(uint8_t output[50])
                     // 合成当前步的50个数据点
                     for (int i = 0; i < 50; i++)
                     {
-                        temp[i] += note->data[note->current_step][i];
+                        temp[i] += (uint16)(note->data[note->current_step][i] * voiceFact);
                     }
                     active_notes++; // 每个活跃音符贡献一次
                     // 移动到下一步
@@ -154,7 +156,7 @@ uint16 bpm = 161;
 uint16 notePreBite = 3;
 uint16 CH1Period;
 uint8 trueNote = 12;
-float slowFact = 0.5; // 1就是100速度
+float slowFact = 0.6; // 1就是100速度
 // CH1BPM中断器
 static void Int_Tmr_CH1_handler(void)
 {
@@ -191,28 +193,28 @@ void DACWork_key(uint8 key)
     switch (key)
     {
     case 0:
-        addNote(3, DACData_C4);
+        addNote(0, DACData_C4);
         break;
     case 1:
-        addNote(3, DACData_D4);
+        addNote(0, DACData_D4);
         break;
     case 2:
-        addNote(3, DACData_E4);
+        addNote(0, DACData_E4);
         break;
     case 3:
-        addNote(3, DACData_F4);
+        addNote(0, DACData_F4);
         break;
     case 4:
-        addNote(3, DACData_G4);
+        addNote(0, DACData_G4);
         break;
     case 5:
-        addNote(3, DACData_A4);
+        addNote(0, DACData_A4);
         break;
     case 6:
-        addNote(3, DACData_B4);
+        addNote(0, DACData_B4);
         break;
     case 7:
-        addNote(3, DACData_C5);
+        addNote(0, DACData_C5);
         break;
 
     default:

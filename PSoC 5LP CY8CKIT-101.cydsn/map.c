@@ -37,10 +37,10 @@ void read_score(Score *score)
     }
 
     SynthNote current_note = score->notes[score->current_time_step];
-    
+
     if (current_note.data != NULL)
     {
-        addNote(0, current_note.data);
+        addNote(1, current_note.data);
     }
     // 递增时间步
     score->current_time_step = (score->current_time_step + 1) % TOTAL_NOTES;
@@ -111,4 +111,6 @@ void fill_score_example(Score *score)
     fill_score_note(score, 3, 9, DACData_C4);
     fill_score_note(score, 3, 10, DACData_D4);
     fill_score_note(score, 3, 11, DACData_G4);
+
+    synthChannels[1].voiceFact = 0.3;
 }
