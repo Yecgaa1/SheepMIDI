@@ -1,6 +1,6 @@
 // ======================================================================
 // PSoC 5LP CY8CKIT-101.v generated from TopDesign.cysch
-// 01/07/2025 at 17:41
+// 01/08/2025 at 10:52
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -144,65 +144,18 @@
 `define CYDEV_CHIP_FAMILY_USED 3
 `define CYDEV_CHIP_MEMBER_USED 2
 `define CYDEV_CHIP_REVISION_USED 0
-// Component: cy_virtualmux_v1_0
+// Component: cy_analog_virtualmux_v1_0
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
 `endif
-
-// Component: not_v1_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
-`endif
-
-// Comp_v2_0(Hysteresis=0, Pd_Override=0, Polarity=0, PSOC5A=false, Speed=0, Sync=1, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=Comp_v2_0, CY_CONFIG_TITLE=CompCH0, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=CapSense:CompCH0, CY_INSTANCE_SHORT_NAME=CompCH0, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=CapSense_CompCH0, )
-module Comp_v2_0_0 (
-    clock,
-    CmpOut,
-    Vminus,
-    Vplus);
-    input       clock;
-    output      CmpOut;
-    inout       Vminus;
-    electrical  Vminus;
-    inout       Vplus;
-    electrical  Vplus;
-
-
-          wire  Net_9;
-          wire  Net_1;
-
-    cy_psoc3_ctcomp_v1_0 ctComp (
-        .clk_udb(clock),
-        .clock(clock),
-        .cmpout(Net_1),
-        .vminus(Vminus),
-        .vplus(Vplus));
-
-	// VirtualMux_1 (cy_virtualmux_v1_0)
-	assign CmpOut = Net_1;
-
-
-    assign Net_9 = ~Net_1;
-
-
-
-endmodule
 
 // Component: ZeroTerminal
 `ifdef CY_BLK_DIR
@@ -217,145 +170,30 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
 `endif
 
-// IDAC8_v2_0(Current=0, Data_Source=0, Hardware_Enable=true, IDAC_Range=4, IDAC_Speed=0, Initial_Value=0, Polarity=4, Strobe_Mode=0, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=IDAC8_v2_0, CY_CONFIG_TITLE=IdacCH0, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=CapSense:IdacCH0, CY_INSTANCE_SHORT_NAME=IdacCH0, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=CapSense_IdacCH0, )
-module IDAC8_v2_0_1 (
-    data,
-    en,
-    iOut,
-    ipolarity,
-    strobe);
-    input      [7:0] data;
-    input       en;
-    inout       iOut;
-    electrical  iOut;
-    input       ipolarity;
-    input       strobe;
-
-    parameter Data_Source = 0;
-    parameter Initial_Value = 0;
-    parameter Strobe_Mode = 0;
-
-          wire  Net_195;
-          wire  Net_194;
-    electrical  Net_124;
-          wire  Net_158;
-          wire  Net_157;
-          wire  Net_123;
-          wire  Net_125;
-
-    cy_psoc3_vidac8_v1_0 viDAC8 (
-        .data(data[7:0]),
-        .idir(Net_158),
-        .ioff(Net_123),
-        .iout(iOut),
-        .reset(Net_125),
-        .strobe(strobe),
-        .strobe_udb(strobe),
-        .vout(Net_124));
-    defparam viDAC8.is_all_if_any = 0;
-    defparam viDAC8.reg_data = 0;
-
-
-    assign Net_157 = ~en;
-
-    ZeroTerminal ZeroTerminal_3 (
-        .z(Net_125));
-
-    cy_analog_noconnect_v1_0 cy_analog_noconnect_1 (
-        .noconnect(Net_124));
-
-	// VirtualMux_2 (cy_virtualmux_v1_0)
-	assign Net_123 = Net_157;
-
-	// VirtualMux_1 (cy_virtualmux_v1_0)
-	assign Net_158 = Net_195;
-
-    ZeroTerminal ZeroTerminal_1 (
-        .z(Net_194));
-
-    ZeroTerminal ZeroTerminal_2 (
-        .z(Net_195));
-
-
-
-endmodule
-
-// Component: cy_vref_v1_60
+// Component: cy_virtualmux_v1_0
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_60"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_60\cy_vref_v1_60.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_60"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_60\cy_vref_v1_60.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
 `endif
 
-// Component: CapSense_CSD_AMux_v3_50
+// Component: cy_vref_v1_70
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_AMux_v3_50"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_AMux_v3_50\CapSense_CSD_AMux_v3_50.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_AMux_v3_50"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_AMux_v3_50\CapSense_CSD_AMux_v3_50.v"
-`endif
-
-// Component: cy_analog_virtualmux_v1_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
-`endif
-
-// Component: CapSense_CSD_MeasureCh_v3_50
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_MeasureCh_v3_50"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_MeasureCh_v3_50\CapSense_CSD_MeasureCh_v3_50.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_MeasureCh_v3_50"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_MeasureCh_v3_50\CapSense_CSD_MeasureCh_v3_50.v"
-`endif
-
-// Component: CapSense_CSD_ClockGen_v3_50
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_ClockGen_v3_50"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_ClockGen_v3_50\CapSense_CSD_ClockGen_v3_50.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_ClockGen_v3_50"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_ClockGen_v3_50\CapSense_CSD_ClockGen_v3_50.v"
-`endif
-
-// Component: OneTerminal
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v"
 `endif
 
 // Component: or_v1_0
@@ -369,382 +207,6 @@ endmodule
 `else
 `define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0"
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v"
-`endif
-
-// CapSense_CSD_v3_50(AnalogSwitchDivider=2, ClockSource=0, ConnectInactiveSensors=0, CtlModeReplacementString=SyncCtrl, CurrentSource=1, EnableTuneHelper=false, EzI2CInstanceName=EZI2C, GuardSensorEnable=false, IdacRange=4, Implementation_CH0=1, Implementation_CH1=1, IntClockFrequency=12, LowBaselineReset=5, MaximumSensors=62, MultipleAnalogSwitchDivider=false, NegativeNoiseThreshold=20, NumberOfChannels=1, PrechargePolarity=3, PrescalerOptions=1, PrsOptions=1, RawDataFilterType=0, RbNumber_CH0=0, RbNumber_CH1=0, RemoveCH1=true, RemoveVrefTerm=false, ScanSpeed=1, SensorAutoReset=false, SensorNumber_CH0=5, SensorNumber_CH1=0, SensorNumberChannel0=5, SensorNumberChannel1=0, ShieldEnable=false, SizeReplacementString=uint8, SnsAlias_CH0=<?xml version='1.0'?><PinAliases Version='1'><pin0>LinearSlider0_e0__LS</pin0><pin1>LinearSlider0_e1__LS</pin1><pin2>LinearSlider0_e2__LS</pin2><pin3>LinearSlider0_e3__LS</pin3><pin4>LinearSlider0_e4__LS</pin4></PinAliases>, SnsAlias_CH1=<?xml version="1.0" ?><PinAliases Version="1"><pin0>pin1_ch1</pin0></PinAliases>, TunerProperties=, TuningMethod=1, VrefOptions=0, VrefValue=64, WaterProofingEnabled=false, WidgetResolution=8, WidgetsData=<?xml version="1.0" encoding="utf-16"?> <CyWidgetsList xmlns:version="v1.00">   <ListMainTerminal>     <CyTerminal NameIndex="0" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="1" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="2" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="3" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="4" WidgetName="LinearSlider0__LS" />   </ListMainTerminal>   <ListButtons />   <ListMatrixButtons />   <ListTouchPads />   <ListSliders>     <CySlider Name="LinearSlider0" Type="SliderLinear" Channel="First" Count="5" Angle="0" Fliped="false" Fliped2D="false" ScaleFactor="1" Diplexing="false" Resolution="100" FilterPropertiesPos="None">       <Location>         <X>2147483647</X>         <Y>2147483647</Y>       </Location>       <Properties>         <Hysteresis>0</Hysteresis>         <Debounce>1</Debounce>         <FingerThreshold>40</FingerThreshold>         <NoiseThreshold>20</NoiseThreshold>         <ScanResolution>_8</ScanResolution>       </Properties>     </CySlider>   </ListSliders>   <GuardSensor Name="GuardSensor" Type="Button" Channel="First" Count="1" Angle="0" Fliped="false" Fliped2D="false" ScaleFactor="1">     <Location>       <X>2147483647</X>       <Y>2147483647</Y>     </Location>     <Properties>       <Hysteresis>10</Hysteresis>       <Debounce>5</Debounce>       <FingerThreshold>100</FingerThreshold>       <NoiseThreshold>20</NoiseThreshold>       <ScanResolution>_10</ScanResolution>     </Properties>   </GuardSensor>   <GuardSensorTerminal NameIndex="0" WidgetName="GuardSensor__GRD" />   <CyScanSlotsList>     <ListScanSlots>       <CyScanSlot IDACSettings="40" Sensitivity="2" AnalogSwitchDivider="11" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e0__LS</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="40" Sensitivity="2" AnalogSwitchDivider="11" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e1__LS</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="40" Sensitivity="2" AnalogSwitchDivider="11" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e2__LS</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="40" Sensitivity="2" AnalogSwitchDivider="11" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e3__LS</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="40" Sensitivity="2" AnalogSwitchDivider="11" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e4__LS</string>         </ListTerminalsNames>       </CyScanSlot>     </ListScanSlots>     <GuardSensorScanSlot IDACSettings="200" Sensitivity="2" AnalogSwitchDivider="11" WidgetName="GuardSensor__GRD">       <ListTerminalsNames>         <string>GuardSensor__GRD</string>       </ListTerminalsNames>     </GuardSensorScanSlot>   </CyScanSlotsList> </CyWidgetsList>, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=CapSense_CSD_v3_50, CY_CONFIG_TITLE=CapSense, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=CapSense, CY_INSTANCE_SHORT_NAME=CapSense, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=50, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=CapSense, )
-module CapSense_CSD_v3_50_2 (
-    bclk,
-    clock,
-    shield,
-    vref);
-    output      bclk;
-    input       clock;
-    output      shield;
-    inout       vref;
-    electrical  vref;
-
-
-          wire  Cmp_CH1;
-          wire  Ioff_CH1;
-          wire  DigitalClk;
-          wire  PreChargeClk;
-          wire  ShieldSignal;
-          wire  Ioff_CH0;
-          wire  Cmp_CH0;
-          wire  Net_464;
-          wire  Net_460;
-          wire  Net_458;
-          wire  clk;
-          wire  mrst;
-    electrical  Net_429;
-    electrical  Net_428;
-    electrical  Net_427;
-    electrical  Net_426;
-    electrical  Net_425;
-    electrical  Net_424;
-          wire  Net_397;
-          wire  Net_396;
-          wire  Net_371;
-          wire  Net_373;
-          wire  Net_372;
-          wire  Net_374;
-          wire  Net_375;
-          wire  Net_422;
-          wire [7:0] Net_423;
-          wire  Net_421;
-          wire  Net_470;
-          wire  Net_474;
-          wire [7:0] Net_471;
-          wire  Net_420;
-          wire  Net_412;
-          wire [7:0] Net_413;
-          wire  Net_411;
-          wire  Net_465;
-          wire  Net_469;
-          wire [7:0] Net_466;
-          wire  Net_410;
-    electrical  Net_2129;
-    electrical  Net_2101;
-    electrical  Net_1440;
-    electrical  Net_2153;
-    electrical  Net_2098;
-    electrical  Net_2072;
-    electrical  Net_2077;
-    electrical  Net_2038;
-    electrical  Net_2031;
-    electrical  Net_1903;
-    electrical  Net_2149;
-    electrical  Net_2107;
-    electrical  Net_1956;
-    electrical  Net_1433;
-    electrical  Net_2164;
-    electrical  Net_1438;
-    electrical [4:0] Net_1410;
-    electrical  Net_1983;
-    electrical  Net_1425;
-    electrical  Net_1917;
-    electrical  Net_282;
-          wire  Net_1644;
-          wire  Net_461;
-          wire  Net_1603;
-          wire  Net_1358;
-          wire  Net_1350;
-
-    cy_psoc3_csabuf_v1_0 BufCH0 (
-        .vchan(Net_2149),
-        .vout(Net_2072),
-        .vref(Net_2129));
-
-    Comp_v2_0_0 CompCH0 (
-        .clock(1'b0),
-        .CmpOut(Cmp_CH0),
-        .Vminus(Net_1983),
-        .Vplus(Net_282));
-
-    IDAC8_v2_0_1 IdacCH0 (
-        .data(8'b00000000),
-        .en(Ioff_CH0),
-        .iOut(Net_1425),
-        .ipolarity(1'b0),
-        .strobe(1'b0));
-    defparam IdacCH0.Data_Source = 0;
-    defparam IdacCH0.Initial_Value = 0;
-    defparam IdacCH0.Strobe_Mode = 0;
-
-	wire [0:0] tmpOE__CmodCH0_net;
-	wire [0:0] tmpFB_0__CmodCH0_net;
-	wire [0:0] tmpIO_0__CmodCH0_net;
-	wire [0:0] tmpINTERRUPT_0__CmodCH0_net;
-	electrical [0:0] tmpSIOVREF__CmodCH0_net;
-
-	cy_psoc3_pins_v1_10
-		#(.id("82799613-11c0-4871-b047-2c5f703dc510/232398c5-3876-4e07-8f5b-7cd7657055e2"),
-		  .drive_mode(3'b000),
-		  .ibuf_enabled(1'b0),
-		  .init_dr_st(1'b0),
-		  .input_clk_en(0),
-		  .input_sync(1'b1),
-		  .input_sync_mode(1'b0),
-		  .intr_mode(2'b00),
-		  .invert_in_clock(0),
-		  .invert_in_clock_en(0),
-		  .invert_in_reset(0),
-		  .invert_out_clock(0),
-		  .invert_out_clock_en(0),
-		  .invert_out_reset(0),
-		  .io_voltage(""),
-		  .layout_mode("NONCONTIGUOUS"),
-		  .oe_conn(1'b0),
-		  .oe_reset(0),
-		  .oe_sync(1'b0),
-		  .output_clk_en(0),
-		  .output_clock_mode(1'b0),
-		  .output_conn(1'b0),
-		  .output_mode(1'b0),
-		  .output_reset(0),
-		  .output_sync(1'b0),
-		  .pa_in_clock(-1),
-		  .pa_in_clock_en(-1),
-		  .pa_in_reset(-1),
-		  .pa_out_clock(-1),
-		  .pa_out_clock_en(-1),
-		  .pa_out_reset(-1),
-		  .pin_aliases("Cmod_CH0"),
-		  .pin_mode("A"),
-		  .por_state(4),
-		  .sio_group_cnt(0),
-		  .sio_hyst(1'b0),
-		  .sio_ibuf(""),
-		  .sio_info(2'b00),
-		  .sio_obuf(""),
-		  .sio_refsel(""),
-		  .sio_vtrip(""),
-		  .slew_rate(1'b0),
-		  .spanning(1),
-		  .vtrip(2'b10),
-		  .width(1),
-		  .use_annotation(1'b0))
-		CmodCH0
-		 (.oe(tmpOE__CmodCH0_net),
-		  .y({1'b0}),
-		  .fb({tmpFB_0__CmodCH0_net[0:0]}),
-		  .analog({Net_1917}),
-		  .io({tmpIO_0__CmodCH0_net[0:0]}),
-		  .siovref(tmpSIOVREF__CmodCH0_net),
-		  .interrupt({tmpINTERRUPT_0__CmodCH0_net[0:0]}),
-		  .in_clock({1'b0}),
-		  .in_clock_en({1'b1}),
-		  .in_reset({1'b0}),
-		  .out_clock({1'b0}),
-		  .out_clock_en({1'b1}),
-		  .out_reset({1'b0}));
-
-	assign tmpOE__CmodCH0_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
-
-	wire [0:0] tmpOE__PortCH0_net;
-
-	cy_psoc3_port_v1_0
-		#(.width(5),
-		  .siorefwidth(3),
-		  .id("82799613-11c0-4871-b047-2c5f703dc510/dd9c1af8-be5a-4b9e-b10c-b2d9f11dc9fc"),
-		  .pin_aliases({"LinearSlider0_e0","__LS,LinearSlide","r0_e1__LS,Linear","Slider0_e2__LS,L","inearSlider0_e3_","_LS,LinearSlider","0_e4__LS"}),
-		  .access_mode("HW_ONLY"),
-		  .layout_mode("NONCONTIGUOUS"),
-		  .port_mode("ANALOG"),
-		  .intr_mode(10'b0000000000),
-		  .drive_mode(15'b100100100100100),
-		  .por_state(0),
-		  .enable_shielding(5'b00000),
-		  .cs_mode(2'b11))
-		PortCH0
-		 (.oe(tmpOE__PortCH0_net),
-		  .y(5'b0),
-		  .analog(Net_1410[4:0]),
-		  .precharge(PreChargeClk));
-
-	assign tmpOE__PortCH0_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? 1'b1 : 1'b0;
-
-
-	cy_vref_v1_0
-		#(.guid("89B398AD-36A8-4627-9212-707F2986319E"),
-		  .name("1.024V"),
-		  .autoenable(1))
-		VrefRefCH0
-		 (.vout(Net_2038));
-
-
-    // -- AMux AMuxCH0 start -- ***
-    // -- Mux A --
-    
-    cy_psoc3_amux_v1_0 AMuxCH0(
-        .muxin({
-            Net_1425,
-            Net_282,
-            Net_1917,
-            Net_1410[4],
-            Net_1410[3],
-            Net_1410[2],
-            Net_1410[1],
-            Net_1410[0]
-            }),
-        .vout(Net_2072)
-        );
-    
-    defparam AMuxCH0.muxin_width = 8;
-    defparam AMuxCH0.init_mux_sel = 8'h0;
-    defparam AMuxCH0.one_active = 0;
-    
-    // -- AMux AMuxCH0 end --
-
-	// Select_VrefCH0 (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 Select_VrefCH0_connect(Net_1983, Net_2038);
-	defparam Select_VrefCH0_connect.sig_width = 1;
-
-    ZeroTerminal ZeroTerminal_5 (
-        .z(Net_375));
-
-    CapSense_CSD_MeasureCh_v3_50 MeasureCH0 (
-        .clock(clk),
-        .cmp_in(Cmp_CH0),
-        .enable(Net_373),
-        .interrupt(Net_1603),
-        .ioff(Ioff_CH0),
-        .pulse(DigitalClk),
-        .reset(mrst),
-        .start(Net_1350));
-    defparam MeasureCH0.IdacOptions = 1;
-    defparam MeasureCH0.ImplementationType = 1;
-
-    CapSense_CSD_ClockGen_v3_50 ClockGen (
-        .clock(clk),
-        .dpulse(DigitalClk),
-        .enable(Net_371),
-        .mesrst(mrst),
-        .ppulse(PreChargeClk),
-        .reset(Net_375),
-        .shield(ShieldSignal),
-        .start0(Net_1350),
-        .start1(Net_1358));
-    defparam ClockGen.IdacOptions = 1;
-    defparam ClockGen.PrescalerOptions = 1;
-    defparam ClockGen.PrsOptions = 1;
-
-    OneTerminal OneTerminal_3 (
-        .o(Net_374));
-
-    OneTerminal OneTerminal_2 (
-        .o(Net_373));
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b00))
-		IsrCH0
-		 (.int_signal(Net_1603));
-
-
-    OneTerminal OneTerminal_1 (
-        .o(Net_371));
-
-
-	cy_clock_v1_0
-		#(.id("82799613-11c0-4871-b047-2c5f703dc510/0ad1a1a8-974e-43a0-841b-3af08590011d"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("83333333.3333333"),
-		  .is_direct(0),
-		  .is_digital(1))
-		IntClock
-		 (.clock_out(Net_1644));
-
-
-	// ClockSelect_VirtualMux (cy_virtualmux_v1_0)
-	assign clk = Net_1644;
-
-    cy_analog_noconnect_v1_0 NoConnect_VchanCH0 (
-        .noconnect(Net_424));
-
-	// Connect_VdacToAmuxCH0 (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 Connect_VdacToAmuxCH0_connect(Net_1903, Net_425);
-	defparam Connect_VdacToAmuxCH0_connect.sig_width = 1;
-
-    cy_analog_noconnect_v1_0 NoConnect_1_024ToAMuxCH0 (
-        .noconnect(Net_425));
-
-	// Select_VrefOutput (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 Select_VrefOutput_connect(vref, Net_2038);
-	defparam Select_VrefOutput_connect.sig_width = 1;
-
-	// Select_VrefCH1 (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 Select_VrefCH1_connect(Net_2164, Net_2038);
-	defparam Select_VrefCH1_connect.sig_width = 1;
-
-	// Connect_VdacToAmuxCH1 (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 Connect_VdacToAmuxCH1_connect(Net_2107, Net_426);
-	defparam Connect_VdacToAmuxCH1_connect.sig_width = 1;
-
-    cy_analog_noconnect_v1_0 NoConnect_1_024ToAMuxCH1 (
-        .noconnect(Net_426));
-
-	// DisableCapSBuf_VrefCH0 (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 DisableCapSBuf_VrefCH0_connect(Net_2129, Net_1983);
-	defparam DisableCapSBuf_VrefCH0_connect.sig_width = 1;
-
-    cy_analog_noconnect_v1_0 NoConnect_VrefCH0 (
-        .noconnect(Net_427));
-
-	// DisableCapSBuf_VchanCH1 (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 DisableCapSBuf_VchanCH1_connect(Net_2153, Net_1956);
-	defparam DisableCapSBuf_VchanCH1_connect.sig_width = 1;
-
-    cy_analog_noconnect_v1_0 NoConnect_VchanCH1 (
-        .noconnect(Net_428));
-
-	// DisableCapSBuf_VrefCH1 (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 DisableCapSBuf_VrefCH1_connect(Net_2098, Net_2164);
-	defparam DisableCapSBuf_VrefCH1_connect.sig_width = 1;
-
-    cy_analog_noconnect_v1_0 NoConnect_VrefCH1 (
-        .noconnect(Net_429));
-
-	// DisableCapSBuf_VchanCH0 (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 DisableCapSBuf_VchanCH0_connect(Net_2149, Net_1917);
-	defparam DisableCapSBuf_VchanCH0_connect.sig_width = 1;
-
-    ZeroTerminal ZeroTerminal_6 (
-        .z(Net_458));
-
-
-    assign bclk = Net_458 | Net_460;
-
-
-	cy_clock_v1_0
-		#(.id("82799613-11c0-4871-b047-2c5f703dc510/52b807b3-40a8-4a39-b1e7-e18f76c3b871"),
-		  .source_clock_id("75C2148C-3656-4d8a-846D-0CAE99AB6FF7"),
-		  .divisor(0),
-		  .period("0"),
-		  .is_direct(1),
-		  .is_digital(1))
-		Clock_tmp
-		 (.clock_out(Net_460));
-
-
-
-    assign shield = ShieldSignal;
-
-
-endmodule
-
-// Component: cy_vref_v1_70
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v"
 `endif
 
 // Component: cy_constant_v1_0
@@ -761,7 +223,7 @@ endmodule
 `endif
 
 // ADC_SAR_v3_10(ADC_Clock=1, ADC_Clock_Frequency=1800000, ADC_Input_Range=1, ADC_Power=0, ADC_Reference=1, ADC_Resolution=12, ADC_SampleMode=1, Enable_next_out=false, Ref_Voltage=1.65, Ref_Voltage_mV=1650, rm_int=false, Sample_Precharge=6, Sample_Rate=100000, Sample_Rate_def=631579, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=ADC_SAR_v3_10, CY_CONFIG_TITLE=ADC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ADC, CY_INSTANCE_SHORT_NAME=ADC, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=10, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=ADC, )
-module ADC_SAR_v3_10_3 (
+module ADC_SAR_v3_10_0 (
     aclk,
     eoc,
     eos,
@@ -1001,8 +463,21 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\demux_v1_10\demux_v1_10.v"
 `endif
 
+// Component: not_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
+`endif
+
 // IDAC8_v2_0(Current=32, Data_Source=0, Hardware_Enable=false, IDAC_Range=0, IDAC_Speed=2, Initial_Value=255, Polarity=4, Strobe_Mode=1, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=IDAC8_v2_0, CY_CONFIG_TITLE=IDAC8, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=WaveDAC8:IDAC8, CY_INSTANCE_SHORT_NAME=IDAC8, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=WaveDAC8_IDAC8, )
-module IDAC8_v2_0_4 (
+module IDAC8_v2_0_1 (
     data,
     en,
     iOut,
@@ -1078,7 +553,7 @@ endmodule
 `endif
 
 // WaveDAC8_v2_10(Clock_SRC=1, DAC_Range=6, DacModeReplString=IDAC8, Sample_Clock_Freq=8000, Wave1_Amplitude=2, Wave1_Data=252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u, Wave1_DCOffset=1.02, Wave1_Length=50, Wave1_PhaseShift=0, Wave1_Type=1, Wave2_Amplitude=2, Wave2_Data=252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,252u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u,3u, Wave2_DCOffset=1.02, Wave2_Length=50, Wave2_PhaseShift=0, Wave2_Type=1, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=WaveDAC8_v2_10, CY_CONFIG_TITLE=WaveDAC8, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=WaveDAC8, CY_INSTANCE_SHORT_NAME=WaveDAC8, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=10, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=WaveDAC8, )
-module WaveDAC8_v2_10_5 (
+module WaveDAC8_v2_10_2 (
     clock,
     Wave,
     wc1,
@@ -1186,7 +661,7 @@ module WaveDAC8_v2_10_5 (
 	// VirtualMux_1 (cy_virtualmux_v1_0)
 	assign Net_336 = Net_279;
 
-    IDAC8_v2_0_4 IDAC8 (
+    IDAC8_v2_0_1 IDAC8 (
         .data(8'b00000000),
         .en(1'b0),
         .iOut(Net_190),
@@ -1245,8 +720,21 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v"
 `endif
 
+// Component: OneTerminal
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v"
+`endif
+
 // Timer_v2_80(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=false, CaptureMode=0, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG8, CySetRegReplacementString=CY_SET_REG8, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=false, InterruptOnFIFOFull=false, InterruptOnTC=false, IntOnCapture=0, IntOnFIFOFull=0, IntOnTC=0, NumberOfCaptures=1, param45=1, Period=18, RegDefReplacementString=reg8, RegSizeReplacementString=uint8, Resolution=8, RstStatusReplacementString=rstSts, RunMode=0, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=false, UDB24=false, UDB32=false, UDB8=true, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT8, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=Timer_v2_80, CY_CONFIG_TITLE=Timer_Button, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Timer_Button, CY_INSTANCE_SHORT_NAME=Timer_Button, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=80, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=Timer_Button, )
-module Timer_v2_80_6 (
+module Timer_v2_80_3 (
     capture,
     capture_out,
     clock,
@@ -1319,7 +807,7 @@ module Timer_v2_80_6 (
 endmodule
 
 // VDAC8_v1_90(Data_Source=0, Initial_Value=32, Strobe_Mode=0, VDAC_Range=4, VDAC_Speed=2, Voltage=512, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=VDAC8_v1_90, CY_CONFIG_TITLE=VDAC8, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VDAC8, CY_INSTANCE_SHORT_NAME=VDAC8, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=VDAC8, )
-module VDAC8_v1_90_7 (
+module VDAC8_v1_90_4 (
     data,
     strobe,
     vOut);
@@ -1366,7 +854,7 @@ module VDAC8_v1_90_7 (
 endmodule
 
 // PGA_v2_0(Gain=1, Power=3, VddaValue=3.3, Vref_Input=0, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=PGA_v2_0, CY_CONFIG_TITLE=PGA, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=PGA, CY_INSTANCE_SHORT_NAME=PGA, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=PGA, )
-module PGA_v2_0_8 (
+module PGA_v2_0_5 (
     Vin,
     Vout,
     Vref);
@@ -1419,204 +907,6 @@ module PGA_v2_0_8 (
 
 endmodule
 
-// Component: bSegLCD_v3_40
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\bSegLCD_v3_40"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\bSegLCD_v3_40\bSegLCD_v3_40.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\bSegLCD_v3_40"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\bSegLCD_v3_40\bSegLCD_v3_40.v"
-`endif
-
-// SegLCD_v3_40(AdvancedDPSettings=false, BiasType=0, BiasVoltage=63, ClockFrequency=66048, CustomCharsList={{0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x3E, 0x1C, 0x1C, 0x08, 0x08}, {0x08, 0x08, 0x1C, 0x1C, 0x3E}, {0x02, 0x06, 0x08, 0x10, 0x20}, {0x00, 0x4F, 0x00, 0x4F, 0x00}, {0x06, 0x0F, 0x7F, 0x01, 0x7F}, {0x48, 0x56, 0x55, 0x35, 0x09}, {0x0C, 0x0C, 0x0C, 0x0C, 0x0C}, {0x10, 0x38, 0x54, 0x10, 0x1F}, {0x04, 0x02, 0x7F, 0x02, 0x04}, {0x10, 0x20, 0x7F, 0x20, 0x10}, {0x7F, 0x3E, 0x1C, 0x08, 0x7F}, {0x7F, 0x08, 0x1C, 0x3E, 0x7F}, {0x7F, 0x08, 0x2A, 0x1C, 0x08}, {0x08, 0x1C, 0x2A, 0x08, 0x7F}, {0x02, 0x0E, 0x3E, 0x0E, 0x02}, {0x20, 0x38, 0x3E, 0x38, 0x20}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x4F, 0x00, 0x00}, {0x00, 0x07, 0x00, 0x07, 0x00}, {0x14, 0x7F, 0x14, 0x7F, 0x14}, {0x24, 0x2A, 0x7F, 0x2A, 0x12}, {0x23, 0x13, 0x08, 0x64, 0x62}, {0x36, 0x49, 0x55, 0x22, 0x50}, {0x00, 0x05, 0x03, 0x00, 0x00}, {0x00, 0x1C, 0x22, 0x41, 0x00}, {0x00, 0x41, 0x22, 0x1C, 0x00}, {0x14, 0x08, 0x3E, 0x08, 0x14}, {0x08, 0x08, 0x3E, 0x08, 0x08}, {0x00, 0x50, 0x30, 0x00, 0x00}, {0x08, 0x08, 0x08, 0x08, 0x08}, {0x00, 0x60, 0x60, 0x00, 0x00}, {0x20, 0x10, 0x08, 0x04, 0x02}, {0x3E, 0x51, 0x49, 0x45, 0x3E}, {0x00, 0x42, 0x7F, 0x40, 0x00}, {0x42, 0x61, 0x51, 0x49, 0x46}, {0x21, 0x41, 0x45, 0x4B, 0x31}, {0x18, 0x14, 0x12, 0x7F, 0x10}, {0x27, 0x45, 0x45, 0x45, 0x39}, {0x3C, 0x4A, 0x49, 0x49, 0x30}, {0x01, 0x71, 0x09, 0x05, 0x03}, {0x36, 0x49, 0x49, 0x49, 0x36}, {0x06, 0x49, 0x49, 0x29, 0x1E}, {0x00, 0x36, 0x36, 0x00, 0x00}, {0x00, 0x56, 0x36, 0x00, 0x00}, {0x08, 0x14, 0x22, 0x41, 0x00}, {0x14, 0x14, 0x14, 0x14, 0x14}, {0x00, 0x41, 0x22, 0x14, 0x08}, {0x02, 0x01, 0x51, 0x09, 0x06}, {0x32, 0x49, 0x79, 0x41, 0x3E}, {0x7E, 0x11, 0x11, 0x11, 0x7E}, {0x7F, 0x49, 0x49, 0x49, 0x36}, {0x3E, 0x41, 0x41, 0x41, 0x22}, {0x7F, 0x41, 0x41, 0x22, 0x1C}, {0x7F, 0x49, 0x49, 0x49, 0x41}, {0x7F, 0x09, 0x09, 0x09, 0x01}, {0x3E, 0x41, 0x49, 0x49, 0x3A}, {0x7F, 0x08, 0x08, 0x08, 0x7F}, {0x00, 0x41, 0x7F, 0x41, 0x00}, {0x20, 0x40, 0x41, 0x3F, 0x01}, {0x7F, 0x08, 0x14, 0x22, 0x41}, {0x7F, 0x40, 0x40, 0x40, 0x40}, {0x7F, 0x02, 0x0C, 0x02, 0x7F}, {0x7F, 0x04, 0x08, 0x10, 0x7F}, {0x3E, 0x41, 0x41, 0x41, 0x3E}, {0x7F, 0x09, 0x09, 0x09, 0x06}, {0x3E, 0x41, 0x51, 0x21, 0x5E}, {0x7F, 0x09, 0x19, 0x29, 0x46}, {0x46, 0x49, 0x49, 0x49, 0x31}, {0x01, 0x01, 0x7F, 0x01, 0x01}, {0x3F, 0x40, 0x40, 0x40, 0x3F}, {0x1F, 0x20, 0x40, 0x20, 0x1F}, {0x3F, 0x40, 0x38, 0x40, 0x3F}, {0x63, 0x14, 0x08, 0x14, 0x63}, {0x07, 0x08, 0x70, 0x08, 0x07}, {0x61, 0x51, 0x49, 0x45, 0x43}, {0x00, 0x7F, 0x41, 0x41, 0x00}, {0x15, 0x16, 0x7C, 0x16, 0x15}, {0x00, 0x41, 0x41, 0x7F, 0x00}, {0x04, 0x02, 0x01, 0x02, 0x04}, {0x40, 0x40, 0x40, 0x40, 0x40}, {0x00, 0x01, 0x02, 0x04, 0x00}, {0x20, 0x54, 0x54, 0x54, 0x78}, {0x7F, 0x48, 0x44, 0x44, 0x38}, {0x38, 0x44, 0x44, 0x44, 0x40}, {0x38, 0x44, 0x44, 0x48, 0x7F}, {0x38, 0x54, 0x54, 0x54, 0x18}, {0x08, 0x7E, 0x09, 0x01, 0x02}, {0x0C, 0x52, 0x52, 0x52, 0x3E}, {0x7F, 0x08, 0x04, 0x04, 0x78}, {0x00, 0x44, 0x7D, 0x40, 0x00}, {0x20, 0x40, 0x40, 0x3D, 0x00}, {0x7F, 0x10, 0x28, 0x44, 0x00}, {0x00, 0x41, 0x7F, 0x40, 0x00}, {0x7C, 0x04, 0x18, 0x04, 0x78}, {0x7C, 0x08, 0x04, 0x04, 0x78}, {0x38, 0x44, 0x44, 0x44, 0x38}, {0x7C, 0x14, 0x14, 0x14, 0x08}, {0x08, 0x14, 0x14, 0x18, 0x7C}, {0x7C, 0x08, 0x04, 0x04, 0x08}, {0x48, 0x54, 0x54, 0x54, 0x20}, {0x04, 0x3F, 0x44, 0x40, 0x20}, {0x3C, 0x40, 0x40, 0x20, 0x7C}, {0x1C, 0x20, 0x40, 0x20, 0x1C}, {0x3C, 0x40, 0x30, 0x40, 0x3C}, {0x44, 0x28, 0x10, 0x28, 0x44}, {0x0C, 0x50, 0x50, 0x50, 0x3C}, {0x44, 0x64, 0x54, 0x4C, 0x44}, {0x00, 0x08, 0x36, 0x41, 0x00}, {0x00, 0x00, 0x7F, 0x00, 0x00}, {0x00, 0x41, 0x36, 0x08, 0x00}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x08, 0x08, 0x2A, 0x1C, 0x08}, {0x44, 0x44, 0x5F, 0x44, 0x44}, {0x22, 0x14, 0x08, 0x14, 0x22}, {0x1C, 0x3E, 0x3E, 0x3E, 0x1C}, {0x7F, 0x41, 0x41, 0x41, 0x7F}, {0x7F, 0x5B, 0x41, 0x5F, 0x7F}, {0x7F, 0x4D, 0x55, 0x59, 0x7F}, {0x1D, 0x15, 0x17, 0x00, 0x00}, {0x15, 0x15, 0x1F, 0x00, 0x00}, {0x17, 0x08, 0x74, 0x56, 0x5D}, {0x17, 0x08, 0x24, 0x32, 0x79}, {0x35, 0x1F, 0x28, 0x34, 0x7A}, {0x08, 0x14, 0x2A, 0x14, 0x22}, {0x22, 0x14, 0x2A, 0x14, 0x08}, {0x08, 0x04, 0x08, 0x10, 0x08}, {0x14, 0x0A, 0x14, 0x28, 0x14}, {0x2A, 0x55, 0x2A, 0x55, 0x2A}, {0x24, 0x3B, 0x2A, 0x7E, 0x2A}, {0x40, 0x3F, 0x15, 0x15, 0x7F}, {0x46, 0x20, 0x1F, 0x20, 0x46}, {0x24, 0x14, 0x7F, 0x18, 0x24}, {0x24, 0x14, 0x7F, 0x14, 0x24}, {0x44, 0x6A, 0x79, 0x6A, 0x44}, {0x40, 0x44, 0x7F, 0x44, 0x40}, {0x7F, 0x49, 0x49, 0x49, 0x7F}, {0x02, 0x4C, 0x30, 0x0C, 0x02}, {0x04, 0x04, 0x3C, 0x04, 0x44}, {0x49, 0x55, 0x7F, 0x55, 0x49}, {0x3A, 0x45, 0x45, 0x45, 0x39}, {0x40, 0x3E, 0x10, 0x10, 0x1E}, {0x08, 0x54, 0x3E, 0x15, 0x08}, {0x7F, 0x7F, 0x7F, 0x7F, 0x7F}, {0x55, 0x2A, 0x55, 0x2A, 0x55}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0x70, 0x50, 0x70, 0x00, 0x00}, {0x00, 0x00, 0x0F, 0x01, 0x01}, {0x40, 0x40, 0x70, 0x00, 0x00}, {0x10, 0x20, 0x40, 0x00, 0x00}, {0x00, 0x18, 0x18, 0x00, 0x00}, {0x0A, 0x0A, 0x4A, 0x2A, 0x1E}, {0x04, 0x44, 0x34, 0x14, 0x0C}, {0x20, 0x10, 0x78, 0x04, 0x00}, {0x18, 0x08, 0x4C, 0x48, 0x38}, {0x48, 0x48, 0x78, 0x48, 0x48}, {0x48, 0x28, 0x18, 0x78, 0x08}, {0x08, 0x7C, 0x08, 0x28, 0x18}, {0x40, 0x48, 0x48, 0x78, 0x40}, {0x54, 0x54, 0x54, 0x7C, 0x00}, {0x18, 0x00, 0x58, 0x40, 0x38}, {0x08, 0x08, 0x08, 0x08, 0x08}, {0x01, 0x41, 0x3D, 0x09, 0x07}, {0x10, 0x08, 0x78, 0x02, 0x01}, {0x06, 0x02, 0x43, 0x22, 0x1E}, {0x42, 0x42, 0x7E, 0x42, 0x42}, {0x22, 0x12, 0x0A, 0x7F, 0x02}, {0x42, 0x3F, 0x02, 0x42, 0x3E}, {0x0A, 0x0A, 0x7F, 0x0A, 0x0A}, {0x08, 0x46, 0x42, 0x22, 0x1E}, {0x04, 0x03, 0x42, 0x3E, 0x02}, {0x42, 0x42, 0x42, 0x42, 0x7E}, {0x02, 0x4F, 0x22, 0x1F, 0x02}, {0x4A, 0x4A, 0x40, 0x20, 0x1C}, {0x42, 0x22, 0x12, 0x2A, 0x46}, {0x02, 0x3F, 0x42, 0x4A, 0x46}, {0x06, 0x48, 0x40, 0x20, 0x1E}, {0x08, 0x46, 0x4A, 0x32, 0x1E}, {0x0A, 0x4A, 0x3E, 0x09, 0x08}, {0x0E, 0x00, 0x4E, 0x20, 0x1E}, {0x04, 0x45, 0x3D, 0x05, 0x04}, {0x00, 0x7F, 0x08, 0x10, 0x00}, {0x44, 0x24, 0x1F, 0x04, 0x04}, {0x40, 0x42, 0x42, 0x42, 0x40}, {0x42, 0x2A, 0x12, 0x2A, 0x06}, {0x22, 0x12, 0x7A, 0x16, 0x22}, {0x00, 0x40, 0x20, 0x1F, 0x00}, {0x78, 0x00, 0x02, 0x04, 0x78}, {0x3F, 0x44, 0x44, 0x44, 0x44}, {0x02, 0x42, 0x42, 0x22, 0x1E}, {0x04, 0x02, 0x04, 0x08, 0x30}, {0x32, 0x02, 0x7F, 0x02, 0x32}, {0x02, 0x12, 0x22, 0x52, 0x0E}, {0x00, 0x2A, 0x2A, 0x2A, 0x40}, {0x38, 0x24, 0x22, 0x20, 0x1E}, {0x40, 0x28, 0x10, 0x28, 0x06}, {0x0A, 0x3E, 0x4A, 0x4A, 0x4A}, {0x04, 0x7F, 0x04, 0x14, 0x0C}, {0x40, 0x42, 0x42, 0x7E, 0x40}, {0x4A, 0x4A, 0x4A, 0x4A, 0x7E}, {0x04, 0x05, 0x45, 0x15, 0x1C}, {0x0F, 0x40, 0x20, 0x1F, 0x00}, {0x7C, 0x00, 0x7E, 0x40, 0x30}, {0x7E, 0x40, 0x20, 0x10, 0x08}, {0x7E, 0x7E, 0x7E, 0x7E, 0x7E}, {0x0E, 0x02, 0x42, 0x22, 0x1E}, {0x42, 0x42, 0x40, 0x20, 0x18}, {0x02, 0x04, 0x01, 0x02, 0x00}, {0x07, 0x05, 0x07, 0x00, 0x00}, {0x38, 0x44, 0x48, 0x30, 0x4C}, {0x20, 0x55, 0x55, 0x55, 0x38}, {0xFE, 0x15, 0x15, 0x15, 0x0A}, {0x28, 0x54, 0x54, 0x44, 0x20}, {0xFF, 0x10, 0x10, 0x08, 0x1F}, {0x38, 0x44, 0x4C, 0x54, 0x24}, {0xFC, 0x12, 0x11, 0x11, 0x0E}, {0x0E, 0xA1, 0xA1, 0xA1, 0x7F}, {0x20, 0x40, 0x3C, 0x04, 0x04}, {0x04, 0x04, 0x00, 0x0E, 0x00}, {0x40, 0x80, 0x81, 0x7F, 0x00}, {0x0A, 0x04, 0x0A, 0x00, 0x00}, {0x18, 0x24, 0x7E, 0x24, 0x10}, {0x14, 0x7F, 0x54, 0x40, 0x40}, {0x7C, 0x0A, 0x05, 0x05, 0x78}, {0x38, 0x45, 0x45, 0x45, 0x38}, {0xFF, 0x12, 0x11, 0x11, 0x0E}, {0x0E, 0x11, 0x11, 0x12, 0xFF}, {0x3C, 0x4A, 0x4A, 0x4A, 0x3C}, {0x30, 0x28, 0x10, 0x28, 0x18}, {0x58, 0x64, 0x04, 0x64, 0x58}, {0x3C, 0x41, 0x40, 0x21, 0x7C}, {0x63, 0x55, 0x4A, 0x41, 0x41}, {0x44, 0x3C, 0x04, 0x7C, 0x44}, {0x45, 0x29, 0x11, 0x29, 0x45}, {0x0F, 0x90, 0x90, 0x90, 0x7F}, {0x14, 0x14, 0x7C, 0x14, 0x12}, {0x44, 0x3C, 0x14, 0x14, 0x74}, {0x7C, 0x14, 0x1C, 0x14, 0x7C}, {0x10, 0x10, 0x54, 0x10, 0x10}, {0x00, 0x00, 0x00, 0x00, 0x00}, {0xFF, 0xFF, 0xFF, 0xFF, 0xFF}};, CustomStep=1, FrameRate=30, Gang=false, GlassSize=10, Helpers=<?xml version="1.0" encoding="utf-16"?> <ArrayOfAnyType xmlns:CustomizerVersion="CyComponentLibrary_c016ab14fbc9cf555077079ff250ffcb0c4ea833e77bbdfc9649f6f5fe96e0c9, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">   <anyType d2p1:type="HelperInfo" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">     <Name>Empty</Name>     <Color>0</Color>     <GlobalHelperIndex>0</GlobalHelperIndex>     <HelpSegInfoArray>       <HelperSegmentInfo Name="PIX0" Com="0" Seg="0" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX1" Com="1" Seg="0" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX2" Com="2" Seg="0" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX3" Com="3" Seg="0" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX4" Com="0" Seg="1" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX5" Com="1" Seg="1" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX6" Com="2" Seg="1" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX7" Com="3" Seg="1" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX8" Com="0" Seg="2" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX9" Com="1" Seg="2" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX10" Com="2" Seg="2" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX11" Com="3" Seg="2" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX12" Com="0" Seg="3" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX13" Com="1" Seg="3" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX14" Com="2" Seg="3" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX15" Com="3" Seg="3" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX16" Com="0" Seg="4" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX17" Com="1" Seg="4" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX18" Com="2" Seg="4" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX19" Com="3" Seg="4" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX20" Com="0" Seg="5" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX21" Com="1" Seg="5" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX22" Com="2" Seg="5" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX23" Com="3" Seg="5" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX24" Com="0" Seg="6" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX25" Com="1" Seg="6" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX26" Com="2" Seg="6" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX27" Com="3" Seg="6" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX28" Com="0" Seg="7" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX29" Com="1" Seg="7" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX30" Com="2" Seg="7" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX31" Com="3" Seg="7" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX32" Com="0" Seg="8" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX33" Com="1" Seg="8" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX34" Com="2" Seg="8" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX35" Com="3" Seg="8" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX36" Com="0" Seg="9" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX37" Com="1" Seg="9" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX38" Com="2" Seg="9" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="PIX39" Com="3" Seg="9" Display="-1" Digit="-1" Helper="Empty" RelPos="-1">         <GlobalDigitNum>-1</GlobalDigitNum>       </HelperSegmentInfo>     </HelpSegInfoArray>     <Kind>Empty</Kind>     <MaxSymbolsCount>0</MaxSymbolsCount>     <SegmentCount>0</SegmentCount>     <DisplayNum>-1</DisplayNum>     <SymbolsCount>0</SymbolsCount>   </anyType>   <anyType d2p1:type="HelperInfo" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">     <Name>Helper_7Segment_0</Name>     <Color>-7085368</Color>     <GlobalHelperIndex>0</GlobalHelperIndex>     <HelpSegInfoArray>       <HelperSegmentInfo Name="A1" Com="0" Seg="1" Display="0" Digit="0" Helper="Segment7" RelPos="0">         <GlobalDigitNum>0</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="B1" Com="1" Seg="1" Display="0" Digit="0" Helper="Segment7" RelPos="1">         <GlobalDigitNum>0</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="C1" Com="2" Seg="1" Display="0" Digit="0" Helper="Segment7" RelPos="2">         <GlobalDigitNum>0</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="D1" Com="3" Seg="0" Display="0" Digit="0" Helper="Segment7" RelPos="3">         <GlobalDigitNum>0</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="E1" Com="2" Seg="0" Display="0" Digit="0" Helper="Segment7" RelPos="4">         <GlobalDigitNum>0</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="F1" Com="0" Seg="0" Display="0" Digit="0" Helper="Segment7" RelPos="5">         <GlobalDigitNum>0</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="G1" Com="1" Seg="0" Display="0" Digit="0" Helper="Segment7" RelPos="6">         <GlobalDigitNum>0</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="A2" Com="0" Seg="3" Display="0" Digit="1" Helper="Segment7" RelPos="0">         <GlobalDigitNum>1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="B2" Com="1" Seg="3" Display="0" Digit="1" Helper="Segment7" RelPos="1">         <GlobalDigitNum>1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="C2" Com="2" Seg="3" Display="0" Digit="1" Helper="Segment7" RelPos="2">         <GlobalDigitNum>1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="D2" Com="3" Seg="2" Display="0" Digit="1" Helper="Segment7" RelPos="3">         <GlobalDigitNum>1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="E2" Com="2" Seg="2" Display="0" Digit="1" Helper="Segment7" RelPos="4">         <GlobalDigitNum>1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="F2" Com="0" Seg="2" Display="0" Digit="1" Helper="Segment7" RelPos="5">         <GlobalDigitNum>1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="G2" Com="1" Seg="2" Display="0" Digit="1" Helper="Segment7" RelPos="6">         <GlobalDigitNum>1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="A3" Com="0" Seg="5" Display="0" Digit="2" Helper="Segment7" RelPos="0">         <GlobalDigitNum>2</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="B3" Com="1" Seg="5" Display="0" Digit="2" Helper="Segment7" RelPos="1">         <GlobalDigitNum>2</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="C3" Com="2" Seg="5" Display="0" Digit="2" Helper="Segment7" RelPos="2">         <GlobalDigitNum>2</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="D3" Com="3" Seg="4" Display="0" Digit="2" Helper="Segment7" RelPos="3">         <GlobalDigitNum>2</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="E3" Com="2" Seg="4" Display="0" Digit="2" Helper="Segment7" RelPos="4">         <GlobalDigitNum>2</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="F3" Com="0" Seg="4" Display="0" Digit="2" Helper="Segment7" RelPos="5">         <GlobalDigitNum>2</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="G3" Com="1" Seg="4" Display="0" Digit="2" Helper="Segment7" RelPos="6">         <GlobalDigitNum>2</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="A4" Com="0" Seg="7" Display="0" Digit="3" Helper="Segment7" RelPos="0">         <GlobalDigitNum>3</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="B4" Com="1" Seg="7" Display="0" Digit="3" Helper="Segment7" RelPos="1">         <GlobalDigitNum>3</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="C4" Com="2" Seg="7" Display="0" Digit="3" Helper="Segment7" RelPos="2">         <GlobalDigitNum>3</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="D4" Com="3" Seg="6" Display="0" Digit="3" Helper="Segment7" RelPos="3">         <GlobalDigitNum>3</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="E4" Com="2" Seg="6" Display="0" Digit="3" Helper="Segment7" RelPos="4">         <GlobalDigitNum>3</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="F4" Com="0" Seg="6" Display="0" Digit="3" Helper="Segment7" RelPos="5">         <GlobalDigitNum>3</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="G4" Com="1" Seg="6" Display="0" Digit="3" Helper="Segment7" RelPos="6">         <GlobalDigitNum>3</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="A5" Com="0" Seg="9" Display="0" Digit="4" Helper="Segment7" RelPos="0">         <GlobalDigitNum>4</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="B5" Com="1" Seg="9" Display="0" Digit="4" Helper="Segment7" RelPos="1">         <GlobalDigitNum>4</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="C5" Com="2" Seg="9" Display="0" Digit="4" Helper="Segment7" RelPos="2">         <GlobalDigitNum>4</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="D5" Com="3" Seg="8" Display="0" Digit="4" Helper="Segment7" RelPos="3">         <GlobalDigitNum>4</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="E5" Com="2" Seg="8" Display="0" Digit="4" Helper="Segment7" RelPos="4">         <GlobalDigitNum>4</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="F5" Com="0" Seg="8" Display="0" Digit="4" Helper="Segment7" RelPos="5">         <GlobalDigitNum>4</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="G5" Com="1" Seg="8" Display="0" Digit="4" Helper="Segment7" RelPos="6">         <GlobalDigitNum>4</GlobalDigitNum>       </HelperSegmentInfo>     </HelpSegInfoArray>     <Kind>Segment7</Kind>     <MaxSymbolsCount>5</MaxSymbolsCount>     <SegmentCount>7</SegmentCount>     <DisplayNum>0</DisplayNum>     <SymbolsCount>5</SymbolsCount>   </anyType>   <anyType d2p1:type="HelperInfo" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">     <Name>Helper_Bar_0</Name>     <Color>-1928248</Color>     <GlobalHelperIndex>0</GlobalHelperIndex>     <HelpSegInfoArray>       <HelperSegmentInfo Name="T1" Com="3" Seg="3" Display="0" Digit="0" Helper="Bar" RelPos="0">         <GlobalDigitNum>0</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="T2" Com="3" Seg="1" Display="0" Digit="1" Helper="Bar" RelPos="0">         <GlobalDigitNum>1</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="P1" Com="3" Seg="5" Display="0" Digit="2" Helper="Bar" RelPos="0">         <GlobalDigitNum>2</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="P2" Com="3" Seg="7" Display="0" Digit="3" Helper="Bar" RelPos="0">         <GlobalDigitNum>3</GlobalDigitNum>       </HelperSegmentInfo>       <HelperSegmentInfo Name="P3" Com="3" Seg="9" Display="0" Digit="4" Helper="Bar" RelPos="0">         <GlobalDigitNum>4</GlobalDigitNum>       </HelperSegmentInfo>     </HelpSegInfoArray>     <Kind>Bar</Kind>     <MaxSymbolsCount>255</MaxSymbolsCount>     <SegmentCount>1</SegmentCount>     <DisplayNum>1</DisplayNum>     <SymbolsCount>5</SymbolsCount>   </anyType> </ArrayOfAnyType>, HiDriveStrength=4, HiDriveTime=2, LowDriveStrength=0, LowDriveTime=252, Mode=0, NumCommonLines=4, NumSegmentLines=10, Supply=0, TimerPeriod=13, UseCustomStep=false, WaveformType=0, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=SegLCD_v3_40, CY_CONFIG_TITLE=LCD_Seg, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=LCD_Seg, CY_INSTANCE_SHORT_NAME=LCD_Seg, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=40, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=LCD_Seg, )
-module SegLCD_v3_40_9 ;
-
-
-          wire  Net_260;
-          wire  Net_259;
-          wire  Net_256;
-          wire  Net_255;
-    electrical [4:0] Net_250;
-          wire  Net_248;
-          wire  Net_249;
-          wire  Net_247;
-          wire  Net_246;
-          wire  Net_96;
-          wire  Net_98;
-          wire  Net_82;
-          wire  Net_80;
-          wire  Net_78;
-          wire  Net_1186;
-          wire  Net_1163;
-          wire  Net_971;
-          wire  Net_1049;
-          wire  Net_1199;
-          wire  Net_1173;
-          wire  Net_979;
-          wire  Net_1159;
-          wire  Net_1045;
-          wire  Net_988;
-
-
-	cy_clock_v1_0
-		#(.id("9bf039f3-cbcc-46b8-9f66-5f56a4212404/ad4f26d7-8ffe-4f37-9ed6-0ec327663a75"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("15140503875.969"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Int_Clock
-		 (.clock_out(Net_78));
-
-
-
-	cy_dma_v1_0
-		#(.drq_type(2'b10))
-		Lcd_Dma
-		 (.drq(Net_1186),
-		  .nrq(Net_1163),
-		  .trq(1'b0));
-
-
-	wire [0:0] tmpOE__Com_net;
-
-	cy_psoc3_port_v1_0
-		#(.width(4),
-		  .siorefwidth(2),
-		  .id("9bf039f3-cbcc-46b8-9f66-5f56a4212404/6f17f0bc-12e3-40a0-ae3e-f94a2342eb38"),
-		  .pin_aliases(",,,"),
-		  .access_mode("LCD"),
-		  .layout_mode("NONCONTIGUOUS"),
-		  .port_mode("OUTPUT"),
-		  .intr_mode(8'b00000000),
-		  .drive_mode(12'b000000000000),
-		  .lcd_com_seg(4'b0000),
-		  .lcd_sw_drive(0),
-		  .por_state(0),
-		  .port_alias_required(1),
-		  .port_alias_group("SegLcdPort"))
-		Com
-		 (.oe(tmpOE__Com_net),
-		  .y(4'b0));
-
-	assign tmpOE__Com_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? 1'b1 : 1'b0;
-
-	wire [0:0] tmpOE__Seg_net;
-
-	cy_psoc3_port_v1_0
-		#(.width(10),
-		  .siorefwidth(5),
-		  .id("9bf039f3-cbcc-46b8-9f66-5f56a4212404/96a95f9b-4cc2-4a8a-8732-76c138ffddc7"),
-		  .pin_aliases(",,,,,,,,,"),
-		  .access_mode("LCD"),
-		  .layout_mode("NONCONTIGUOUS"),
-		  .port_mode("OUTPUT"),
-		  .intr_mode(20'b00000000000000000000),
-		  .drive_mode(30'b000000000000000000000000000000),
-		  .lcd_com_seg(10'b1111111111),
-		  .lcd_sw_drive(0),
-		  .por_state(0),
-		  .port_alias_required(1),
-		  .port_alias_group("SegLcdPort"))
-		Seg
-		 (.oe(tmpOE__Seg_net),
-		  .y(10'b0));
-
-	assign tmpOE__Seg_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? 1'b1 : 1'b0;
-
-
-	cy_dma_v1_0
-		#(.drq_type(2'b10))
-		Frame_Dma
-		 (.drq(Net_1173),
-		  .nrq(Net_249),
-		  .trq(1'b0));
-
-
-    cy_psoc3_lcd_v2_0 LCD (
-        .bias(Net_250[4:0]),
-        .data_clk(Net_1173),
-        .drive_en(Net_1159),
-        .frame(Net_1199),
-        .int_clr(Net_1049),
-        .interrupt(Net_988),
-        .lp_ack_udb(Net_971),
-        .mode_1(Net_1045),
-        .mode_2(Net_979));
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		TD_DoneInt
-		 (.int_signal(Net_1163));
-
-
-	// VirtualMux_1 (cy_virtualmux_v1_0)
-	assign Net_1186 = Net_1199;
-
-    bSegLCD_v3_40 bLCDDSD (
-        .clock(Net_78),
-        .clr_int(Net_1049),
-        .data_clk(Net_1173),
-        .drive(Net_1159),
-        .frame(Net_1199),
-        .lcd_int(Net_988),
-        .lp_ack(Net_971),
-        .mode_1(Net_1045),
-        .mode_2(Net_979));
-    defparam bLCDDSD.PowerMode = 0;
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		Wakeup
-		 (.int_signal(Net_988));
-
-
-
-	cy_clock_v1_0
-		#(.id("9bf039f3-cbcc-46b8-9f66-5f56a4212404/4787bcd5-a12a-45e9-9857-f3f481676345"),
-		  .source_clock_id("75C2148C-3656-4d8a-846D-0CAE99AB6FF7"),
-		  .divisor(0),
-		  .period("0"),
-		  .is_direct(1),
-		  .is_digital(1))
-		MasterClock
-		 (.clock_out(Net_82));
-
-
-
-    assign Net_256 = Net_80 | Net_82;
-
-    ZeroTerminal ZeroTerminal_1 (
-        .z(Net_80));
-
-
-	cy_clock_v1_0
-		#(.id("9bf039f3-cbcc-46b8-9f66-5f56a4212404/9b3e2c72-352e-42bd-bfb8-d649d75acc26"),
-		  .source_clock_id("315365C3-2E3E-4f04-84A2-BB564A173261"),
-		  .divisor(0),
-		  .period("0"),
-		  .is_direct(1),
-		  .is_digital(1))
-		MasterClock_2
-		 (.clock_out(Net_96));
-
-
-
-    assign Net_260 = Net_98 | Net_96;
-
-    ZeroTerminal ZeroTerminal_3 (
-        .z(Net_98));
-
-
-
-endmodule
-
 // Component: B_UART_v2_50
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
@@ -1631,7 +921,7 @@ endmodule
 `endif
 
 // UART_v2_50(Address1=0, Address2=0, BaudRate=115200, BreakBitsRX=13, BreakBitsTX=13, BreakDetect=false, CRCoutputsEn=false, Enable_RX=1, Enable_RXIntInterrupt=0, Enable_TX=1, Enable_TXIntInterrupt=1, EnableHWAddress=0, EnIntRXInterrupt=false, EnIntTXInterrupt=true, FlowControl=0, HalfDuplexEn=false, HwTXEnSignal=true, InternalClock=true, InternalClockToleranceMinus=3.93736842105263, InternalClockTolerancePlus=3.93736842105263, InternalClockUsed=1, InterruptOnAddDetect=0, InterruptOnAddressMatch=0, InterruptOnBreak=1, InterruptOnByteRcvd=0, InterruptOnOverrunError=0, InterruptOnParityError=0, InterruptOnStopError=0, InterruptOnTXComplete=false, InterruptOnTXFifoEmpty=true, InterruptOnTXFifoFull=false, InterruptOnTXFifoNotFull=false, IntOnAddressDetect=false, IntOnAddressMatch=false, IntOnBreak=true, IntOnByteRcvd=false, IntOnOverrunError=false, IntOnParityError=false, IntOnStopError=false, NumDataBits=8, NumStopBits=1, OverSamplingRate=8, ParityType=0, ParityTypeSw=false, RequiredClock=921600, RXAddressMode=0, RXBufferSize=4, RxBuffRegSizeReplacementString=uint8, RXEnable=true, TXBitClkGenDP=true, TXBufferSize=22, TxBuffRegSizeReplacementString=uint8, TXEnable=true, Use23Polling=true, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=UART_v2_50, CY_CONFIG_TITLE=UART_1, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=UART_1, CY_INSTANCE_SHORT_NAME=UART_1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=50, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=UART_1, )
-module UART_v2_50_10 (
+module UART_v2_50_6 (
     clock,
     cts_n,
     reset,
@@ -1738,7 +1028,7 @@ module UART_v2_50_10 (
 endmodule
 
 // MatrixKbLED_8p_v1_0(CLOCK_FREQ_HZ=1000000, CUSTOM_KEYSYM_TABLE=false, MESSAGE_GEN=true, NUM_KEYCOLS=4, NUM_KEYROWS=4, NUM_LEDCOLS=4, NUM_LEDROWS=4, PORTING_TO_CY8CKIT=1, SCANS_PER_ROUND=10, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=MatrixKbLED_8p_v1_0, CY_CONFIG_TITLE=MatrixKbLED, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=MatrixKbLED, CY_INSTANCE_SHORT_NAME=MatrixKbLED, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=MatrixKbLED, )
-module MatrixKbLED_8p_v1_0_11 (
+module MatrixKbLED_8p_v1_0_7 (
     Clk);
     input       Clk;
 
@@ -1756,7 +1046,7 @@ module MatrixKbLED_8p_v1_0_11 (
 endmodule
 
 // CharLCD_v2_20(ConversionRoutines=false, CUSTOM0=0,E,8,8,8,E,0, CUSTOM1=0,A,A,4,4,4,0, CUSTOM2=0,E,A,E,8,8,0, CUSTOM3=0,E,A,C,A,A,0, CUSTOM4=0,E,8,C,8,E,0, CUSTOM5=0,E,8,E,2,E,0, CUSTOM6=0,E,8,E,2,E,0, CUSTOM7=0,4,4,4,0,4,0, CustomCharacterSet=0, TypeReplacementString=uint8, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=CharLCD_v2_20, CY_CONFIG_TITLE=LCD_Char, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=LCD_Char, CY_INSTANCE_SHORT_NAME=LCD_Char, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=20, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=LCD_Char, )
-module CharLCD_v2_20_12 ;
+module CharLCD_v2_20_8 ;
 
 
 
@@ -1839,348 +1129,9 @@ module CharLCD_v2_20_12 ;
 
 endmodule
 
-// USBFS_v3_20(AudioDescriptors=<?xml version="1.0" encoding="utf-16"?>\r\n<Tree xmlns:CustomizerVersion="3_0">\r\n  <Tree_x0020_Descriptors>\r\n    <DescriptorNode Key="Audio">\r\n      <Nodes />\r\n    </DescriptorNode>\r\n  </Tree_x0020_Descriptors>\r\n</Tree>, CDCDescriptors=<?xml version="1.0" encoding="utf-16"?>\r\n<Tree xmlns:CustomizerVersion="3_0">\r\n  <Tree_x0020_Descriptors>\r\n    <DescriptorNode Key="CDC">\r\n      <Nodes>\r\n        <DescriptorNode Key="Interface60">\r\n          <m_value d6p1:type="InterfaceGeneralDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>ALTERNATE</bDescriptorType>\r\n            <bLength>0</bLength>\r\n            <DisplayName>CDC Interface 1</DisplayName>\r\n          </m_value>\r\n          <Value d6p1:type="InterfaceGeneralDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>ALTERNATE</bDescriptorType>\r\n            <bLength>0</bLength>\r\n            <DisplayName>CDC Interface 1</DisplayName>\r\n          </Value>\r\n          <Nodes>\r\n            <DescriptorNode Key="USBDescriptor61">\r\n              <m_value d8p1:type="CyCommunicationsInterfaceDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                <bDescriptorType>INTERFACE</bDescriptorType>\r\n                <bLength>9</bLength>\r\n                <iwInterface>49</iwInterface>\r\n                <bInterfaceClass>2</bInterfaceClass>\r\n                <bAlternateSetting>0</bAlternateSetting>\r\n                <bInterfaceNumber>0</bInterfaceNumber>\r\n                <bNumEndpoints>1</bNumEndpoints>\r\n                <bInterfaceSubClass>2</bInterfaceSubClass>\r\n                <bInterfaceProtocol>1</bInterfaceProtocol>\r\n                <iInterface>3</iInterface>\r\n                <sInterface>CDC Communication Interface</sInterface>\r\n              </m_value>\r\n              <Value d8p1:type="CyCommunicationsInterfaceDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                <bDescriptorType>INTERFACE</bDescriptorType>\r\n                <bLength>9</bLength>\r\n                <iwInterface>49</iwInterface>\r\n                <bInterfaceClass>2</bInterfaceClass>\r\n                <bAlternateSetting>0</bAlternateSetting>\r\n                <bInterfaceNumber>0</bInterfaceNumber>\r\n                <bNumEndpoints>1</bNumEndpoints>\r\n                <bInterfaceSubClass>2</bInterfaceSubClass>\r\n                <bInterfaceProtocol>1</bInterfaceProtocol>\r\n                <iInterface>3</iInterface>\r\n                <sInterface>CDC Communication Interface</sInterface>\r\n              </Value>\r\n              <Nodes>\r\n                <DescriptorNode Key="USBDescriptor63">\r\n                  <m_value d10p1:type="CyCDCHeaderDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>CDC</bDescriptorType>\r\n                    <bLength>5</bLength>\r\n                    <bDescriptorSubtype>HEADER</bDescriptorSubtype>\r\n                    <bcdADC>272</bcdADC>\r\n                  </m_value>\r\n                  <Value d10p1:type="CyCDCHeaderDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>CDC</bDescriptorType>\r\n                    <bLength>5</bLength>\r\n                    <bDescriptorSubtype>HEADER</bDescriptorSubtype>\r\n                    <bcdADC>272</bcdADC>\r\n                  </Value>\r\n                  <Nodes />\r\n                </DescriptorNode>\r\n                <DescriptorNode Key="USBDescriptor64">\r\n                  <m_value d10p1:type="CyCDCAbstractControlMgmtDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>CDC</bDescriptorType>\r\n                    <bLength>4</bLength>\r\n                    <bDescriptorSubtype>ABSTRACT_CONTROL_MANAGEMENT</bDescriptorSubtype>\r\n                    <bmCapabilities>2</bmCapabilities>\r\n                  </m_value>\r\n                  <Value d10p1:type="CyCDCAbstractControlMgmtDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>CDC</bDescriptorType>\r\n                    <bLength>4</bLength>\r\n                    <bDescriptorSubtype>ABSTRACT_CONTROL_MANAGEMENT</bDescriptorSubtype>\r\n                    <bmCapabilities>2</bmCapabilities>\r\n                  </Value>\r\n                  <Nodes />\r\n                </DescriptorNode>\r\n                <DescriptorNode Key="USBDescriptor65">\r\n                  <m_value d10p1:type="CyCDCUnionDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>CDC</bDescriptorType>\r\n                    <bLength>5</bLength>\r\n                    <bDescriptorSubtype>UNION</bDescriptorSubtype>\r\n                    <bSubordinateInterface>AQ==</bSubordinateInterface>\r\n                  </m_value>\r\n                  <Value d10p1:type="CyCDCUnionDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>CDC</bDescriptorType>\r\n                    <bLength>5</bLength>\r\n                    <bDescriptorSubtype>UNION</bDescriptorSubtype>\r\n                    <bSubordinateInterface>AQ==</bSubordinateInterface>\r\n                  </Value>\r\n                  <Nodes />\r\n                </DescriptorNode>\r\n                <DescriptorNode Key="USBDescriptor66">\r\n                  <m_value d10p1:type="CyCDCCallManagementDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>CDC</bDescriptorType>\r\n                    <bLength>5</bLength>\r\n                    <bDescriptorSubtype>CALL_MANAGEMENT</bDescriptorSubtype>\r\n                    <bDataInterface>1</bDataInterface>\r\n                  </m_value>\r\n                  <Value d10p1:type="CyCDCCallManagementDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>CDC</bDescriptorType>\r\n                    <bLength>5</bLength>\r\n                    <bDescriptorSubtype>CALL_MANAGEMENT</bDescriptorSubtype>\r\n                    <bDataInterface>1</bDataInterface>\r\n                  </Value>\r\n                  <Nodes />\r\n                </DescriptorNode>\r\n                <DescriptorNode Key="USBDescriptor67">\r\n                  <m_value d10p1:type="EndpointDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                    <bLength>7</bLength>\r\n                    <DoubleBuffer>false</DoubleBuffer>\r\n                    <bEndpointAddress>129</bEndpointAddress>\r\n                    <bmAttributes>3</bmAttributes>\r\n                  </m_value>\r\n                  <Value d10p1:type="EndpointDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                    <bLength>7</bLength>\r\n                    <DoubleBuffer>false</DoubleBuffer>\r\n                    <bEndpointAddress>129</bEndpointAddress>\r\n                    <bmAttributes>3</bmAttributes>\r\n                  </Value>\r\n                  <Nodes />\r\n                </DescriptorNode>\r\n              </Nodes>\r\n            </DescriptorNode>\r\n          </Nodes>\r\n        </DescriptorNode>\r\n        <DescriptorNode Key="Interface68">\r\n          <m_value d6p1:type="InterfaceGeneralDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>ALTERNATE</bDescriptorType>\r\n            <bLength>0</bLength>\r\n            <DisplayName>CDC Interface 2</DisplayName>\r\n          </m_value>\r\n          <Value d6p1:type="InterfaceGeneralDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>ALTERNATE</bDescriptorType>\r\n            <bLength>0</bLength>\r\n            <DisplayName>CDC Interface 2</DisplayName>\r\n          </Value>\r\n          <Nodes>\r\n            <DescriptorNode Key="USBDescriptor69">\r\n              <m_value d8p1:type="CyDataInterfaceDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                <bDescriptorType>INTERFACE</bDescriptorType>\r\n                <bLength>9</bLength>\r\n                <iwInterface>50</iwInterface>\r\n                <bInterfaceClass>10</bInterfaceClass>\r\n                <bAlternateSetting>0</bAlternateSetting>\r\n                <bInterfaceNumber>1</bInterfaceNumber>\r\n                <bNumEndpoints>2</bNumEndpoints>\r\n                <bInterfaceSubClass>0</bInterfaceSubClass>\r\n                <bInterfaceProtocol>0</bInterfaceProtocol>\r\n                <iInterface>4</iInterface>\r\n                <sInterface>CDC Data Interface</sInterface>\r\n              </m_value>\r\n              <Value d8p1:type="CyDataInterfaceDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                <bDescriptorType>INTERFACE</bDescriptorType>\r\n                <bLength>9</bLength>\r\n                <iwInterface>50</iwInterface>\r\n                <bInterfaceClass>10</bInterfaceClass>\r\n                <bAlternateSetting>0</bAlternateSetting>\r\n                <bInterfaceNumber>1</bInterfaceNumber>\r\n                <bNumEndpoints>2</bNumEndpoints>\r\n                <bInterfaceSubClass>0</bInterfaceSubClass>\r\n                <bInterfaceProtocol>0</bInterfaceProtocol>\r\n                <iInterface>4</iInterface>\r\n                <sInterface>CDC Data Interface</sInterface>\r\n              </Value>\r\n              <Nodes>\r\n                <DescriptorNode Key="USBDescriptor71">\r\n                  <m_value d10p1:type="EndpointDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                    <bLength>7</bLength>\r\n                    <DoubleBuffer>false</DoubleBuffer>\r\n                    <bEndpointAddress>130</bEndpointAddress>\r\n                    <bmAttributes>2</bmAttributes>\r\n                    <wMaxPacketSize>64</wMaxPacketSize>\r\n                  </m_value>\r\n                  <Value d10p1:type="EndpointDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                    <bLength>7</bLength>\r\n                    <DoubleBuffer>false</DoubleBuffer>\r\n                    <bEndpointAddress>130</bEndpointAddress>\r\n                    <bmAttributes>2</bmAttributes>\r\n                    <wMaxPacketSize>64</wMaxPacketSize>\r\n                  </Value>\r\n                  <Nodes />\r\n                </DescriptorNode>\r\n                <DescriptorNode Key="USBDescriptor72">\r\n                  <m_value d10p1:type="EndpointDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                    <bLength>7</bLength>\r\n                    <DoubleBuffer>false</DoubleBuffer>\r\n                    <bEndpointAddress>3</bEndpointAddress>\r\n                    <bmAttributes>2</bmAttributes>\r\n                    <wMaxPacketSize>64</wMaxPacketSize>\r\n                  </m_value>\r\n                  <Value d10p1:type="EndpointDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                    <bLength>7</bLength>\r\n                    <DoubleBuffer>false</DoubleBuffer>\r\n                    <bEndpointAddress>3</bEndpointAddress>\r\n                    <bmAttributes>2</bmAttributes>\r\n                    <wMaxPacketSize>64</wMaxPacketSize>\r\n                  </Value>\r\n                  <Nodes />\r\n                </DescriptorNode>\r\n              </Nodes>\r\n            </DescriptorNode>\r\n          </Nodes>\r\n        </DescriptorNode>\r\n      </Nodes>\r\n    </DescriptorNode>\r\n  </Tree_x0020_Descriptors>\r\n</Tree>, DeviceDescriptors=<?xml version="1.0" encoding="utf-16"?>\r\n<Tree xmlns:CustomizerVersion="3_0">\r\n  <Tree_x0020_Descriptors>\r\n    <DescriptorNode Key="Device">\r\n      <Nodes>\r\n        <DescriptorNode Key="USBDescriptor51">\r\n          <m_value d6p1:type="DeviceDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>DEVICE</bDescriptorType>\r\n            <bLength>18</bLength>\r\n            <iwManufacturer>47</iwManufacturer>\r\n            <iwProduct>48</iwProduct>\r\n            <sManufacturer>Cypress Semiconductor</sManufacturer>\r\n            <sProduct>USBUART</sProduct>\r\n            <sSerialNumber />\r\n            <bDeviceClass>2</bDeviceClass>\r\n            <bDeviceSubClass>0</bDeviceSubClass>\r\n            <bDeviceProtocol>0</bDeviceProtocol>\r\n            <bMaxPacketSize0>0</bMaxPacketSize0>\r\n            <idVendor>1204</idVendor>\r\n            <idProduct>62002</idProduct>\r\n            <bcdDevice>1</bcdDevice>\r\n            <bcdUSB>512</bcdUSB>\r\n            <iManufacturer>1</iManufacturer>\r\n            <iProduct>2</iProduct>\r\n            <iSerialNumber>0</iSerialNumber>\r\n            <bNumConfigurations>1</bNumConfigurations>\r\n            <bMemoryMgmt>0</bMemoryMgmt>\r\n            <bMemoryAlloc>0</bMemoryAlloc>\r\n          </m_value>\r\n          <Value d6p1:type="DeviceDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>DEVICE</bDescriptorType>\r\n            <bLength>18</bLength>\r\n            <iwManufacturer>47</iwManufacturer>\r\n            <iwProduct>48</iwProduct>\r\n            <sManufacturer>Cypress Semiconductor</sManufacturer>\r\n            <sProduct>USBUART</sProduct>\r\n            <sSerialNumber />\r\n            <bDeviceClass>2</bDeviceClass>\r\n            <bDeviceSubClass>0</bDeviceSubClass>\r\n            <bDeviceProtocol>0</bDeviceProtocol>\r\n            <bMaxPacketSize0>0</bMaxPacketSize0>\r\n            <idVendor>1204</idVendor>\r\n            <idProduct>62002</idProduct>\r\n            <bcdDevice>1</bcdDevice>\r\n            <bcdUSB>512</bcdUSB>\r\n            <iManufacturer>1</iManufacturer>\r\n            <iProduct>2</iProduct>\r\n            <iSerialNumber>0</iSerialNumber>\r\n            <bNumConfigurations>1</bNumConfigurations>\r\n            <bMemoryMgmt>0</bMemoryMgmt>\r\n            <bMemoryAlloc>0</bMemoryAlloc>\r\n          </Value>\r\n          <Nodes>\r\n            <DescriptorNode Key="USBDescriptor56">\r\n              <m_value d8p1:type="ConfigDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                <bDescriptorType>CONFIGURATION</bDescriptorType>\r\n                <bLength>9</bLength>\r\n                <iwConfiguration>47</iwConfiguration>\r\n                <sConfiguration>Cypress Semiconductor</sConfiguration>\r\n                <wTotalLength>67</wTotalLength>\r\n                <bNumInterfaces>2</bNumInterfaces>\r\n                <bConfigurationValue>0</bConfigurationValue>\r\n                <iConfiguration>1</iConfiguration>\r\n                <bmAttributes>128</bmAttributes>\r\n                <bMaxPower>50</bMaxPower>\r\n              </m_value>\r\n              <Value d8p1:type="ConfigDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                <bDescriptorType>CONFIGURATION</bDescriptorType>\r\n                <bLength>9</bLength>\r\n                <iwConfiguration>47</iwConfiguration>\r\n                <sConfiguration>Cypress Semiconductor</sConfiguration>\r\n                <wTotalLength>67</wTotalLength>\r\n                <bNumInterfaces>2</bNumInterfaces>\r\n                <bConfigurationValue>0</bConfigurationValue>\r\n                <iConfiguration>1</iConfiguration>\r\n                <bmAttributes>128</bmAttributes>\r\n                <bMaxPower>50</bMaxPower>\r\n              </Value>\r\n              <Nodes>\r\n                <DescriptorNode Key="Interface60">\r\n                  <m_value d10p1:type="InterfaceGeneralDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ALTERNATE</bDescriptorType>\r\n                    <bLength>0</bLength>\r\n                    <DisplayName>CDC Interface 1</DisplayName>\r\n                  </m_value>\r\n                  <Value d10p1:type="InterfaceGeneralDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ALTERNATE</bDescriptorType>\r\n                    <bLength>0</bLength>\r\n                    <DisplayName>CDC Interface 1</DisplayName>\r\n                  </Value>\r\n                  <Nodes>\r\n                    <DescriptorNode Key="USBDescriptor61">\r\n                      <m_value d12p1:type="CyCommunicationsInterfaceDescriptor" xmlns:d12p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                        <bDescriptorType>INTERFACE</bDescriptorType>\r\n                        <bLength>9</bLength>\r\n                        <iwInterface>49</iwInterface>\r\n                        <bInterfaceClass>2</bInterfaceClass>\r\n                        <bAlternateSetting>0</bAlternateSetting>\r\n                        <bInterfaceNumber>0</bInterfaceNumber>\r\n                        <bNumEndpoints>1</bNumEndpoints>\r\n                        <bInterfaceSubClass>2</bInterfaceSubClass>\r\n                        <bInterfaceProtocol>1</bInterfaceProtocol>\r\n                        <iInterface>3</iInterface>\r\n                        <sInterface>CDC Communication Interface</sInterface>\r\n                      </m_value>\r\n                      <Value d12p1:type="CyCommunicationsInterfaceDescriptor" xmlns:d12p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                        <bDescriptorType>INTERFACE</bDescriptorType>\r\n                        <bLength>9</bLength>\r\n                        <iwInterface>49</iwInterface>\r\n                        <bInterfaceClass>2</bInterfaceClass>\r\n                        <bAlternateSetting>0</bAlternateSetting>\r\n                        <bInterfaceNumber>0</bInterfaceNumber>\r\n                        <bNumEndpoints>1</bNumEndpoints>\r\n                        <bInterfaceSubClass>2</bInterfaceSubClass>\r\n                        <bInterfaceProtocol>1</bInterfaceProtocol>\r\n                        <iInterface>3</iInterface>\r\n                        <sInterface>CDC Communication Interface</sInterface>\r\n                      </Value>\r\n                      <Nodes>\r\n                        <DescriptorNode Key="USBDescriptor63">\r\n                          <m_value d14p1:type="CyCDCHeaderDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>CDC</bDescriptorType>\r\n                            <bLength>5</bLength>\r\n                            <bDescriptorSubtype>HEADER</bDescriptorSubtype>\r\n                            <bcdADC>272</bcdADC>\r\n                          </m_value>\r\n                          <Value d14p1:type="CyCDCHeaderDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>CDC</bDescriptorType>\r\n                            <bLength>5</bLength>\r\n                            <bDescriptorSubtype>HEADER</bDescriptorSubtype>\r\n                            <bcdADC>272</bcdADC>\r\n                          </Value>\r\n                          <Nodes />\r\n                        </DescriptorNode>\r\n                        <DescriptorNode Key="USBDescriptor64">\r\n                          <m_value d14p1:type="CyCDCAbstractControlMgmtDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>CDC</bDescriptorType>\r\n                            <bLength>4</bLength>\r\n                            <bDescriptorSubtype>ABSTRACT_CONTROL_MANAGEMENT</bDescriptorSubtype>\r\n                            <bmCapabilities>2</bmCapabilities>\r\n                          </m_value>\r\n                          <Value d14p1:type="CyCDCAbstractControlMgmtDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>CDC</bDescriptorType>\r\n                            <bLength>4</bLength>\r\n                            <bDescriptorSubtype>ABSTRACT_CONTROL_MANAGEMENT</bDescriptorSubtype>\r\n                            <bmCapabilities>2</bmCapabilities>\r\n                          </Value>\r\n                          <Nodes />\r\n                        </DescriptorNode>\r\n                        <DescriptorNode Key="USBDescriptor65">\r\n                          <m_value d14p1:type="CyCDCUnionDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>CDC</bDescriptorType>\r\n                            <bLength>5</bLength>\r\n                            <bDescriptorSubtype>UNION</bDescriptorSubtype>\r\n                            <bSubordinateInterface>AQ==</bSubordinateInterface>\r\n                          </m_value>\r\n                          <Value d14p1:type="CyCDCUnionDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>CDC</bDescriptorType>\r\n                            <bLength>5</bLength>\r\n                            <bDescriptorSubtype>UNION</bDescriptorSubtype>\r\n                            <bSubordinateInterface>AQ==</bSubordinateInterface>\r\n                          </Value>\r\n                          <Nodes />\r\n                        </DescriptorNode>\r\n                        <DescriptorNode Key="USBDescriptor66">\r\n                          <m_value d14p1:type="CyCDCCallManagementDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>CDC</bDescriptorType>\r\n                            <bLength>5</bLength>\r\n                            <bDescriptorSubtype>CALL_MANAGEMENT</bDescriptorSubtype>\r\n                            <bDataInterface>1</bDataInterface>\r\n                          </m_value>\r\n                          <Value d14p1:type="CyCDCCallManagementDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>CDC</bDescriptorType>\r\n                            <bLength>5</bLength>\r\n                            <bDescriptorSubtype>CALL_MANAGEMENT</bDescriptorSubtype>\r\n                            <bDataInterface>1</bDataInterface>\r\n                          </Value>\r\n                          <Nodes />\r\n                        </DescriptorNode>\r\n                        <DescriptorNode Key="USBDescriptor67">\r\n                          <m_value d14p1:type="EndpointDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                            <bLength>7</bLength>\r\n                            <DoubleBuffer>false</DoubleBuffer>\r\n                            <bEndpointAddress>129</bEndpointAddress>\r\n                            <bmAttributes>3</bmAttributes>\r\n                          </m_value>\r\n                          <Value d14p1:type="EndpointDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                            <bLength>7</bLength>\r\n                            <DoubleBuffer>false</DoubleBuffer>\r\n                            <bEndpointAddress>129</bEndpointAddress>\r\n                            <bmAttributes>3</bmAttributes>\r\n                          </Value>\r\n                          <Nodes />\r\n                        </DescriptorNode>\r\n                      </Nodes>\r\n                    </DescriptorNode>\r\n                  </Nodes>\r\n                </DescriptorNode>\r\n                <DescriptorNode Key="Interface68">\r\n                  <m_value d10p1:type="InterfaceGeneralDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ALTERNATE</bDescriptorType>\r\n                    <bLength>0</bLength>\r\n                    <DisplayName>CDC Interface 2</DisplayName>\r\n                  </m_value>\r\n                  <Value d10p1:type="InterfaceGeneralDescriptor" xmlns:d10p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                    <bDescriptorType>ALTERNATE</bDescriptorType>\r\n                    <bLength>0</bLength>\r\n                    <DisplayName>CDC Interface 2</DisplayName>\r\n                  </Value>\r\n                  <Nodes>\r\n                    <DescriptorNode Key="USBDescriptor69">\r\n                      <m_value d12p1:type="CyDataInterfaceDescriptor" xmlns:d12p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                        <bDescriptorType>INTERFACE</bDescriptorType>\r\n                        <bLength>9</bLength>\r\n                        <iwInterface>50</iwInterface>\r\n                        <bInterfaceClass>10</bInterfaceClass>\r\n                        <bAlternateSetting>0</bAlternateSetting>\r\n                        <bInterfaceNumber>1</bInterfaceNumber>\r\n                        <bNumEndpoints>2</bNumEndpoints>\r\n                        <bInterfaceSubClass>0</bInterfaceSubClass>\r\n                        <bInterfaceProtocol>0</bInterfaceProtocol>\r\n                        <iInterface>4</iInterface>\r\n                        <sInterface>CDC Data Interface</sInterface>\r\n                      </m_value>\r\n                      <Value d12p1:type="CyDataInterfaceDescriptor" xmlns:d12p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                        <bDescriptorType>INTERFACE</bDescriptorType>\r\n                        <bLength>9</bLength>\r\n                        <iwInterface>50</iwInterface>\r\n                        <bInterfaceClass>10</bInterfaceClass>\r\n                        <bAlternateSetting>0</bAlternateSetting>\r\n                        <bInterfaceNumber>1</bInterfaceNumber>\r\n                        <bNumEndpoints>2</bNumEndpoints>\r\n                        <bInterfaceSubClass>0</bInterfaceSubClass>\r\n                        <bInterfaceProtocol>0</bInterfaceProtocol>\r\n                        <iInterface>4</iInterface>\r\n                        <sInterface>CDC Data Interface</sInterface>\r\n                      </Value>\r\n                      <Nodes>\r\n                        <DescriptorNode Key="USBDescriptor71">\r\n                          <m_value d14p1:type="EndpointDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                            <bLength>7</bLength>\r\n                            <DoubleBuffer>false</DoubleBuffer>\r\n                            <bEndpointAddress>130</bEndpointAddress>\r\n                            <bmAttributes>2</bmAttributes>\r\n                            <wMaxPacketSize>64</wMaxPacketSize>\r\n                          </m_value>\r\n                          <Value d14p1:type="EndpointDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                            <bLength>7</bLength>\r\n                            <DoubleBuffer>false</DoubleBuffer>\r\n                            <bEndpointAddress>130</bEndpointAddress>\r\n                            <bmAttributes>2</bmAttributes>\r\n                            <wMaxPacketSize>64</wMaxPacketSize>\r\n                          </Value>\r\n                          <Nodes />\r\n                        </DescriptorNode>\r\n                        <DescriptorNode Key="USBDescriptor72">\r\n                          <m_value d14p1:type="EndpointDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                            <bLength>7</bLength>\r\n                            <DoubleBuffer>false</DoubleBuffer>\r\n                            <bEndpointAddress>3</bEndpointAddress>\r\n                            <bmAttributes>2</bmAttributes>\r\n                            <wMaxPacketSize>64</wMaxPacketSize>\r\n                          </m_value>\r\n                          <Value d14p1:type="EndpointDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">\r\n                            <bDescriptorType>ENDPOINT</bDescriptorType>\r\n                            <bLength>7</bLength>\r\n                            <DoubleBuffer>false</DoubleBuffer>\r\n                            <bEndpointAddress>3</bEndpointAddress>\r\n                            <bmAttributes>2</bmAttributes>\r\n                            <wMaxPacketSize>64</wMaxPacketSize>\r\n                          </Value>\r\n                          <Nodes />\r\n                        </DescriptorNode>\r\n                      </Nodes>\r\n                    </DescriptorNode>\r\n                  </Nodes>\r\n                </DescriptorNode>\r\n              </Nodes>\r\n            </DescriptorNode>\r\n          </Nodes>\r\n        </DescriptorNode>\r\n      </Nodes>\r\n    </DescriptorNode>\r\n  </Tree_x0020_Descriptors>\r\n</Tree>, DmaChannelPriority=3, DW_Hide_DmaAuto=true, DW_Hide_Usbv2Regs=true, DW_RegSize=8, DW_USB_CHGDET_CTRL=CR0, DW_USB_INTR_CAUSE_HI=CR0, DW_USB_INTR_CAUSE_LO=CR0, DW_USB_INTR_CAUSE_MED=CR0, DW_USB_INTR_LVL_SEL=CR0, DW_USB_INTR_SIE=CR0, DW_USB_INTR_SIE_MASK=CR0, DW_USB_LPM_CTRL=CR0, DW_USB_LPM_STAT=CR0, DW_USB_POWER_CTRL=CR0, EnableBatteryChargDetect=false, EnableCDCApi=true, EnableMidiApi=true, endpointMA=0, endpointMM=0, epDMAautoOptimization=false, extern_cls=false, extern_vbus=false, extern_vnd=false, extJackCount=0, Gen16bitEpAccessApi=true, HandleMscRequests=true, HIDReportDescriptors=<?xml version="1.0" encoding="utf-16"?>\r\n<Tree xmlns:CustomizerVersion="3_0">\r\n  <Tree_x0020_Descriptors>\r\n    <DescriptorNode Key="HIDReport">\r\n      <Nodes />\r\n    </DescriptorNode>\r\n  </Tree_x0020_Descriptors>\r\n</Tree>, isrGroupArbiter=0, isrGroupBusReset=2, isrGroupEp0=1, isrGroupEp1=1, isrGroupEp2=1, isrGroupEp3=1, isrGroupEp4=1, isrGroupEp5=1, isrGroupEp6=1, isrGroupEp7=1, isrGroupEp8=1, isrGroupLpm=0, isrGroupSof=2, M0S8USBDSS_BLOCK_COUNT_1=0, max_interfaces_num=2, MidiDescriptors=<?xml version="1.0" encoding="utf-16"?>\r\n<Tree xmlns:CustomizerVersion="3_0">\r\n  <Tree_x0020_Descriptors>\r\n    <DescriptorNode Key="Midi">\r\n      <Nodes />\r\n    </DescriptorNode>\r\n  </Tree_x0020_Descriptors>\r\n</Tree>, Mode=false, mon_vbus=false, MscDescriptors=, MscLogicalUnitsNum=1, out_sof=false, Pid=F232, powerpad_vbus=false, PRIMITIVE_INSTANCE=USB, ProdactName=, ProdactRevision=, REG_SIZE=reg8, RemoveDmaAutoOpt=true, RemoveVbusPin=true, rm_arb_int=false, rm_dma_1=true, rm_dma_2=true, rm_dma_3=true, rm_dma_4=true, rm_dma_5=true, rm_dma_6=true, rm_dma_7=true, rm_dma_8=true, rm_dp_int=false, rm_ep_isr_0=false, rm_ep_isr_1=false, rm_ep_isr_2=false, rm_ep_isr_3=false, rm_ep_isr_4=true, rm_ep_isr_5=true, rm_ep_isr_6=true, rm_ep_isr_7=true, rm_ep_isr_8=true, rm_lpm_int=true, rm_ord_int=true, rm_sof_int=false, rm_usb_int=false, SofTermEnable=false, StringDescriptors=<?xml version="1.0" encoding="utf-16"?>\r\n<Tree xmlns:CustomizerVersion="3_0">\r\n  <Tree_x0020_Descriptors>\r\n    <DescriptorNode Key="String">\r\n      <Nodes>\r\n        <DescriptorNode Key="LANGID">\r\n          <m_value d6p1:type="StringZeroDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>4</bLength>\r\n            <wLANGID>1033</wLANGID>\r\n          </m_value>\r\n          <Value d6p1:type="StringZeroDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>4</bLength>\r\n            <wLANGID>1033</wLANGID>\r\n          </Value>\r\n          <Nodes />\r\n        </DescriptorNode>\r\n        <DescriptorNode Key="USBDescriptor47">\r\n          <m_value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>44</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>Cypress Semiconductor</bString>\r\n            <bUsed>false</bUsed>\r\n          </m_value>\r\n          <Value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>44</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>Cypress Semiconductor</bString>\r\n            <bUsed>false</bUsed>\r\n          </Value>\r\n          <Nodes />\r\n        </DescriptorNode>\r\n        <DescriptorNode Key="USBDescriptor48">\r\n          <m_value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>16</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>USBUART</bString>\r\n            <bUsed>false</bUsed>\r\n          </m_value>\r\n          <Value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>16</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>USBUART</bString>\r\n            <bUsed>false</bUsed>\r\n          </Value>\r\n          <Nodes />\r\n        </DescriptorNode>\r\n        <DescriptorNode Key="USBDescriptor49">\r\n          <m_value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>56</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>CDC Communication Interface</bString>\r\n            <bUsed>false</bUsed>\r\n          </m_value>\r\n          <Value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>56</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>CDC Communication Interface</bString>\r\n            <bUsed>false</bUsed>\r\n          </Value>\r\n          <Nodes />\r\n        </DescriptorNode>\r\n        <DescriptorNode Key="USBDescriptor50">\r\n          <m_value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>38</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>CDC Data Interface</bString>\r\n            <bUsed>false</bUsed>\r\n          </m_value>\r\n          <Value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>38</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>CDC Data Interface</bString>\r\n            <bUsed>false</bUsed>\r\n          </Value>\r\n          <Nodes />\r\n        </DescriptorNode>\r\n      </Nodes>\r\n    </DescriptorNode>\r\n    <DescriptorNode Key="SpecialString">\r\n      <Nodes>\r\n        <DescriptorNode Key="Serial">\r\n          <m_value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>2</bLength>\r\n            <snType>SILICON_NUMBER</snType>\r\n            <bString />\r\n            <bUsed>true</bUsed>\r\n          </m_value>\r\n          <Value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>2</bLength>\r\n            <snType>SILICON_NUMBER</snType>\r\n            <bString />\r\n            <bUsed>true</bUsed>\r\n          </Value>\r\n          <Nodes />\r\n        </DescriptorNode>\r\n        <DescriptorNode Key="EE">\r\n          <m_value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>16</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>MSFT100</bString>\r\n            <bUsed>false</bUsed>\r\n          </m_value>\r\n          <Value d6p1:type="StringDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">\r\n            <bDescriptorType>STRING</bDescriptorType>\r\n            <bLength>16</bLength>\r\n            <snType>USER_ENTERED_TEXT</snType>\r\n            <bString>MSFT100</bString>\r\n            <bUsed>false</bUsed>\r\n          </Value>\r\n          <Nodes />\r\n        </DescriptorNode>\r\n      </Nodes>\r\n    </DescriptorNode>\r\n  </Tree_x0020_Descriptors>\r\n</Tree>, UINT_TYPE=uint8, VbusDetectTermEnable=false, VendorName=, Vid=04B4, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMMENT=, CY_COMPONENT_NAME=USBFS_v3_20, CY_CONFIG_TITLE=USBUART_1, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=USBUART_1, CY_INSTANCE_SHORT_NAME=USBUART_1, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=20, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=USBUART_1, )
-module USBFS_v3_20_13 (
-    sof,
-    vbusdet);
-    output      sof;
-    input       vbusdet;
-
-    parameter epDMAautoOptimization = 0;
-
-          wire  Net_1914;
-          wire  Net_1915;
-          wire  Net_1916;
-          wire  Net_1917;
-          wire  Net_1918;
-          wire  Net_1919;
-          wire [7:0] dma_request;
-          wire  Net_1920;
-          wire  Net_1921;
-          wire  Net_1922;
-          wire [7:0] Net_2039;
-          wire  Net_2038;
-          wire  Net_2037;
-          wire  EPs_1_to_7_dma_complete;
-          wire  Net_2036;
-          wire  Net_2035;
-          wire  Net_2034;
-          wire  Net_2033;
-          wire  Net_2032;
-          wire  Net_2031;
-          wire  Net_2030;
-          wire  Net_2029;
-          wire  Net_2028;
-          wire  Net_2027;
-          wire  Net_2026;
-          wire  Net_2025;
-          wire  Net_2024;
-          wire [7:0] Net_1940;
-          wire  Net_1938;
-          wire  Net_1937;
-          wire  Net_1936;
-          wire  Net_1935;
-          wire  Net_1934;
-          wire  Net_1933;
-          wire  Net_1932;
-          wire  Net_1939;
-          wire  Net_2047;
-          wire  Net_1202;
-          wire  dma_terminate;
-          wire [7:0] Net_2040;
-          wire  Net_1010;
-    electrical  Net_1000;
-    electrical  Net_597;
-          wire  Net_1495;
-          wire  Net_1498;
-          wire  Net_1559;
-          wire  Net_1567;
-          wire  Net_1576;
-          wire  Net_1579;
-          wire  Net_1591;
-          wire [7:0] dma_complete;
-          wire  Net_1588;
-          wire  Net_1876;
-          wire [8:0] ep_int;
-          wire  Net_1889;
-          wire  busClk;
-          wire  Net_95;
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		dp_int
-		 (.int_signal(Net_1010));
-
-
-	wire [0:0] tmpOE__Dm_net;
-	wire [0:0] tmpFB_0__Dm_net;
-	wire [0:0] tmpIO_0__Dm_net;
-	wire [0:0] tmpINTERRUPT_0__Dm_net;
-	electrical [0:0] tmpSIOVREF__Dm_net;
-
-	cy_psoc3_pins_v1_10
-		#(.id("beca5e2d-f70f-4900-a4db-7eca1ed3126e/8b77a6c4-10a0-4390-971c-672353e2a49c"),
-		  .drive_mode(3'b000),
-		  .ibuf_enabled(1'b0),
-		  .init_dr_st(1'b0),
-		  .input_clk_en(0),
-		  .input_sync(1'b1),
-		  .input_sync_mode(1'b0),
-		  .intr_mode(2'b00),
-		  .invert_in_clock(0),
-		  .invert_in_clock_en(0),
-		  .invert_in_reset(0),
-		  .invert_out_clock(0),
-		  .invert_out_clock_en(0),
-		  .invert_out_reset(0),
-		  .io_voltage(""),
-		  .layout_mode("NONCONTIGUOUS"),
-		  .oe_conn(1'b0),
-		  .oe_reset(0),
-		  .oe_sync(1'b0),
-		  .output_clk_en(0),
-		  .output_clock_mode(1'b0),
-		  .output_conn(1'b0),
-		  .output_mode(1'b0),
-		  .output_reset(0),
-		  .output_sync(1'b0),
-		  .pa_in_clock(-1),
-		  .pa_in_clock_en(-1),
-		  .pa_in_reset(-1),
-		  .pa_out_clock(-1),
-		  .pa_out_clock_en(-1),
-		  .pa_out_reset(-1),
-		  .pin_aliases(""),
-		  .pin_mode("A"),
-		  .por_state(4),
-		  .sio_group_cnt(0),
-		  .sio_hyst(1'b1),
-		  .sio_ibuf(""),
-		  .sio_info(2'b00),
-		  .sio_obuf(""),
-		  .sio_refsel(""),
-		  .sio_vtrip(""),
-		  .sio_hifreq(""),
-		  .sio_vohsel(""),
-		  .slew_rate(1'b0),
-		  .spanning(1),
-		  .use_annotation(1'b0),
-		  .vtrip(2'b10),
-		  .width(1),
-		  .ovt_hyst_trim(1'b0),
-		  .ovt_needed(1'b0),
-		  .ovt_slew_control(2'b00),
-		  .input_buffer_sel(2'b00))
-		Dm
-		 (.oe(tmpOE__Dm_net),
-		  .y({1'b0}),
-		  .fb({tmpFB_0__Dm_net[0:0]}),
-		  .analog({Net_597}),
-		  .io({tmpIO_0__Dm_net[0:0]}),
-		  .siovref(tmpSIOVREF__Dm_net),
-		  .interrupt({tmpINTERRUPT_0__Dm_net[0:0]}),
-		  .in_clock({1'b0}),
-		  .in_clock_en({1'b1}),
-		  .in_reset({1'b0}),
-		  .out_clock({1'b0}),
-		  .out_clock_en({1'b1}),
-		  .out_reset({1'b0}));
-
-	assign tmpOE__Dm_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
-
-	wire [0:0] tmpOE__Dp_net;
-	wire [0:0] tmpFB_0__Dp_net;
-	wire [0:0] tmpIO_0__Dp_net;
-	electrical [0:0] tmpSIOVREF__Dp_net;
-
-	cy_psoc3_pins_v1_10
-		#(.id("beca5e2d-f70f-4900-a4db-7eca1ed3126e/618a72fc-5ddd-4df5-958f-a3d55102db42"),
-		  .drive_mode(3'b000),
-		  .ibuf_enabled(1'b0),
-		  .init_dr_st(1'b1),
-		  .input_clk_en(0),
-		  .input_sync(1'b1),
-		  .input_sync_mode(1'b0),
-		  .intr_mode(2'b10),
-		  .invert_in_clock(0),
-		  .invert_in_clock_en(0),
-		  .invert_in_reset(0),
-		  .invert_out_clock(0),
-		  .invert_out_clock_en(0),
-		  .invert_out_reset(0),
-		  .io_voltage(""),
-		  .layout_mode("CONTIGUOUS"),
-		  .oe_conn(1'b0),
-		  .oe_reset(0),
-		  .oe_sync(1'b0),
-		  .output_clk_en(0),
-		  .output_clock_mode(1'b0),
-		  .output_conn(1'b0),
-		  .output_mode(1'b0),
-		  .output_reset(0),
-		  .output_sync(1'b0),
-		  .pa_in_clock(-1),
-		  .pa_in_clock_en(-1),
-		  .pa_in_reset(-1),
-		  .pa_out_clock(-1),
-		  .pa_out_clock_en(-1),
-		  .pa_out_reset(-1),
-		  .pin_aliases(""),
-		  .pin_mode("I"),
-		  .por_state(4),
-		  .sio_group_cnt(0),
-		  .sio_hyst(1'b1),
-		  .sio_ibuf(""),
-		  .sio_info(2'b00),
-		  .sio_obuf(""),
-		  .sio_refsel(""),
-		  .sio_vtrip(""),
-		  .sio_hifreq(""),
-		  .sio_vohsel(""),
-		  .slew_rate(1'b0),
-		  .spanning(0),
-		  .use_annotation(1'b0),
-		  .vtrip(2'b00),
-		  .width(1),
-		  .ovt_hyst_trim(1'b0),
-		  .ovt_needed(1'b0),
-		  .ovt_slew_control(2'b00),
-		  .input_buffer_sel(2'b00))
-		Dp
-		 (.oe(tmpOE__Dp_net),
-		  .y({1'b0}),
-		  .fb({tmpFB_0__Dp_net[0:0]}),
-		  .analog({Net_1000}),
-		  .io({tmpIO_0__Dp_net[0:0]}),
-		  .siovref(tmpSIOVREF__Dp_net),
-		  .interrupt({Net_1010}),
-		  .in_clock({1'b0}),
-		  .in_clock_en({1'b1}),
-		  .in_reset({1'b0}),
-		  .out_clock({1'b0}),
-		  .out_clock_en({1'b1}),
-		  .out_reset({1'b0}));
-
-	assign tmpOE__Dp_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
-
-    cy_psoc3_usb_v1_0 USB (
-        .arb_int(Net_1889),
-        .dm(Net_597),
-        .dma_req(dma_request[7:0]),
-        .dma_termin(dma_terminate),
-        .dp(Net_1000),
-        .ept_int(ep_int[8:0]),
-        .ord_int(Net_95),
-        .sof_int(sof),
-        .usb_int(Net_1876));
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		ep_3
-		 (.int_signal(ep_int[3]));
-
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		ep_2
-		 (.int_signal(ep_int[2]));
-
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		ep_1
-		 (.int_signal(ep_int[1]));
-
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		ep_0
-		 (.int_signal(ep_int[0]));
-
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		bus_reset
-		 (.int_signal(Net_1876));
-
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		arb_int
-		 (.int_signal(Net_1889));
-
-
-
-	cy_isr_v1_0
-		#(.int_type(2'b10))
-		sof_int
-		 (.int_signal(sof));
-
-
-	// VirtualMux_1 (cy_virtualmux_v1_0)
-	assign dma_complete[0] = Net_1922;
-
-    ZeroTerminal ZeroTerminal_1 (
-        .z(Net_1922));
-
-	// VirtualMux_2 (cy_virtualmux_v1_0)
-	assign dma_complete[1] = Net_1921;
-
-    ZeroTerminal ZeroTerminal_2 (
-        .z(Net_1921));
-
-	// VirtualMux_3 (cy_virtualmux_v1_0)
-	assign dma_complete[2] = Net_1920;
-
-    ZeroTerminal ZeroTerminal_3 (
-        .z(Net_1920));
-
-	// VirtualMux_4 (cy_virtualmux_v1_0)
-	assign dma_complete[3] = Net_1919;
-
-    ZeroTerminal ZeroTerminal_4 (
-        .z(Net_1919));
-
-	// VirtualMux_5 (cy_virtualmux_v1_0)
-	assign dma_complete[4] = Net_1918;
-
-	// VirtualMux_6 (cy_virtualmux_v1_0)
-	assign dma_complete[5] = Net_1917;
-
-    ZeroTerminal ZeroTerminal_5 (
-        .z(Net_1918));
-
-    ZeroTerminal ZeroTerminal_6 (
-        .z(Net_1917));
-
-	// VirtualMux_7 (cy_virtualmux_v1_0)
-	assign dma_complete[6] = Net_1916;
-
-	// VirtualMux_8 (cy_virtualmux_v1_0)
-	assign dma_complete[7] = Net_1915;
-
-    ZeroTerminal ZeroTerminal_7 (
-        .z(Net_1916));
-
-    ZeroTerminal ZeroTerminal_8 (
-        .z(Net_1915));
-
-
-
-endmodule
-
 // top
 module top ;
 
-          wire  Net_194;
-          wire  Net_193;
           wire  Net_192;
           wire  Net_190;
           wire  Net_189;
@@ -2240,10 +1191,8 @@ module top ;
           wire  Net_48;
           wire  Net_45;
           wire  Net_46;
-    electrical  Net_159;
-          wire  Net_158;
-          wire  Net_157;
-          wire  Net_156;
+    electrical  Net_88;
+    electrical  Net_13;
           wire  Net_17;
           wire  Net_53;
           wire  Net_52;
@@ -2254,8 +1203,6 @@ module top ;
     electrical  Net_95;
     electrical  Net_99;
           wire  Net_50;
-    electrical  Net_13;
-    electrical  Net_88;
           wire  Net_23;
           wire  Net_10;
           wire  Net_18;
@@ -2342,13 +1289,7 @@ module top ;
 
 	assign tmpOE__Vo1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-    CapSense_CSD_v3_50_2 CapSense (
-        .bclk(Net_156),
-        .clock(1'b0),
-        .shield(Net_158),
-        .vref(Net_159));
-
-    ADC_SAR_v3_10_3 ADC (
+    ADC_SAR_v3_10_0 ADC (
         .aclk(1'b0),
         .eoc(Net_45),
         .eos(Net_48),
@@ -2357,7 +1298,7 @@ module top ;
         .vminus(Net_43),
         .vplus(Net_13));
 
-    WaveDAC8_v2_10_5 WaveDAC8 (
+    WaveDAC8_v2_10_2 WaveDAC8 (
         .clock(1'b0),
         .Wave(Net_49),
         .wc1(Net_52),
@@ -2728,7 +1669,7 @@ module top ;
     ZeroTerminal ZeroTerminal_1 (
         .z(Net_18));
 
-    Timer_v2_80_6 Timer_Button (
+    Timer_v2_80_3 Timer_Button (
         .capture(1'b0),
         .capture_out(Net_79),
         .clock(Net_10),
@@ -2752,7 +1693,7 @@ module top ;
 		 (.int_signal(Net_23));
 
 
-    VDAC8_v1_90_7 VDAC8 (
+    VDAC8_v1_90_4 VDAC8 (
         .data(8'b00000000),
         .strobe(1'b0),
         .vOut(Net_88));
@@ -2760,7 +1701,7 @@ module top ;
     defparam VDAC8.Initial_Value = 32;
     defparam VDAC8.Strobe_Mode = 0;
 
-    PGA_v2_0_8 PGA (
+    PGA_v2_0_5 PGA (
         .Vin(Net_88),
         .Vout(Net_13),
         .Vref(Net_89));
@@ -2832,8 +1773,6 @@ module top ;
     defparam PWR_2.port_names = "T1";
     defparam PWR_2.width = 1;
 
-    SegLCD_v3_40_9 LCD_Seg ();
-
 
 	cy_isr_v1_0
 		#(.int_type(2'b00))
@@ -2848,7 +1787,7 @@ module top ;
 		 (.int_signal(Net_53));
 
 
-    UART_v2_50_10 UART_1 (
+    UART_v2_50_6 UART_1 (
         .clock(1'b0),
         .cts_n(1'b0),
         .reset(1'b0),
@@ -3024,7 +1963,7 @@ module top ;
 
 	assign tmpOE__Tx_1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-    MatrixKbLED_8p_v1_0_11 MatrixKbLED (
+    MatrixKbLED_8p_v1_0_7 MatrixKbLED (
         .Clk(Net_17));
 
 
@@ -3039,12 +1978,7 @@ module top ;
 		 (.clock_out(Net_17));
 
 
-    CharLCD_v2_20_12 LCD_Char ();
-
-    USBFS_v3_20_13 USBUART_1 (
-        .sof(Net_193),
-        .vbusdet(1'b0));
-    defparam USBUART_1.epDMAautoOptimization = 0;
+    CharLCD_v2_20_8 LCD_Char ();
 
 
 

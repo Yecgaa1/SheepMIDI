@@ -21,17 +21,6 @@
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Vo1_aliases.h" value="HEADER;;;;;Vo1" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Vo1.c" value="SOURCE_C;CortexM3;;;;Vo1" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Vo1.h" value="HEADER;;;;;Vo1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense.c" value="SOURCE_C;CortexM3;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense.h" value="HEADER;;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_CSHL.c" value="SOURCE_C;CortexM3;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_CSHL.h" value="HEADER;;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_INT.c" value="SOURCE_C;CortexM3;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_Pins.c" value="SOURCE_C;CortexM3;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_Pins.h" value="HEADER;;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_PM.c" value="SOURCE_C;CortexM3;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_SMS_Wrapper.c" value="SOURCE_C;CortexM3;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_TunerHelper.c" value="SOURCE_C;CortexM3;;;;CapSense" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_TunerHelper.h" value="HEADER;;;;;CapSense" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC.c" value="SOURCE_C;CortexM3;;;;ADC" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC.h" value="HEADER;;;;;ADC" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC_INT.c" value="SOURCE_C;CortexM3;;;;ADC" />
@@ -66,12 +55,6 @@
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\PGA.c" value="SOURCE_C;CortexM3;;;;PGA" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\PGA.h" value="HEADER;;;;;PGA" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\PGA_PM.c" value="SOURCE_C;CortexM3;;;;PGA" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg.c" value="SOURCE_C;CortexM3;;;;LCD_Seg" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg.h" value="HEADER;;;;;LCD_Seg" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_INT.c" value="SOURCE_C;CortexM3;;;;LCD_Seg" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_Pins.c" value="SOURCE_C;CortexM3;;;;LCD_Seg" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_Pins.h" value="HEADER;;;;;LCD_Seg" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_PM.c" value="SOURCE_C;CortexM3;;;;LCD_Seg" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\DAC_WC1.c" value="SOURCE_C;CortexM3;;;;DAC_WC1" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\DAC_WC1.h" value="HEADER;;;;;DAC_WC1" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\DAC_WC2.c" value="SOURCE_C;CortexM3;;;;DAC_WC2" />
@@ -88,39 +71,6 @@
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Char.c" value="SOURCE_C;CortexM3;;;;LCD_Char" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Char.h" value="HEADER;;;;;LCD_Char" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Char_PM.c" value="SOURCE_C;CortexM3;;;;LCD_Char" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1.h" value="HEADER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_audio.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_audio.h" value="HEADER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_boot.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_cdc.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_cdc.h" value="HEADER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_cls.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_descr.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_drv.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_episr.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_hid.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_hid.h" value="HEADER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_pm.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_std.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_vnd.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_cdc.inf" value="OTHER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_midi.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_midi.h" value="HEADER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_pvt.h" value="HEADER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_cydmac.h" value="HEADER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_msc.c" value="SOURCE_C;CortexM3;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_msc.h" value="HEADER;;;;;USBUART_1" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_CompCH0.c" value="SOURCE_C;CortexM3;;;;CapSense_CompCH0" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_CompCH0.h" value="HEADER;;;;;CapSense_CompCH0" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_CompCH0_PM.c" value="SOURCE_C;CortexM3;;;;CapSense_CompCH0" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_IdacCH0.c" value="SOURCE_C;CortexM3;;;;CapSense_IdacCH0" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_IdacCH0.h" value="HEADER;;;;;CapSense_IdacCH0" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_IdacCH0_PM.c" value="SOURCE_C;CortexM3;;;;CapSense_IdacCH0" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_AMuxCH0.c" value="SOURCE_C;CortexM3;;;;CapSense_AMuxCH0" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_AMuxCH0.h" value="HEADER;;;;;CapSense_AMuxCH0" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_IntClock.c" value="SOURCE_C;CortexM3;;;;CapSense_IntClock" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\CapSense_IntClock.h" value="HEADER;;;;;CapSense_IntClock" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC_IRQ.c" value="SOURCE_C;CortexM3;;;;ADC_IRQ" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC_IRQ.h" value="HEADER;;;;;ADC_IRQ" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC_theACLK.c" value="SOURCE_C;CortexM3;;;;ADC_theACLK" />
@@ -137,14 +87,6 @@
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\WaveDAC8_IDAC8.c" value="SOURCE_C;CortexM3;;;;WaveDAC8_IDAC8" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\WaveDAC8_IDAC8.h" value="HEADER;;;;;WaveDAC8_IDAC8" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\WaveDAC8_IDAC8_PM.c" value="SOURCE_C;CortexM3;;;;WaveDAC8_IDAC8" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_Int_Clock.c" value="SOURCE_C;CortexM3;;;;LCD_Seg_Int_Clock" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_Int_Clock.h" value="HEADER;;;;;LCD_Seg_Int_Clock" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_Lcd_Dma_dma.c" value="SOURCE_C;CortexM3;;;;LCD_Seg_Lcd_Dma" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_Lcd_Dma_dma.h" value="HEADER;;;;;LCD_Seg_Lcd_Dma" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_Frame_Dma_dma.c" value="SOURCE_C;CortexM3;;;;LCD_Seg_Frame_Dma" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_Frame_Dma_dma.h" value="HEADER;;;;;LCD_Seg_Frame_Dma" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_TD_DoneInt.c" value="SOURCE_C;CortexM3;;;;LCD_Seg_TD_DoneInt" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Seg_TD_DoneInt.h" value="HEADER;;;;;LCD_Seg_TD_DoneInt" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\UART_1_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_1_IntClock" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\UART_1_IntClock.h" value="HEADER;;;;;UART_1_IntClock" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\MatrixKbLED_isr_MKbLED.c" value="SOURCE_C;CortexM3;;;;MatrixKbLED_isr_MKbLED" />
@@ -152,12 +94,6 @@
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Char_LCDPort_aliases.h" value="HEADER;;;;;LCD_Char_LCDPort" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Char_LCDPort.c" value="SOURCE_C;CortexM3;;;;LCD_Char_LCDPort" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\LCD_Char_LCDPort.h" value="HEADER;;;;;LCD_Char_LCDPort" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_Dm_aliases.h" value="HEADER;;;;;USBUART_1_Dm" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_Dm.c" value="SOURCE_C;CortexM3;;;;USBUART_1_Dm" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_Dm.h" value="HEADER;;;;;USBUART_1_Dm" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_Dp_aliases.h" value="HEADER;;;;;USBUART_1_Dp" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_Dp.c" value="SOURCE_C;CortexM3;;;;USBUART_1_Dp" />
-  <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\USBUART_1_Dp.h" value="HEADER;;;;;USBUART_1_Dp" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Cm3RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Cm3Start.c" value="SOURCE_C;CortexM3;;;;cy_boot" />

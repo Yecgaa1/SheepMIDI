@@ -21,41 +21,8 @@
 
 extern void cyfitter_cfg(void);
 
-
-/* The CY_DMA_TD_PROTO_ENTRY structures are deprecated and will be removed in
- * a future version of PSoC Creator. These structures have been replaced by
- * entries in cyfitter.h, which can be accessed via ICyAPICustomize_v2. */
-#if defined(__GNUC__) || defined(__ARMCC_VERSION)
-#define CY_DEPRECATED __attribute__ ((deprecated))
-#else
-#define CY_DEPRECATED
-#endif
-
-struct CY_DMA_TD_PROTO_ENTRY
-{
-	uint8 offset;	/* offset of the first register in this TD */
-	uint8 length;	/* length of the register block in this TD */
-};
-
-extern const struct CY_DMA_TD_PROTO_ENTRY CYCODE LCD_Seg_Seg__DMA_TD_PROTO_BLOCK[2] CY_DEPRECATED;
-#define LCD_Seg_Seg__DMA_TD_PROTO_COUNT 2
-extern const struct CY_DMA_TD_PROTO_ENTRY CYCODE LCD_Seg_Com__DMA_TD_PROTO_BLOCK[1] CY_DEPRECATED;
-#define LCD_Seg_Com__DMA_TD_PROTO_COUNT 1
-
-#undef CY_DEPRECATED
-
 /* Analog Set/Unset methods */
 extern void SetAnalogRoutingPumps(uint8 enabled);
-extern void CapSense_AMuxCH0_Set(uint8 channel);
-extern void CapSense_AMuxCH0_Unset(uint8 channel);
-/* CapSense_AMuxCH0__addrTable is an implementation detail of the AMux.
-   Code that depends on it may be incompatible with other versions
-   of PSoC Creator. */
-extern uint8 CYXDATA * const CYCODE CapSense_AMuxCH0__addrTable[8];
-/* CapSense_AMuxCH0__maskTable is an implementation detail of the AMux.
-   Code that depends on it may be incompatible with other versions
-   of PSoC Creator. */
-extern const uint8 CYCODE CapSense_AMuxCH0__maskTable[8];
 
 
 #endif /* CYFITTER_CFG_H */

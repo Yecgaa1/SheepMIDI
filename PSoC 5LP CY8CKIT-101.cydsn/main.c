@@ -76,23 +76,12 @@ int main(void)
     /* 使能全局中断 */
     CYGlobalIntEnable;
 
-    /* 初始化CapSense组件，初始化基线并使能扫描 */
-    CapSense_Start();
-    CapSense_InitializeAllBaselines();
-    CapSense_ScanEnabledWidgets();
-
-    /* 初始化VDAC8、PGA和ADC组件 */
-    VDAC8_Start();
-    PGA_Start();
-    ADC_Start();
     UART_1_Start();
     UART_1_PutString("hello!");
 
     /* 初始化WaveDAC8组件 */
     WaveDAC8_Start();
 
-    /* 初始化段式LCD组件 */
-    LCD_Seg_Start();
 
     /* 初始化按键模块组件 */
     Button_Module_Start();
