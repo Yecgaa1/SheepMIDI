@@ -685,6 +685,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\isr_Tmr_Button.h" />
 <dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\DACWork.h" />
 <dep name=".\main.c" />
 </file>
 <file name=".\Generated_Source\PSoC5\ADC.h" />
@@ -744,6 +745,7 @@
 <file name=".\Generated_Source\PSoC5\cytypes.h" />
 <file name=".\Generated_Source\PSoC5\isr_Tmr_Button.h" />
 <file name=".\Generated_Source\PSoC5\project.h" />
+<file name=".\DACWork.h" />
 <file name=".\main.c" />
 <file name=".\ARM_GCC_541\Debug\DACWork.o">
 <dep name=".\Generated_Source\PSoC5\ADC.h" />
@@ -810,7 +812,6 @@
 <dep name=".\piano.h" />
 </file>
 <file name=".\DACWork.c" />
-<file name=".\DACWork.h" />
 <file name=".\piano.h" />
 <file name=".\ARM_GCC_541\Debug\ADC.o">
 <dep name=".\Generated_Source\PSoC5\ADC.h" />
@@ -2429,7 +2430,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="133807938064363677" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="133807942591155120" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

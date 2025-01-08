@@ -65,15 +65,15 @@ extern bool WC1Update, WC2Update;
  */
 int main(void)
 {
-    int16 adc_count = 0;   // A/D转换后的数值
-    int32 mVolts = 0;      // 由A/D数值换算后的mV数
-    uint8 dac_val = 0x20u; // VDAC8输入数据
+    // int16 adc_count = 0;   // A/D转换后的数值
+    // int32 mVolts = 0;      // 由A/D数值换算后的mV数
+    // uint8 dac_val = 0x20u; // VDAC8输入数据
 
-    uint8 cntr_wavedac8 = 0, cntr_adc = 0; // 软件定时器的计数器，用于切换WaveDAC8输出波形、开始A/D转换
+    // uint8 cntr_wavedac8 = 0, cntr_adc = 0; // 软件定时器的计数器，用于切换WaveDAC8输出波形、开始A/D转换
 
-    uint8 msg, button_num, button_act; // 按键消息、按键编号、按键动作类型
+    // uint8 msg, button_num, button_act; // 按键消息、按键编号、按键动作类型
 
-    uint8 slider_pos = 0xFFu, slider_pos_last = 0xFFu; // 电容感应滑条的当前、最近触摸位置，0xFF为未触摸
+    // uint8 slider_pos = 0xFFu, slider_pos_last = 0xFFu; // 电容感应滑条的当前、最近触摸位置，0xFF为未触摸
 
     /* 使能全局中断 */
     CYGlobalIntEnable;
@@ -149,7 +149,7 @@ void MatrixKbLED_Task(void)
     static uint8 tff = 0;            /* 等效T触发器，用于实现流水灯效果 */
     static uint8 barled_lvl = 0;     /* LED灯条的指示级 */
     static uint32 leds = LED_D0_S0B; /* 指定需点亮或者熄灭的若干个LED */
-    static uint32 keys_prev = 0;     /* 保存上一次的各按键开合状态 */
+    // static uint32 keys_prev = 0;     /* 保存上一次的各按键开合状态 */
     uint32 keys;                     /* 保存当前的各按键开合状态 */
     uint8 qdat;                      /* 保存按键消息 */
     uint8 rc;                        /* 保存按键所在的行列号 */
