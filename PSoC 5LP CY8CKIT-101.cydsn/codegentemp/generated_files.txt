@@ -76,6 +76,13 @@
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\UART_2_PM.c" value="SOURCE_C;CortexM3;;;;UART_2" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\UART_2_INT.c" value="SOURCE_C;CortexM3;;;;UART_2" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\UART_2_BOOT.c" value="SOURCE_C;CortexM3;;;;UART_2" />
+  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Timer_CH1.c" value="SOURCE_C;CortexM3;;;;Timer_CH1" />
+  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Timer_CH1.h" value="HEADER;;;;;Timer_CH1" />
+  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Timer_CH1_PM.c" value="SOURCE_C;CortexM3;;;;Timer_CH1" />
+  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Clk_Tmr_CH1.c" value="SOURCE_C;CortexM3;;;;Clk_Tmr_CH1" />
+  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Clk_Tmr_CH1.h" value="HEADER;;;;;Clk_Tmr_CH1" />
+  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\isr_Tmr_CH1.c" value="SOURCE_C;CortexM3;;;;isr_Tmr_CH1" />
+  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\isr_Tmr_CH1.h" value="HEADER;;;;;isr_Tmr_CH1" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC_IRQ.c" value="SOURCE_C;CortexM3;;;;ADC_IRQ" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC_IRQ.h" value="HEADER;;;;;ADC_IRQ" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC_theACLK.c" value="SOURCE_C;CortexM3;;;;ADC_theACLK" />

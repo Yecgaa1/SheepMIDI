@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Jan 8 2025 14:55:53
+#File Generated:     Jan 8 2025 15:35:25
 
 #Purpose:            
 
@@ -44,17 +44,17 @@ Phase 2
 Phase 3
 
 Design Statistics after Packing
-    Number of Combinational MCs 	:	19
-    Number of Sequential MCs    	:	36
-    Number of DPs               	:	7
-    Number of Controls          	:	4
-    Number of Status            	:	5
+    Number of Combinational MCs 	:	20
+    Number of Sequential MCs    	:	37
+    Number of DPs               	:	9
+    Number of Controls          	:	5
+    Number of Status            	:	6
     Number of SyncCells         	:	2
     Number of count7cells       	:	2
 
 Device Utilization Summary after Packing
-    Macrocells                  :	55/192
-    UDBS                        :	10/24
+    Macrocells                  :	57/192
+    UDBS                        :	12/24
     IOs                         :	16/72
 
 
@@ -79,20 +79,21 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 14
+Number of clocks: 15
 Clock: ADC_theACLK          | Frequency: N/A       | Target:   1.8 MHz
 Clock: ADC_theACLK(fixed-function) | Frequency: N/A       | Target:   1.8 MHz
-Clock: Clk_Tmr_Button       | Frequency: 101.2 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_Button       | Frequency:  76.6 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_CH1          | Frequency:  77.5 MHz | Target:   0.0 MHz
 Clock: Clock_500Hz          | Frequency: N/A       | Target:   0.0 MHz
 Clock: Clock_500Hz(routed)  | Frequency: N/A       | Target:   0.0 MHz
-Clock: CyBUS_CLK            | Frequency:  66.3 MHz | Target:  36.0 MHz
+Clock: CyBUS_CLK            | Frequency:  56.1 MHz | Target:  36.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  36.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  36.0 MHz
-Clock: UART_1_IntClock      | Frequency:  59.6 MHz | Target:   0.9 MHz
-Clock: UART_2_IntClock      | Frequency:  62.7 MHz | Target:   0.9 MHz
-Clock: WaveDAC8_DacClk      | Frequency:  95.8 MHz | Target:   0.0 MHz
+Clock: UART_1_IntClock      | Frequency:  56.1 MHz | Target:   0.9 MHz
+Clock: UART_2_IntClock      | Frequency:  60.4 MHz | Target:   0.9 MHz
+Clock: WaveDAC8_DacClk      | Frequency:  86.7 MHz | Target:   0.0 MHz
 Clock: WaveDAC8_DacClk(routed) | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
@@ -105,17 +106,17 @@ Phase 7
 D2088: Phase 7, elapsed time : 0.0 (sec)
 
 Final Design Statistics
-    Number of Combinational MCs 	:	19
-    Number of Sequential MCs    	:	36
-    Number of DPs               	:	7
-    Number of Controls          	:	4
-    Number of Status            	:	5
+    Number of Combinational MCs 	:	20
+    Number of Sequential MCs    	:	37
+    Number of DPs               	:	9
+    Number of Controls          	:	5
+    Number of Status            	:	6
     Number of SyncCells         	:	2
     Number of count7cells       	:	2
     Number of IOs       	:	16
 
 Device Utilization Summary
-    Macrocells                  :	55/192
+    Macrocells                  :	57/192
     IOs                         :	16/72
 
 
@@ -132,20 +133,21 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 14
+Number of clocks: 15
 Clock: ADC_theACLK          | Frequency: N/A       | Target:   1.8 MHz
 Clock: ADC_theACLK(fixed-function) | Frequency: N/A       | Target:   1.8 MHz
-Clock: Clk_Tmr_Button       | Frequency: 101.2 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_Button       | Frequency:  76.6 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_CH1          | Frequency:  77.5 MHz | Target:   0.0 MHz
 Clock: Clock_500Hz          | Frequency: N/A       | Target:   0.0 MHz
 Clock: Clock_500Hz(routed)  | Frequency: N/A       | Target:   0.0 MHz
-Clock: CyBUS_CLK            | Frequency:   2.4 MHz | Target:  36.0 MHz
+Clock: CyBUS_CLK            | Frequency:   2.0 MHz | Target:  36.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  36.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  36.0 MHz
-Clock: UART_1_IntClock      | Frequency:   2.4 MHz | Target:   0.9 MHz
-Clock: UART_2_IntClock      | Frequency:   2.7 MHz | Target:   0.9 MHz
-Clock: WaveDAC8_DacClk      | Frequency:   3.4 MHz | Target:   0.0 MHz
+Clock: UART_1_IntClock      | Frequency:   2.0 MHz | Target:   0.9 MHz
+Clock: UART_2_IntClock      | Frequency:   3.1 MHz | Target:   0.9 MHz
+Clock: WaveDAC8_DacClk      | Frequency:   3.1 MHz | Target:   0.0 MHz
 Clock: WaveDAC8_DacClk(routed) | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
@@ -165,20 +167,21 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 14
+Number of clocks: 15
 Clock: ADC_theACLK          | Frequency: N/A       | Target:   1.8 MHz
 Clock: ADC_theACLK(fixed-function) | Frequency: N/A       | Target:   1.8 MHz
-Clock: Clk_Tmr_Button       | Frequency: 101.2 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_Button       | Frequency:  76.6 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_CH1          | Frequency:  77.5 MHz | Target:   0.0 MHz
 Clock: Clock_500Hz          | Frequency: N/A       | Target:   0.0 MHz
 Clock: Clock_500Hz(routed)  | Frequency: N/A       | Target:   0.0 MHz
-Clock: CyBUS_CLK            | Frequency:   2.4 MHz | Target:  36.0 MHz
+Clock: CyBUS_CLK            | Frequency:   2.0 MHz | Target:  36.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  36.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  36.0 MHz
-Clock: UART_1_IntClock      | Frequency:   2.4 MHz | Target:   0.9 MHz
-Clock: UART_2_IntClock      | Frequency:   2.9 MHz | Target:   0.9 MHz
-Clock: WaveDAC8_DacClk      | Frequency:   3.4 MHz | Target:   0.0 MHz
+Clock: UART_1_IntClock      | Frequency:   2.0 MHz | Target:   0.9 MHz
+Clock: UART_2_IntClock      | Frequency:   3.1 MHz | Target:   0.9 MHz
+Clock: WaveDAC8_DacClk      | Frequency:   3.1 MHz | Target:   0.0 MHz
 Clock: WaveDAC8_DacClk(routed) | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
@@ -191,39 +194,40 @@ Phase 7
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 14
+Number of clocks: 15
 Clock: ADC_theACLK          | Frequency: N/A       | Target:   1.8 MHz
 Clock: ADC_theACLK(fixed-function) | Frequency: N/A       | Target:   1.8 MHz
-Clock: Clk_Tmr_Button       | Frequency: 101.2 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_Button       | Frequency:  81.8 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_CH1          | Frequency:  77.5 MHz | Target:   0.0 MHz
 Clock: Clock_500Hz          | Frequency: N/A       | Target:   0.0 MHz
 Clock: Clock_500Hz(routed)  | Frequency: N/A       | Target:   0.0 MHz
-Clock: CyBUS_CLK            | Frequency:   2.4 MHz | Target:  36.0 MHz
+Clock: CyBUS_CLK            | Frequency:   2.6 MHz | Target:  36.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  36.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  36.0 MHz
-Clock: UART_1_IntClock      | Frequency:   2.4 MHz | Target:   0.9 MHz
-Clock: UART_2_IntClock      | Frequency:   3.2 MHz | Target:   0.9 MHz
-Clock: WaveDAC8_DacClk      | Frequency:   3.4 MHz | Target:   0.0 MHz
+Clock: UART_1_IntClock      | Frequency:   2.6 MHz | Target:   0.9 MHz
+Clock: UART_2_IntClock      | Frequency:   3.1 MHz | Target:   0.9 MHz
+Clock: WaveDAC8_DacClk      | Frequency:   3.1 MHz | Target:   0.0 MHz
 Clock: WaveDAC8_DacClk(routed) | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.3 (sec)
+D2088: Phase 7, elapsed time : 0.4 (sec)
 
 Final Design Statistics
-    Number of Combinational MCs 	:	19
-    Number of Sequential MCs    	:	36
-    Number of DPs               	:	7
-    Number of Controls          	:	4
-    Number of Status            	:	5
+    Number of Combinational MCs 	:	20
+    Number of Sequential MCs    	:	37
+    Number of DPs               	:	9
+    Number of Controls          	:	5
+    Number of Status            	:	6
     Number of SyncCells         	:	2
     Number of count7cells       	:	2
     Number of IOs       	:	16
 
 Device Utilization Summary
-    Macrocells                  :	55/192
+    Macrocells                  :	57/192
     IOs                         :	16/72
 
 
@@ -240,20 +244,21 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 14
+Number of clocks: 15
 Clock: ADC_theACLK          | Frequency: N/A       | Target:   1.8 MHz
 Clock: ADC_theACLK(fixed-function) | Frequency: N/A       | Target:   1.8 MHz
-Clock: Clk_Tmr_Button       | Frequency:  87.7 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_Button       | Frequency:  81.8 MHz | Target:   0.0 MHz
+Clock: Clk_Tmr_CH1          | Frequency:  77.5 MHz | Target:   0.0 MHz
 Clock: Clock_500Hz          | Frequency: N/A       | Target:   0.0 MHz
 Clock: Clock_500Hz(routed)  | Frequency: N/A       | Target:   0.0 MHz
-Clock: CyBUS_CLK            | Frequency:   2.6 MHz | Target:  36.0 MHz
+Clock: CyBUS_CLK            | Frequency:   2.7 MHz | Target:  36.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  36.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  36.0 MHz
-Clock: UART_1_IntClock      | Frequency:   2.6 MHz | Target:   0.9 MHz
-Clock: UART_2_IntClock      | Frequency:   3.4 MHz | Target:   0.9 MHz
-Clock: WaveDAC8_DacClk      | Frequency:   3.4 MHz | Target:   0.0 MHz
+Clock: UART_1_IntClock      | Frequency:   2.7 MHz | Target:   0.9 MHz
+Clock: UART_2_IntClock      | Frequency:   2.7 MHz | Target:   0.9 MHz
+Clock: WaveDAC8_DacClk      | Frequency:   3.1 MHz | Target:   0.0 MHz
 Clock: WaveDAC8_DacClk(routed) | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
@@ -265,5 +270,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 1.1 sec.
+I2076: Total run-time: 0.8 sec.
 

@@ -51,6 +51,8 @@
 void MatrixKbLED_Task(void);
 void LCD_Indicator(uint8 msg, uint32 key_statuses);
 extern bool WC1Update, WC2Update;
+
+
 /*******************************************************************************
  *                                    main()
  *
@@ -95,6 +97,9 @@ int main(void)
     uint8_t WC2_Output[50];
     WaveDAC8_Wave1Setup(WC1_Output, 50);
     WaveDAC8_Wave2Setup(WC2_Output, 50);
+    // uint8 time = 0;
+    
+
     while (1)
     {
         // 串口检查
@@ -110,16 +115,19 @@ int main(void)
         if (WC1Update)
         {
             WC1Update = false;
-            synthesize(WC1_Output);
+            Synthesize(WC1_Output);
         }
         else if (WC2Update)
         {
             WC2Update = false;
-            synthesize(WC2_Output);
+            Synthesize(WC2_Output);
         }
         /* Timer_Button定时器运行了一个周期（默认为BUTTON_SAMPLE_PERIOD_MS =20ms）*/
         if ((Timer_Button_ReadStatusRegister() & Timer_Button_STATUS_TC) != 0)
         {
+            // char tmp[20] = "";
+            // sprintf(tmp, "%d\r\n", time++);
+            // UART_1_PutString(tmp);
             MatrixKbLED_Task(); /* 周期性运行MatrixKbLED任务 */
         }
     }
@@ -150,9 +158,9 @@ void MatrixKbLED_Task(void)
     static uint8 barled_lvl = 0;     /* LED灯条的指示级 */
     static uint32 leds = LED_D0_S0B; /* 指定需点亮或者熄灭的若干个LED */
     // static uint32 keys_prev = 0;     /* 保存上一次的各按键开合状态 */
-    uint32 keys;                     /* 保存当前的各按键开合状态 */
-    uint8 qdat;                      /* 保存按键消息 */
-    uint8 rc;                        /* 保存按键所在的行列号 */
+    uint32 keys; /* 保存当前的各按键开合状态 */
+    uint8 qdat;  /* 保存按键消息 */
+    uint8 rc;    /* 保存按键所在的行列号 */
 
     /* cnt4Marquee于0~4之间循环递增 */
     cnt4Marquee = (cnt4Marquee < 5 - 1) ? cnt4Marquee + 1 : 0;
