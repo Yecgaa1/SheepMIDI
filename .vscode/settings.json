@@ -2,6 +2,7 @@
     "files.associations": {
         "project.h": "c",
         "piano.h": "c",
-        "dacwork.h": "c"
+        "dacwork.h": "c",
+        "uart_1.h": "c"
     }
 }

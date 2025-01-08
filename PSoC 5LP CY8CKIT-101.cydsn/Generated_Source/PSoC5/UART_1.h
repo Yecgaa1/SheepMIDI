@@ -31,22 +31,22 @@
 #define UART_1_RX_ENABLED                     (1u)
 #define UART_1_TX_ENABLED                     (1u)
 #define UART_1_HD_ENABLED                     (0u)
-#define UART_1_RX_INTERRUPT_ENABLED           (0u)
+#define UART_1_RX_INTERRUPT_ENABLED           (1u)
 #define UART_1_TX_INTERRUPT_ENABLED           (1u)
 #define UART_1_INTERNAL_CLOCK_USED            (1u)
 #define UART_1_RXHW_ADDRESS_ENABLED           (0u)
 #define UART_1_OVER_SAMPLE_COUNT              (8u)
 #define UART_1_PARITY_TYPE                    (0u)
 #define UART_1_PARITY_TYPE_SW                 (0u)
-#define UART_1_BREAK_DETECT                   (0u)
-#define UART_1_BREAK_BITS_TX                  (13u)
-#define UART_1_BREAK_BITS_RX                  (13u)
+#define UART_1_BREAK_DETECT                   (1u)
+#define UART_1_BREAK_BITS_TX                  (11u)
+#define UART_1_BREAK_BITS_RX                  (11u)
 #define UART_1_TXCLKGEN_DP                    (1u)
 #define UART_1_USE23POLLING                   (1u)
 #define UART_1_FLOW_CONTROL                   (0u)
 #define UART_1_CLK_FREQ                       (0u)
 #define UART_1_TX_BUFFER_SIZE                 (22u)
-#define UART_1_RX_BUFFER_SIZE                 (4u)
+#define UART_1_RX_BUFFER_SIZE                 (22u)
 
 /* Check to see if required defines such as CY_PSOC5LP are available */
 /* They are defined starting with cy_boot v3.0 */
@@ -359,12 +359,12 @@ extern uint8 UART_1_initVar;
 #endif /* (UART_1_RXHW_ADDRESS_ENABLED) */
 
 #define UART_1_INIT_RX_INTERRUPTS_MASK \
-                                  (uint8)((0 << UART_1_RX_STS_FIFO_NOTEMPTY_SHIFT) \
+                                  (uint8)((1 << UART_1_RX_STS_FIFO_NOTEMPTY_SHIFT) \
                                         | (0 << UART_1_RX_STS_MRKSPC_SHIFT) \
                                         | (0 << UART_1_RX_STS_ADDR_MATCH_SHIFT) \
                                         | (0 << UART_1_RX_STS_PAR_ERROR_SHIFT) \
                                         | (0 << UART_1_RX_STS_STOP_ERROR_SHIFT) \
-                                        | (1 << UART_1_RX_STS_BREAK_SHIFT) \
+                                        | (0 << UART_1_RX_STS_BREAK_SHIFT) \
                                         | (0 << UART_1_RX_STS_OVERRUN_SHIFT))
 
 #define UART_1_INIT_TX_INTERRUPTS_MASK \

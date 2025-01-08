@@ -1,4 +1,4 @@
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\TopDesign\TopDesign.cysch
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\TopDesign\TopDesign.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.pdf
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cystate
@@ -213,10 +213,10 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrim
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\Resources.Designer.cs
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\cybitfieldcontrol.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\Resources.resx
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Button_Module_Macro_v1_1\Button_Module_Macro_v1_1.cysym
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Button_Module_Macro_v1_1\PSoC5\API\Button_Module_Macro_v1_1.h
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Button_Module_Macro_v1_1\PSoC5\API\Button_Module_Macro_v1_1.c
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Button_Module_Macro_v1_1
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Button_Module_Macro_v1_1\Button_Module_Macro_v1_1.cysym
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Button_Module_Macro_v1_1\PSoC5\API\Button_Module_Macro_v1_1.h
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Button_Module_Macro_v1_1\PSoC5\API\Button_Module_Macro_v1_1.c
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Button_Module_Macro_v1_1
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\Resistor_v1_0\Resistor_v1_0.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\Resistor_v1_0\Resistor_v1_0.pdf
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\Resistor_v1_0\version.cypatch
@@ -313,11 +313,11 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComp
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\UART_v2_50\Custom\Resources.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\MatrixKbLED_8p_v1_0.cysym
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\MatrixKbLED_8p_v1_0_comp_ds.pdf
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\API\MatrixKbLED_8p_v1_0.h
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\API\MatrixKbLED_8p_v1_0.c
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\PSoC5\MatrixKbLED_8p_v1_0.cysch
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\MatrixKbLED_8p_v1_0.cysym
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\MatrixKbLED_8p_v1_0_comp_ds.pdf
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\API\MatrixKbLED_8p_v1_0.h
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\API\MatrixKbLED_8p_v1_0.c
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\MatrixKbLED_8p_v1_0\PSoC5\MatrixKbLED_8p_v1_0.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CharLCD_v2_20\CharLCD_v2_20.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CharLCD_v2_20\CharLCD_v2_20.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CharLCD_v2_20\CharLCD_v2_20.pdf
@@ -338,7 +338,7 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComp
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycharlcdcontrol.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycustomcharacter.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\Resources.resx
-C:\GitProject\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\PSoC 5LP CY8CKIT-101.cydwr
+G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\PSoC 5LP CY8CKIT-101.cydwr
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_40\PSoC5\API\cm3gcc.ld
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_40\PSoC5\API\Cm3RealView.scat
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_40\PSoC5\API\Cm3Start.c

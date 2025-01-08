@@ -1,5 +1,5 @@
 # PSoC 5LP CY8CKIT-101
-# 2025-01-08 02:52:41Z
+# 2025-01-08 06:55:53Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -12,8 +12,10 @@ set_io "\ADC:Bypass(0)\" iocell 0 2
 set_io "Vo2(0)" iocell 6 5
 set_io "Pin_SW3(0)" iocell 15 5
 set_io "Pin_SW2(0)" iocell 6 1
-set_io "Rx_1(0)" iocell 1 6
-set_io "Tx_1(0)" iocell 1 7
+set_io "Rx_Debug(0)" iocell 1 6
+set_io "Tx_Debug(0)" iocell 1 7
+set_io "Rx_Screen(0)" iocell 5 0
+set_io "Tx_Screen(0)" iocell 5 1
 set_location "\ADC:ADC_SAR\" sarcell -1 -1 1
 set_location "\WaveDAC8:IDAC8:viDAC8\" vidaccell -1 -1 0
 set_location "\VDAC8:viDAC8\" vidaccell -1 -1 3

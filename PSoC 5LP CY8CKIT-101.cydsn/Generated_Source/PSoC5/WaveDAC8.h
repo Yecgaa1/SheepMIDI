@@ -27,8 +27,8 @@
 *  Initial Parameter Constants
 ***************************************/
 
-#define WaveDAC8_WAVE1_TYPE     (1u)     /* Waveform for wave1 */
-#define WaveDAC8_WAVE2_TYPE     (1u)     /* Waveform for wave2 */
+#define WaveDAC8_WAVE1_TYPE     (0u)     /* Waveform for wave1 */
+#define WaveDAC8_WAVE2_TYPE     (0u)     /* Waveform for wave2 */
 #define WaveDAC8_SINE_WAVE      (0u)
 #define WaveDAC8_SQUARE_WAVE    (1u)
 #define WaveDAC8_TRIANGLE_WAVE  (2u)

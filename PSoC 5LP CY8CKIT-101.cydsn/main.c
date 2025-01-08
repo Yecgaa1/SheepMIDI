@@ -26,6 +26,8 @@
  */
 #include "project.h"
 #include "stdbool.h"
+#include "stdio.h"
+#include "DACWork.h"
 /* 定义此宏表示VDAC8至ADC的总误差已校正 */
 #define VDAC_TO_ADC_CALIBRATED
 
@@ -82,7 +84,6 @@ int main(void)
     /* 初始化WaveDAC8组件 */
     WaveDAC8_Start();
 
-
     /* 初始化按键模块组件 */
     Button_Module_Start();
 
@@ -96,135 +97,30 @@ int main(void)
     WaveDAC8_Wave2Setup(WC2_Output, 50);
     while (1)
     {
+        // 串口检查
+        char tmp[20] = "";
+        // sprintf(tmp,"%d\r\n",UART_1_GetRxBufferSize());
+        uint8 t = UART_1_GetRxBufferSize();
+        for (uint8 i = 0; i < t; i++)
+        {
+            tmp[i] = UART_1_GetChar();
+        }
+        UART_1_PutString(tmp);
+        // DAC更新
         if (WC1Update)
         {
             WC1Update = false;
             synthesize(WC1_Output);
-            // WaveDAC8_Wave1Setup(synthesizedOutput, 50);
         }
         else if (WC2Update)
         {
             WC2Update = false;
             synthesize(WC2_Output);
-            // WaveDAC8_Wave2Setup(synthesizedOutput, 50);
         }
-        /* Timer_Button定时器运行了一个周期（默认为BUTTON_SAMPLE_PERIOD_MS =20ms）？ */
+        /* Timer_Button定时器运行了一个周期（默认为BUTTON_SAMPLE_PERIOD_MS =20ms）*/
         if ((Timer_Button_ReadStatusRegister() & Timer_Button_STATUS_TC) != 0)
         {
             MatrixKbLED_Task(); /* 周期性运行MatrixKbLED任务 */
-            // /* 【任务1】：每200ms执行一次A/D测量及其结果的显示 */
-            // cntr_adc = (cntr_adc < (200 / BUTTON_SAMPLE_PERIOD_MS) - 1) ? cntr_adc + 1 : 0;
-            // if (cntr_adc == 0)
-            // {
-            //     /* 开始新一次A/D转换 */
-            //     ADC_StartConvert();
-
-            //     /* 等待A/D转换结束 */
-            //     ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
-
-            //     /* 获取A/D转换数值 */
-            //     adc_count = ADC_GetResult16();
-
-            //     /* 由A/D数值换算得出mV数 */
-            //     mVolts = ADC_CountsTo_mVolts(adc_count);
-
-            //     /* 校正VDAC8至ADC的总误差 */
-            //     mVolts = (mVolts >= V0_READ_BEFORE_CAL) ? mVolts - V0_READ_BEFORE_CAL : 0;
-            //     mVolts = mVolts * GAIN_FACTOR_COR; // 勿写为mVolts *= GAIN_FACTOR_COR;
-            //     mVolts += V0_ACTUAL;
-            //     if (mVolts < 0)
-            //     {
-            //         mVolts = 0;
-            //     }
-
-            //     /* 显示测量的mV数 */
-            //     if (mVolts != 0)
-            //     {
-            //         LCD_Seg_Write7SegNumber_0(mVolts, 0, 0);
-            //     }
-            //     else
-            //     {
-            //         LCD_Seg_Write7SegDigit_0(0, 0);
-            //     }
-
-            //     /* >=2145mV时为可靠的高电平（3.3V电源时），在屏的左上侧显示小三角标识 */
-            //     if (mVolts >= 2145)
-            //     {
-            //         LCD_Seg_WritePixel(LCD_Seg_T1, LCD_Seg_PIXEL_STATE_ON);
-            //     }
-            //     /* <=1155mV时为可靠的低电平（3.3V电源时），在屏的左下侧显示小三角标识 */
-            //     else if (mVolts <= 1155)
-            //     {
-            //         LCD_Seg_WritePixel(LCD_Seg_T2, LCD_Seg_PIXEL_STATE_ON);
-            //     }
-            //     /* >1155mV且<2145mV时，清除屏左侧的小三角标识 */
-            //     else
-            //     {
-            //         LCD_Seg_WritePixel(LCD_Seg_T1, LCD_Seg_PIXEL_STATE_OFF);
-            //         LCD_Seg_WritePixel(LCD_Seg_T2, LCD_Seg_PIXEL_STATE_OFF);
-            //     }
-            // }
-
-            // /* 【任务2】：每20ms检测一次电容感应滑条的触摸状态，并根据触摸位置调整屏的显示对比度 */
-            // /* 扫描完成，返回传感器扫描状态 */
-            // if (CapSense_IsBusy() == 0)
-            // {
-            //     /* 检查滑条是否正被触摸，并返回触摸位置 */
-            //     slider_pos = (uint8)CapSense_GetCentroidPos(CapSense_LINEARSLIDER0__LS);
-
-            //     /* 为所有使能的传感器更新基线 */
-            //     CapSense_UpdateEnabledBaselines();
-
-            //     /* 扫描所有使能的Widgets */
-            //     CapSense_ScanEnabledWidgets();
-            // }
-            // /* 若手指于滑条上有滑动，则根据新的触摸位置调整屏的显示对比度 */
-            // if (slider_pos_last != slider_pos)
-            // {
-            //     if (slider_pos <= 100)
-            //     {
-            //         LCD_Seg_SetBias(slider_pos / 2 + 14);
-            //     }
-            //     slider_pos_last = slider_pos;
-            // }
-
-            // /* 【任务3】：定期切换WaveDAC8的输出波形，以形成报警声效果 */
-            // /* 报警声的周期为2000ms */
-            // cntr_wavedac8 = (cntr_wavedac8 < (2000 / BUTTON_SAMPLE_PERIOD_MS) - 1) ? cntr_wavedac8 + 1 : 0;
-            // /* 高频1500Hz波形输出1.26s */
-            // if (cntr_wavedac8 == (200 / BUTTON_SAMPLE_PERIOD_MS) * 37 / 10)
-            // {
-            //     Control_Reg_Write(1); // 选择高频1500Hz输出波形
-            // }
-            // /* 低频700Hz波形输出0.74s */
-            // if (cntr_wavedac8 == 0)
-            // {
-            //     Control_Reg_Write(1); // 选择低频700Hz输出波形
-            // }
-
-            // /* 【任务4】：每20ms，进行一次按键消息获取及处理，根据按键动作递增或递减VDAC8输出电压 */
-            // /* 按键消息获取 */
-            // msg = Button_Module_GetMessage();
-            // /* 若有按键消息 */
-            // if (msg != 0xFFu)
-            // { /* 提取出按键编号和动作类型信息 */
-            //     button_num = (msg & MSG_BUTTON_NUM_MASK) >> MSG_BUTTON_NUM_MASK_SHIFTS;
-            //     button_act = (msg & MSG_BUTTON_ACTION_TYPE_MASK) >> MSG_BUTTON_ACTION_TYPE_MASK_SHIFTS;
-
-            //     /* 单击时 */
-            //     if (button_act == BUTTON_ACTION_TYPE_SGLCLICK)
-            //     {
-            //         if (button_num == 0) // SW2单击，递减直至0
-            //         {
-            //             dac_val = (dac_val > 0) ? dac_val - 1 : 0;
-            //         }
-            //         else if (button_num == 1) // SW3单击，递增直至3V
-            //         {
-            //             dac_val = (dac_val < 94u) ? dac_val + 1 : 94u;
-            //         }
-            //         VDAC8_SetValue(dac_val); // 更新VDAC8
-            //     }
-            // }
         }
     }
 }
