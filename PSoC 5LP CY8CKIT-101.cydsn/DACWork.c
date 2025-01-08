@@ -16,14 +16,14 @@ void InitSynthChannels()
     {
         for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++)
         {
-            synthChannels[ch].notes[n].data = NULL;
+            synthChannels[ch].notes[n].n_Sound = -1;
             synthChannels[ch].notes[n].current_step = 0;
             synthChannels[ch].notes[n].active = false;
         }
         synthChannels[ch].voiceFact = 1.0;
     }
 }
-bool addNote(int channel, const uint8_t (*noteData)[50])
+bool addNote(int channel, const uint8_t n_Sound)
 {
     if (channel < 0 || channel >= NUM_CHANNELS)
     {
@@ -35,12 +35,17 @@ bool addNote(int channel, const uint8_t (*noteData)[50])
     {
         if (!ch->notes[n].active)
         {
-            ch->notes[n].data = noteData;
+            ch->notes[n].n_Sound = n_Sound;
             ch->notes[n].current_step = 0;
             ch->notes[n].active = true;
+
+            // //可选，亮灯
+            FlashLed(n_Sound + 48);
+
             return true; // 成功添加
         }
     }
+
     return false; // 通道已满
 }
 
@@ -55,7 +60,7 @@ bool removeNote(int channel, int noteIndex)
     if (ch->notes[noteIndex].active)
     {
         ch->notes[noteIndex].active = false;
-        ch->notes[noteIndex].data = NULL;
+        ch->notes[noteIndex].n_Sound = -1;
         ch->notes[noteIndex].current_step = 0;
         return true; // 成功删除
     }
@@ -80,7 +85,7 @@ void Synthesize(uint8_t output[50])
         for (int n = 0; n < MAX_NOTES_PER_CHANNEL; n++)
         {
             SynthNote *note = &channel->notes[n];
-            if (note->active && note->data != NULL)
+            if (note->active && note->n_Sound != -1)
             {
                 // 确保当前步数在范围内
                 if (note->current_step < 48)
@@ -88,7 +93,7 @@ void Synthesize(uint8_t output[50])
                     // 合成当前步的50个数据点
                     for (int i = 0; i < 50; i++)
                     {
-                        temp[i] += (uint16)(note->data[note->current_step][i] * voiceFact);
+                        temp[i] += (uint16)(allNote[note->n_Sound][note->current_step][i] * voiceFact);
                     }
                     active_notes++; // 每个活跃音符贡献一次
                     // 移动到下一步
@@ -96,6 +101,10 @@ void Synthesize(uint8_t output[50])
                     // 如果音符合成完成，自动删除该音符
                     if (note->current_step >= 48)
                     {
+
+                        // 可选，灭灯
+                        FlashLed(note->n_Sound + 176);
+
                         // 使用 removeNote 函数删除音符
                         removeNote(ch, n);
                     }
@@ -152,15 +161,19 @@ static void Int_DAC_WC2_handler(void)
     WC2Update = true;
 }
 
-uint16 bpm = 161;
+uint16 bpm = 124;
 uint16 notePreBite = 3;
 uint16 CH1Period;
 uint8 trueNote = 12;
 float slowFact = 0.6; // 1就是100速度
+bool CH1Work = false, CH2Work = false, CH3Work = false;
 // CH1BPM中断器
 static void Int_Tmr_CH1_handler(void)
 {
-    read_score(&CH1_Score);
+    if (CH1Work)
+    {
+        read_score(&CH1_Score);
+    }
 }
 void InitCH1()
 {
@@ -179,6 +192,15 @@ void InitCH1()
 
 void InitDACWork()
 {
+    memcpy(allNote[0], DACData_C4, sizeof(DACData_C4));
+    memcpy(allNote[1], DACData_D4, sizeof(DACData_D4));
+    memcpy(allNote[2], DACData_E4, sizeof(DACData_E4));
+    memcpy(allNote[3], DACData_F4, sizeof(DACData_F4));
+    memcpy(allNote[4], DACData_G4, sizeof(DACData_G4));
+    memcpy(allNote[5], DACData_A4, sizeof(DACData_A4));
+    memcpy(allNote[6], DACData_B4, sizeof(DACData_B4));
+    memcpy(allNote[7], DACData_C5, sizeof(DACData_C5));
+
     DAC_WC1_ClearPending();
     DAC_WC1_StartEx(Int_DAC_WC1_handler);
     DAC_WC2_ClearPending();
@@ -193,30 +215,44 @@ void DACWork_key(uint8 key)
     switch (key)
     {
     case 0:
-        addNote(0, DACData_C4);
+        addNote(0, NOTE_C4);
         break;
     case 1:
-        addNote(0, DACData_D4);
+        addNote(0, NOTE_D4);
         break;
     case 2:
-        addNote(0, DACData_E4);
+        addNote(0, NOTE_E4);
         break;
     case 3:
-        addNote(0, DACData_F4);
+        addNote(0, NOTE_F4);
         break;
     case 4:
-        addNote(0, DACData_G4);
+        addNote(0, NOTE_G4);
         break;
     case 5:
-        addNote(0, DACData_A4);
+        addNote(0, NOTE_A4);
         break;
     case 6:
-        addNote(0, DACData_B4);
+        addNote(0, NOTE_B4);
         break;
     case 7:
-        addNote(0, DACData_C5);
+        addNote(0, NOTE_C5);
         break;
-
+    case 19:
+        CH1Work = true;
+        break;
+    case 20:
+        CH2Work = true;
+        break;
+    case 21:
+        CH2Work = true;
+        break;
+    case 147:
+        CH1Work = false;
+    case 148:
+        CH2Work = false;
+    case 149:
+        CH2Work = false;
     default:
         break;
     }
@@ -224,4 +260,23 @@ void DACWork_key(uint8 key)
     // {
     //     WaveDAC8_Start();
     // }
+}
+
+void FlashLed(uint16 led)
+{
+    uint8 rc = MatrixKbLED_KeySym2RC(led);
+    if ((led & 0x80) == 0)  // 按下
+    {                       /* 点亮对应行、列处的LED */
+        if ((rc >> 4) != 4) // 避开LED灯条
+        {
+            MatrixKbLED_SetLED_RC(rc >> 4, rc & 0x0Fu, LEDON);
+        }
+    }
+    else                    // 松开
+    {                       /* 熄灭对应行、列处的LED */
+        if ((rc >> 4) != 4) // 避开LED灯条
+        {
+            MatrixKbLED_SetLED_RC(rc >> 4, rc & 0x0Fu, LEDOFF);
+        }
+    }
 }

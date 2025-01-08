@@ -897,6 +897,73 @@
 <dep name=".\main.c" />
 </file>
 <file name=".\main.c" />
+<file name=".\ARM_GCC_541\Debug\piano.o">
+<dep name=".\Generated_Source\PSoC5\ADC.h" />
+<dep name=".\Generated_Source\PSoC5\ADC_Bypass.h" />
+<dep name=".\Generated_Source\PSoC5\ADC_Bypass_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\ADC_IRQ.h" />
+<dep name=".\Generated_Source\PSoC5\ADC_theACLK.h" />
+<dep name=".\Generated_Source\PSoC5\Button_Module.h" />
+<dep name=".\Generated_Source\PSoC5\CYDMAC.H" />
+<dep name=".\Generated_Source\PSoC5\CYFITTER.H" />
+<dep name=".\Generated_Source\PSoC5\Clk_Tmr_Button.h" />
+<dep name=".\Generated_Source\PSoC5\Clk_Tmr_CH1.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_500Hz.h" />
+<dep name=".\Generated_Source\PSoC5\Control_Reg.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\DAC_WC1.h" />
+<dep name=".\Generated_Source\PSoC5\DAC_WC2.h" />
+<dep name=".\Generated_Source\PSoC5\LCD_Char.h" />
+<dep name=".\Generated_Source\PSoC5\LCD_Char_LCDPort.h" />
+<dep name=".\Generated_Source\PSoC5\LCD_Char_LCDPort_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MatrixKbLED.h" />
+<dep name=".\Generated_Source\PSoC5\MatrixKbLED_isr_MKbLED.h" />
+<dep name=".\Generated_Source\PSoC5\PGA.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_SW2.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_SW2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_SW3.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_SW3_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_Button.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_CH1.h" />
+<dep name=".\Generated_Source\PSoC5\UART_1.h" />
+<dep name=".\Generated_Source\PSoC5\UART_1_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\UART_2.h" />
+<dep name=".\Generated_Source\PSoC5\UART_2_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\VDAC8.h" />
+<dep name=".\Generated_Source\PSoC5\Vo1.h" />
+<dep name=".\Generated_Source\PSoC5\Vo1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Vo2.h" />
+<dep name=".\Generated_Source\PSoC5\Vo2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\WaveDAC8.h" />
+<dep name=".\Generated_Source\PSoC5\WaveDAC8_DacClk.h" />
+<dep name=".\Generated_Source\PSoC5\WaveDAC8_IDAC8.h" />
+<dep name=".\Generated_Source\PSoC5\WaveDAC8_Wave1_DMA_dma.h" />
+<dep name=".\Generated_Source\PSoC5\WaveDAC8_Wave2_DMA_dma.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cmInstr.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\isr_Tmr_Button.h" />
+<dep name=".\Generated_Source\PSoC5\isr_Tmr_CH1.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\piano.c" />
+<dep name=".\piano.h" />
+</file>
+<file name=".\piano.c" />
 <file name=".\ARM_GCC_541\Debug\UartScreen.o">
 <dep name=".\Generated_Source\PSoC5\ADC.h" />
 <dep name=".\Generated_Source\PSoC5\ADC_Bypass.h" />
@@ -1737,73 +1804,6 @@
 <dep name=".\Generated_Source\PSoC5\isr_Tmr_CH1.c" />
 </file>
 <file name=".\Generated_Source\PSoC5\isr_Tmr_CH1.c" />
-<file name=".\ARM_GCC_541\Debug\piano.o">
-<dep name=".\Generated_Source\PSoC5\ADC.h" />
-<dep name=".\Generated_Source\PSoC5\ADC_Bypass.h" />
-<dep name=".\Generated_Source\PSoC5\ADC_Bypass_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\ADC_IRQ.h" />
-<dep name=".\Generated_Source\PSoC5\ADC_theACLK.h" />
-<dep name=".\Generated_Source\PSoC5\Button_Module.h" />
-<dep name=".\Generated_Source\PSoC5\CYDMAC.H" />
-<dep name=".\Generated_Source\PSoC5\CYFITTER.H" />
-<dep name=".\Generated_Source\PSoC5\Clk_Tmr_Button.h" />
-<dep name=".\Generated_Source\PSoC5\Clk_Tmr_CH1.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_500Hz.h" />
-<dep name=".\Generated_Source\PSoC5\Control_Reg.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\DAC_WC1.h" />
-<dep name=".\Generated_Source\PSoC5\DAC_WC2.h" />
-<dep name=".\Generated_Source\PSoC5\LCD_Char.h" />
-<dep name=".\Generated_Source\PSoC5\LCD_Char_LCDPort.h" />
-<dep name=".\Generated_Source\PSoC5\LCD_Char_LCDPort_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MatrixKbLED.h" />
-<dep name=".\Generated_Source\PSoC5\MatrixKbLED_isr_MKbLED.h" />
-<dep name=".\Generated_Source\PSoC5\PGA.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_SW2.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_SW2_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_SW3.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_SW3_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Timer_Button.h" />
-<dep name=".\Generated_Source\PSoC5\Timer_CH1.h" />
-<dep name=".\Generated_Source\PSoC5\UART_1.h" />
-<dep name=".\Generated_Source\PSoC5\UART_1_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\UART_2.h" />
-<dep name=".\Generated_Source\PSoC5\UART_2_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\VDAC8.h" />
-<dep name=".\Generated_Source\PSoC5\Vo1.h" />
-<dep name=".\Generated_Source\PSoC5\Vo1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Vo2.h" />
-<dep name=".\Generated_Source\PSoC5\Vo2_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\WaveDAC8.h" />
-<dep name=".\Generated_Source\PSoC5\WaveDAC8_DacClk.h" />
-<dep name=".\Generated_Source\PSoC5\WaveDAC8_IDAC8.h" />
-<dep name=".\Generated_Source\PSoC5\WaveDAC8_Wave1_DMA_dma.h" />
-<dep name=".\Generated_Source\PSoC5\WaveDAC8_Wave2_DMA_dma.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cmInstr.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\isr_Tmr_Button.h" />
-<dep name=".\Generated_Source\PSoC5\isr_Tmr_CH1.h" />
-<dep name=".\Generated_Source\PSoC5\project.h" />
-<dep name=".\piano.c" />
-<dep name=".\piano.h" />
-</file>
-<file name=".\piano.c" />
 <file name=".\ARM_GCC_541\Debug\CyBootAsmGnu.o">
 <dep name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
 <dep name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
@@ -2648,7 +2648,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="133808010816263232" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="133808102857173112" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
@@ -2717,7 +2717,7 @@
 <dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
 <CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
 <debugger_breakpoint_list>
-<CyGuid_76464711-0ae1-4583-b869-f07a0403fc6e type_name="CyDesigner.Common.Debugger.CyFileLineBreakpoint" version="1" hitcount="0" condition="" enabled="True" hardware="True" temparary="False" filename=".\DACWork.c" linenumber="113" />
+<CyGuid_76464711-0ae1-4583-b869-f07a0403fc6e type_name="CyDesigner.Common.Debugger.CyFileLineBreakpoint" version="1" hitcount="0" condition="" enabled="True" hardware="True" temparary="False" filename=".\DACWork.c" linenumber="108" />
 </debugger_breakpoint_list>
 </CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
 </dataGuid>
