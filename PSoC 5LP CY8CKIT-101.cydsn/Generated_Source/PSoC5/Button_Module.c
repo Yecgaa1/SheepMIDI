@@ -447,8 +447,8 @@ static inline ButtonBank Button_Module_GetCurrentPBStatus(uint8 bank)
      可在下方注释#START ～ #END之间添加获取其它开发板上的用户机械按键、及更多按键的状态读取代码 */
   val  = (ButtonBank)(BUTTON_ALL_OFF << NUM_BUTTONS);
   /* P6[1](SW2), P15[5](SW3) */
-  val |= (ButtonBank)((CyPins_ReadPin(Pin_SW2__0__PC) ==0)? BUTTON_ON : BUTTON_OFF);
-  val |= (ButtonBank)((CyPins_ReadPin(Pin_SW3__0__PC) ==0)? BUTTON_ON : BUTTON_OFF) <<1;
+  // val |= (ButtonBank)((CyPins_ReadPin(Pin_SW2__0__PC) ==0)? BUTTON_ON : BUTTON_OFF);
+  // val |= (ButtonBank)((CyPins_ReadPin(Pin_SW3__0__PC) ==0)? BUTTON_ON : BUTTON_OFF) <<1;
   /*************************************************************************
    *  Place your additional button status reads
    ************************************************************************/

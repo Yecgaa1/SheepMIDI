@@ -18,9 +18,6 @@
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Vo1_aliases.h" value="HEADER;;;;;Vo1" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Vo1.c" value="SOURCE_C;CortexM3;;;;Vo1" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Vo1.h" value="HEADER;;;;;Vo1" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC.c" value="SOURCE_C;CortexM3;;;;ADC" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC.h" value="HEADER;;;;;ADC" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\ADC_INT.c" value="SOURCE_C;CortexM3;;;;ADC" />
@@ -36,12 +33,6 @@
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Vo2.h" value="HEADER;;;;;Vo2" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Button_Module.h" value="HEADER;;;;;Button_Module" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Button_Module.c" value="SOURCE_C;CortexM3;;;;Button_Module" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Pin_SW3_aliases.h" value="HEADER;;;;;Pin_SW3" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Pin_SW3.c" value="SOURCE_C;CortexM3;;;;Pin_SW3" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Pin_SW3.h" value="HEADER;;;;;Pin_SW3" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Pin_SW2_aliases.h" value="HEADER;;;;;Pin_SW2" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Pin_SW2.c" value="SOURCE_C;CortexM3;;;;Pin_SW2" />
-  <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Pin_SW2.h" value="HEADER;;;;;Pin_SW2" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Clk_Tmr_Button.c" value="SOURCE_C;CortexM3;;;;Clk_Tmr_Button" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Clk_Tmr_Button.h" value="HEADER;;;;;Clk_Tmr_Button" />
   <file name="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\codegentemp\Timer_Button.c" value="SOURCE_C;CortexM3;;;;Timer_Button" />

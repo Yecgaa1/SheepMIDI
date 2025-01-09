@@ -117,20 +117,11 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_IDAC8.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_IDAC8.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_IDAC8_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vo1_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vo1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vo1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vo2_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vo2.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vo2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_Module.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_Module.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_SW3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_SW3.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_SW3.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_SW2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_SW2.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_SW2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clk_Tmr_Button.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clk_Tmr_Button.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_Button.c</File>

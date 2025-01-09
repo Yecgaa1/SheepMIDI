@@ -40,6 +40,9 @@
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>PSoC 5LP CY8CKIT-101</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101</v>
+<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\TopDesign</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\Pins</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101.cydwr\Analog</v>
@@ -84,9 +87,6 @@
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source\PSoC5\MatrixKbLED</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source\PSoC5\MatrixKbLED_isr_MKbLED</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source\PSoC5\PGA</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source\PSoC5\Pin_SW2</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source\PSoC5\Pin_SW3</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\Generated_Source\PSoC5\Timer_Button</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101">
@@ -209,8 +209,6 @@
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\PGA.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\PGA_PM.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\piano.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_SW2.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_SW3.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Button.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_Button_PM.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_CH1.lst</v>
@@ -232,7 +230,6 @@
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\UartScreen.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC8.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC8_PM.lst</v>
-<v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Vo1.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\Vo2.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8.lst</v>
 <v>PSoC 5LP CY8CKIT-101\PSoC 5LP CY8CKIT-101\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_DacClk.lst</v>

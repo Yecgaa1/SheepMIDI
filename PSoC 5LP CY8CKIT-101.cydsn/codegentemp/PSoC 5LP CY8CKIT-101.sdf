@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2025-01-09T06:24:19Z")
+ (DATE "2025-01-09T07:40:05Z")
  (DESIGN "PSoC 5LP CY8CKIT-101")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -507,8 +507,6 @@
     (INTERCONNECT \\Timer_CH3\:TimerUDB\:sT16\:timerdp\:u0\\.cfbo \\Timer_CH3\:TimerUDB\:sT16\:timerdp\:u1\\.cfbi (0.000:0.000:0.000))
     (INTERCONNECT \\Timer_CH3\:TimerUDB\:sT16\:timerdp\:u1\\.sor \\Timer_CH3\:TimerUDB\:sT16\:timerdp\:u0\\.sil (0.000:0.000:0.000))
     (INTERCONNECT \\Timer_CH3\:TimerUDB\:sT16\:timerdp\:u1\\.cmsbo \\Timer_CH3\:TimerUDB\:sT16\:timerdp\:u0\\.cmsbi (0.000:0.000:0.000))
-    (INTERCONNECT Pin_SW3\(0\)_PAD Pin_SW3\(0\).pad_in (0.000:0.000:0.000))
-    (INTERCONNECT Pin_SW2\(0\)_PAD Pin_SW2\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Rx_Debug\(0\)_PAD Rx_Debug\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Tx_Debug\(0\).pad_out Tx_Debug\(0\)_PAD (0.000:0.000:0.000))
     (INTERCONNECT Tx_Debug\(0\)_PAD Tx_Debug\(0\).pad_in (0.000:0.000:0.000))
