@@ -1,4 +1,4 @@
---------------- Build Started: 01/09/2025 11:31:04 Project: PSoC 5LP CY8CKIT-101, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 01/09/2025 12:01:11 Project: PSoC 5LP CY8CKIT-101, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_541\Debug/DACWork.lst -g -Wall -ffunction-sections -ffat-lto-objects -O0 -c DACWork.c -o .\ARM_GCC_541\Debug\DACWork.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_541\Debug/piano.lst -g -Wall -ffunction-sections -ffat-lto-objects -O0 -c piano.c -o .\ARM_GCC_541\Debug\piano.o
@@ -11,6 +11,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S "G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\ARM_GCC_541\Debug\PSoC 5LP CY8CKIT-101.elf"
-Flash used: 65160 of 262144 bytes (24.9%).
+Flash used: 79560 of 262144 bytes (30.3%).
 SRAM used: 21909 of 65536 bytes (33.4%). Stack: 16384 bytes. Heap: 4096 bytes.
---------------- Build Succeeded: 01/09/2025 11:31:09 ---------------
+--------------- Build Succeeded: 01/09/2025 12:01:13 ---------------
