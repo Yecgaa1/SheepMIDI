@@ -41,7 +41,7 @@ bool addNote(int channel, const uint8_t n_Sound)
             ch->notes[n].active = true;
 
             // //可选，亮灯
-            FlashLed(n_Sound + 48);
+            FlashLed((n_Sound % 7) + 48);
 
             return true; // 成功添加
         }
@@ -75,7 +75,7 @@ void Synthesize(uint8_t output[50])
 
     // 临时变量用于累加
     int temp[50] = {0};
-    int active_notes = 0; // 记录当前活跃的音符总数
+    float active_notes = 0.0f; // 记录当前活跃的音符总数
 
     // 遍历所有通道
     for (int ch = 0; ch < NUM_CHANNELS; ch++)
@@ -97,6 +97,7 @@ void Synthesize(uint8_t output[50])
                         temp[i] += (uint16)(allNoteNew[note->n_Sound][note->current_step][i] * voiceFact);
                     }
                     active_notes++; // 每个活跃音符贡献一次
+                    // active_notes += 1 / voiceFact; // 弃用，会导致失真
                     // 移动到下一步
                     note->current_step++;
                     // 如果音符合成完成，自动删除该音符
@@ -104,7 +105,7 @@ void Synthesize(uint8_t output[50])
                     {
 
                         // 可选，灭灯
-                        FlashLed(note->n_Sound + 176);
+                        FlashLed((note->n_Sound % 7) + 176);
 
                         // 使用 removeNote 函数删除音符
                         removeNote(ch, n);
@@ -132,7 +133,7 @@ void Synthesize(uint8_t output[50])
     {
         // 使用整数除法，确保结果在0-255范围内
         // 可以根据需要添加舍入或限制
-        int scaled = temp[i] / active_notes;
+        int scaled = temp[i] / (int)active_notes;
         if (scaled < 0)
             scaled = 0;
         if (scaled > 255)
