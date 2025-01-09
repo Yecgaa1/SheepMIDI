@@ -10,6 +10,7 @@ int i = 0;
 bool WC1Update = false, WC2Update = false;
 Score CH1_Score;
 
+uint8 nowTone = 1;
 void InitSynthChannels()
 {
     for (int ch = 0; ch < NUM_CHANNELS; ch++)
@@ -215,28 +216,43 @@ void DACWork_key(uint8 key)
     switch (key)
     {
     case 0:
-        addNote(0, NOTE_C4);
+        addNote(0, nowTone * 7 + NOTE_C4);
         break;
     case 1:
-        addNote(0, NOTE_D4);
+        addNote(0, nowTone * 7 + NOTE_D4);
         break;
     case 2:
-        addNote(0, NOTE_E4);
+        addNote(0, nowTone * 7 + NOTE_E4);
         break;
     case 3:
-        addNote(0, NOTE_F4);
+        addNote(0, nowTone * 7 + NOTE_F4);
         break;
     case 4:
-        addNote(0, NOTE_G4);
+        addNote(0, nowTone * 7 + NOTE_G4);
         break;
     case 5:
-        addNote(0, NOTE_A4);
+        addNote(0, nowTone * 7 + NOTE_A4);
         break;
     case 6:
-        addNote(0, NOTE_B4);
+        addNote(0, nowTone * 7 + NOTE_B4);
         break;
     case 7:
-        addNote(0, NOTE_C5);
+        addNote(0, nowTone * 7 + NOTE_C5);
+        break;
+    case 8:
+        nowTone = 2;
+        TCJSendAnyProperty("b3", "bco", "19002");
+        TCJSendTxt("b3", "C5大调");
+        break;
+    case 9:
+        nowTone = 1;
+        TCJSendAnyProperty("b3", "bco", "9499");
+        TCJSendTxt("b3", "C4大调");
+        break;
+    case 17:
+        nowTone = 0;
+        TCJSendAnyProperty("b3", "bco", "5983");
+        TCJSendTxt("b3", "C3大调");
         break;
     case 19:
         CH1Work = true;
