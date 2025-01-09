@@ -184,6 +184,20 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clk_Tmr_CH1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Tmr_CH1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Tmr_CH1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_CH2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_CH2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_CH2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clk_Tmr_CH2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clk_Tmr_CH2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Tmr_CH2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Tmr_CH2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_CH3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_CH3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_CH3_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clk_Tmr_CH3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clk_Tmr_CH3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Tmr_CH3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Tmr_CH3.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="G:\SheepMIDI\PSoC 5LP CY8CKIT-101.cydsn\Export\ARM_GCC_Generic">
