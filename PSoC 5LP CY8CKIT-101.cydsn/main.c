@@ -66,19 +66,10 @@ extern bool WC1Update, WC2Update;
  */
 int main(void)
 {
-    // int16 adc_count = 0;   // A/D转换后的数值
-    // int32 mVolts = 0;      // 由A/D数值换算后的mV数
-    // uint8 dac_val = 0x20u; // VDAC8输入数据
-
-    // uint8 cntr_wavedac8 = 0, cntr_adc = 0; // 软件定时器的计数器，用于切换WaveDAC8输出波形、开始A/D转换
-
-    // uint8 msg, button_num, button_act; // 按键消息、按键编号、按键动作类型
-
-    // uint8 slider_pos = 0xFFu, slider_pos_last = 0xFFu; // 电容感应滑条的当前、最近触摸位置，0xFF为未触摸
-
     /* 使能全局中断 */
     CYGlobalIntEnable;
 
+    // 初始化串口模块
     UART_1_Start();
     UART_2_Start();
     TCJSendEnd();
@@ -90,44 +81,47 @@ int main(void)
     /* 初始化按键模块组件 */
     Button_Module_Start();
 
-    InitDACWork();
+    InitDACWork(); // 初始化DAC模块
 
     LCD_Char_Start();    /* 初始化LCD_Char组件 */
     MatrixKbLED_Start(); /* 初始化MatrixKbLED组件 */
-    uint8_t WC1_Output[50];
-    uint8_t WC2_Output[50];
-    WaveDAC8_Wave1Setup(WC1_Output, 50);
-    WaveDAC8_Wave2Setup(WC2_Output, 50);
+
+    //后续合成都会输出在这两个uint8
+    uint8_t Wave1_Output[50];
+    uint8_t Wave2_Output[50];
+    WaveDAC8_Wave1Setup(Wave1_Output, 50);
+    WaveDAC8_Wave2Setup(Wave2_Output, 50);
     // uint8 time = 0;
 
     while (1)
     {
-        // 串口检查
+        // 串口处理模块
         char tmp[20] = "";
-        // sprintf(tmp,"%d\r\n",UART_1_GetRxBufferSize());
-        uint8 t = UART_1_GetRxBufferSize();
-        for (uint8 i = 0; i < t; i++)
+        uint8 t = UART_2_GetRxBufferSize();
+        if (t != 0)
         {
-            tmp[i] = UART_1_GetChar();
+            for (uint8 i = 0; i < t; i++)
+            {
+                tmp[i] = UART_2_GetChar();
+            }
+            ScreenWork(tmp); // 解析数据
         }
-        UART_1_PutString(tmp);
+
         // DAC更新
         if (WC1Update)
         {
             WC1Update = false;
-            Synthesize(WC1_Output);
+            Synthesize(Wave1_Output);
         }
         else if (WC2Update)
         {
             WC2Update = false;
-            Synthesize(WC2_Output);
+            Synthesize(Wave2_Output);
         }
+
         /* Timer_Button定时器运行了一个周期（默认为BUTTON_SAMPLE_PERIOD_MS =20ms）*/
         if ((Timer_Button_ReadStatusRegister() & Timer_Button_STATUS_TC) != 0)
         {
-            // char tmp[20] = "";
-            // sprintf(tmp, "%d\r\n", time++);
-            // UART_1_PutString(tmp);
             MatrixKbLED_Task(); /* 周期性运行MatrixKbLED任务 */
         }
     }

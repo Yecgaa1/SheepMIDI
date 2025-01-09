@@ -1,3 +1,19 @@
---------------- Rebuild Started: 01/08/2025 17:42:26 Project: DACWork.c, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_541\Debug/DACWork.lst -g -Wall -ffunction-sections -ffat-lto-objects -O0 -c DACWork.c -o .\ARM_GCC_541\Debug\DACWork.o
---------------- Rebuild Succeeded: 01/08/2025 17:42:26 ---------------
+--------------- Rebuild Started: 01/09/2025 21:17:50 Project: main.c, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_541\Debug/main.lst -g -Wall -ffunction-sections -ffat-lto-objects -O0 -c main.c -o .\ARM_GCC_541\Debug\main.o
+In file included from main.c:30:0:
+DACWork.h:22:0: warning: "NOTE_C" redefined
+ #define NOTE_C 7
+ ^
+DACWork.h:15:0: note: this is the location of the previous definition
+ #define NOTE_C 0
+ ^
+main.c: In function 'main':
+main.c:107:13: warning: implicit declaration of function 'ScreenWork' [-Wimplicit-function-declaration]
+             ScreenWork(tmp); // 瑙ｆ瀽鏁版嵁
+             ^
+main.c: In function 'MatrixKbLED_Task':
+main.c:174:22: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+         sprintf(tmp, "%d,%d\r\n", qdat, keys);
+                      ^
+main.c:174:22: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+--------------- Rebuild Succeeded: 01/09/2025 21:17:51 ---------------

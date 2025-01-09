@@ -217,22 +217,22 @@ void DACWork_key(uint8 key)
     switch (key)
     {
     case 0:
-        addNote(0, nowTone * 7 + NOTE_C4);
+        addNote(0, nowTone * 7 + NOTE_C);
         break;
     case 1:
-        addNote(0, nowTone * 7 + NOTE_D4);
+        addNote(0, nowTone * 7 + NOTE_D);
         break;
     case 2:
-        addNote(0, nowTone * 7 + NOTE_E4);
+        addNote(0, nowTone * 7 + NOTE_E);
         break;
     case 3:
-        addNote(0, nowTone * 7 + NOTE_F4);
+        addNote(0, nowTone * 7 + NOTE_F);
         break;
     case 4:
-        addNote(0, nowTone * 7 + NOTE_G4);
+        addNote(0, nowTone * 7 + NOTE_G);
         break;
     case 5:
-        addNote(0, nowTone * 7 + NOTE_A4);
+        addNote(0, nowTone * 7 + NOTE_A);
         break;
     case 6:
         addNote(0, nowTone * 7 + NOTE_B4);
@@ -242,7 +242,7 @@ void DACWork_key(uint8 key)
         break;
     case 8:
         nowTone = 2;
-        TCJSendAnyProperty("b3", "bco", "19002");
+        TCJSendAnyProperty("b3", "bco", "5983");
         TCJSendTxt("b3", "C5大调");
         break;
     case 9:
@@ -252,7 +252,7 @@ void DACWork_key(uint8 key)
         break;
     case 17:
         nowTone = 0;
-        TCJSendAnyProperty("b3", "bco", "5983");
+        TCJSendAnyProperty("b3", "bco", "19002");
         TCJSendTxt("b3", "C3大调");
         break;
     case 19:
