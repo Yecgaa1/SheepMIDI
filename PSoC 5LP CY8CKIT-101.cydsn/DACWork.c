@@ -93,7 +93,7 @@ void Synthesize(uint8_t output[50])
                     // 合成当前步的50个数据点
                     for (int i = 0; i < 50; i++)
                     {
-                        temp[i] += (uint16)(allNote[note->n_Sound][note->current_step][i] * voiceFact);
+                        temp[i] += (uint16)(allNoteNew[note->n_Sound][note->current_step][i] * voiceFact);
                     }
                     active_notes++; // 每个活跃音符贡献一次
                     // 移动到下一步
@@ -192,14 +192,14 @@ void InitCH1()
 
 void InitDACWork()
 {
-    memcpy(allNote[0], DACData_C4, sizeof(DACData_C4));
-    memcpy(allNote[1], DACData_D4, sizeof(DACData_D4));
-    memcpy(allNote[2], DACData_E4, sizeof(DACData_E4));
-    memcpy(allNote[3], DACData_F4, sizeof(DACData_F4));
-    memcpy(allNote[4], DACData_G4, sizeof(DACData_G4));
-    memcpy(allNote[5], DACData_A4, sizeof(DACData_A4));
-    memcpy(allNote[6], DACData_B4, sizeof(DACData_B4));
-    memcpy(allNote[7], DACData_C5, sizeof(DACData_C5));
+    // memcpy(allNote[0], DACData_C4, sizeof(DACData_C4));
+    // memcpy(allNote[1], DACData_D4, sizeof(DACData_D4));
+    // memcpy(allNote[2], DACData_E4, sizeof(DACData_E4));
+    // memcpy(allNote[3], DACData_F4, sizeof(DACData_F4));
+    // memcpy(allNote[4], DACData_G4, sizeof(DACData_G4));
+    // memcpy(allNote[5], DACData_A4, sizeof(DACData_A4));
+    // memcpy(allNote[6], DACData_B4, sizeof(DACData_B4));
+    // memcpy(allNote[7], DACData_C5, sizeof(DACData_C5));
 
     DAC_WC1_ClearPending();
     DAC_WC1_StartEx(Int_DAC_WC1_handler);
